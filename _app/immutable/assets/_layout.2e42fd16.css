@@ -1,0 +1,1 @@
+.container.svelte-11d4w2k{height:100vh;padding:3rem;display:grid;grid-template-areas:"nav" "main" "footer";grid-template-rows:4em 1fr 4em}nav.svelte-11d4w2k{grid-area:nav;display:flex;justify-content:space-between}main.svelte-11d4w2k{grid-area:main}footer.svelte-11d4w2k{grid-area:footer;display:flex;justify-content:center;padding:1em}
