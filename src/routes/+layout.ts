@@ -34,3 +34,4 @@ export const load = (async () => {
 }) satisfies LayoutLoad;
 
 export const prerender = true;
+export const trailingSlash = "always";
