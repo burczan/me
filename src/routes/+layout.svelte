@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from '$app/paths';
   import { page } from "$app/stores";
 
   export let data;
@@ -7,7 +8,7 @@
 <div class="container">
   <nav>
     {#each data.navbarItems as { name, href }}
-      <a {href}>
+      <a href="{base}{href}">
         <button
           type="button"
           class="nes-btn"
