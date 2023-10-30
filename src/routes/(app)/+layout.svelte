@@ -5,6 +5,23 @@
   export let data;
 </script>
 
+<svelte:head>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/nes.css@latest/css/nes.min.css" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/nes.icons@latest/css/nes-icons.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    rel="stylesheet" />
+  <style>
+    body {
+      background-color: #4e4e4e;
+    }
+  </style>
+</svelte:head>
+
 <div class="container">
   <nav>
     {#each data.navbarItems as { name, href }}
