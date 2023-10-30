@@ -3,45 +3,7 @@
   import List from "$lib/components/List.svelte";
   import SvelteHead from "$lib/components/SvelteHead.svelte";
 
-  const techstack = [
-    "AWS",
-    'Crochet Hook <i class="nes-icon is-small heart" />',
-    "JavaScript",
-    'Linux <i class="nes-icon is-small heart" />',
-    'Node.js <i class="nes-icon is-small heart" />',
-    "React",
-    'Svelte <i class="nes-icon is-small heart" />',
-    'TypeScript <i class="nes-icon is-small heart" />',
-  ];
-
-  const happyToLearn = [
-    "C",
-    "C++",
-    "C#",
-    "Java",
-    "Kotlin",
-    "Python",
-    "Rust",
-    "Solidity",
-    "(but not limited to)",
-  ];
-
-  const generallyInterested = [
-    "algorithms and data structures",
-    "blockchain",
-    "devops",
-    "distributed systems",
-    "electronics",
-    "knitting",
-    "machine learning",
-    "math",
-    "neuroscience",
-    "resilience engineering",
-    "security",
-    "theoretical computer science",
-    "tunisian crochet",
-    "web3",
-  ];
+  export let data;
 </script>
 
 <SvelteHead title="Tech stack" />
@@ -50,7 +12,7 @@
   <div class="columns">
     <div class="left">
       <List caption="Current tech stack">
-        {#each techstack as entry}
+        {#each data.currentTechstack as entry}
           <li>{@html entry}</li>
         {/each}
       </List>
@@ -58,7 +20,7 @@
 
     <div class="central">
       <List caption="Happy to learn">
-        {#each happyToLearn as entry}
+        {#each data.happyToLearn as entry}
           <li>{entry}</li>
         {/each}
       </List>
@@ -66,7 +28,7 @@
 
     <div class="right">
       <List caption="Generally interested in">
-        {#each generallyInterested as entry}
+        {#each data.generallyInterested as entry}
           <li style:text-transform="capitalize">{entry}</li>
         {/each}
       </List>
