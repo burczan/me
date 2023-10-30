@@ -2,6 +2,7 @@
   "useTabs": false,
   "tabWidth": 2,
   "printWidth": 80,
+  "htmlWhitespaceSensitivity": "ignore",
   "bracketSameLine": true,
   "plugins": ["prettier-plugin-svelte"],
   "pluginSearchDirs": ["."],

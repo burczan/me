@@ -16,7 +16,8 @@
         rel="noopener"
         target="_blank">
         <button type="button" class="nes-btn">
-          <i class="nes-icon github-square is-small" /> Python CLI version
+          <i class="nes-icon github-square is-small" />
+          Python CLI version
         </button>
       </a>
       <a
@@ -24,7 +25,8 @@
         rel="noopener"
         target="_blank">
         <button type="button" class="nes-btn">
-          <i class="nes-icon github-square is-small" /> React GUI version
+          <i class="nes-icon github-square is-small" />
+          React GUI version
         </button>
       </a>
     </p>
@@ -61,8 +63,10 @@
           Data source: <a
             href="https://www.chmi.cz/"
             rel="noopener"
-            target="_blank">Český hydrometeorologický ústav</a
-          >.
+            target="_blank">
+            Český hydrometeorologický ústav
+          </a>
+          .
         </p>
       </dd>
     </dl>
@@ -71,7 +75,8 @@
   <Subcontainer h2="Anki Scripts">
     <p>
       <button type="button" class="nes-btn is-disabled">
-        <i class="nes-icon github-square is-small" /> Private repository
+        <i class="nes-icon github-square is-small" />
+        Private repository
       </button>
     </p>
     <dl>
@@ -82,7 +87,10 @@
             Custom scripts (TypeScript) and styling (Sass) for <a
               href="https://apps.ankiweb.net/"
               rel="noopener"
-              target="_blank">Anki</a> flashcards.
+              target="_blank">
+              Anki
+            </a>
+            flashcards.
           </li>
           <li>CLI tools (Node/TypeScript) for</li>
           <List>
@@ -90,7 +98,9 @@
               generating <a
                 href="https://plantuml.com/"
                 rel="noopener"
-                target="_blank">PlantUML</a>
+                target="_blank">
+                PlantUML
+              </a>
               diagrams.
             </li>
             <li>diagrams' storage and retrieval.</li>
@@ -98,7 +108,10 @@
               HTML &lt;--&gt; <a
                 href="https://prismjs.com/"
                 rel="noopener"
-                target="_blank">Prism</a> conversion.
+                target="_blank">
+                Prism
+              </a>
+              conversion.
             </li>
           </List>
         </List>
@@ -109,7 +122,8 @@
   <Subcontainer h2="Intraview">
     <p>
       <button type="button" class="nes-btn is-disabled">
-        <i class="nes-icon github-square is-small" /> Public soon
+        <i class="nes-icon github-square is-small" />
+        Public soon
       </button>
     </p>
     <dl>
@@ -123,7 +137,8 @@
   <Subcontainer h2="Crocheting Admin Tools">
     <p>
       <button type="button" class="nes-btn is-disabled">
-        <i class="nes-icon github-square is-small" /> Private repository
+        <i class="nes-icon github-square is-small" />
+        Private repository
       </button>
     </p>
     <dl>
