@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Container from "$lib/components/Container.svelte";
-  import List from "$lib/components/List.svelte";
-  import SvelteHead from "$lib/components/SvelteHead.svelte";
+  import Container from "$lib/app/components/Container.svelte";
+  import List from "$lib/app/components/List.svelte";
+  import SvelteHead from "$lib/app/components/SvelteHead.svelte";
 
   export let data;
 </script>

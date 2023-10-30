@@ -1,7 +1,7 @@
 <script>
   import { base } from "$app/paths";
-  import Container from "$lib/components/Container.svelte";
-  import SvelteHead from "$lib/components/SvelteHead.svelte";
+  import Container from "$lib/app/components/Container.svelte";
+  import SvelteHead from "$lib/app/components/SvelteHead.svelte";
 </script>
 
 <SvelteHead title="Home" />

@@ -1,7 +1,7 @@
 import type { LayoutLoad } from "./$types";
 
 export const load = (async () => {
-  const languages: Language[] = [
+  const languages: APP_Language[] = [
     {
       language: "Polish",
       level: "Native proficiency",

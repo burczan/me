@@ -1,19 +1,19 @@
-type Education = {
+type APP_Education = {
   school: string;
   degree: string;
   dateRange: string;
 };
 
-type Experience = {
+type APP_Experience = {
   role: string;
   company: string;
   startDate: string;
   endDate: string;
   description: string[];
-  skills: Skill[];
+  skills: APP_Skill[];
 };
 
-type Skill =
+type APP_Skill =
   | "API testing"
   | "AWS"
   | "Burp Suite"
@@ -31,7 +31,7 @@ type Skill =
   | "TypeScript"
   | "Unit testing";
 
-type Language = {
+type APP_Language = {
   language: string;
   level:
     | "Elementary proficiency"

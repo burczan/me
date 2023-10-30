@@ -1,9 +1,9 @@
 <script lang="ts">
-  import Container from "$lib/components/Container.svelte";
-  import Dt from "$lib/components/Dt.svelte";
-  import List from "$lib/components/List.svelte";
-  import Subcontainer from "$lib/components/Subcontainer.svelte";
-  import SvelteHead from "$lib/components/SvelteHead.svelte";
+  import Container from "$lib/app/components/Container.svelte";
+  import Dt from "$lib/app/components/Dt.svelte";
+  import List from "$lib/app/components/List.svelte";
+  import Subcontainer from "$lib/app/components/Subcontainer.svelte";
+  import SvelteHead from "$lib/app/components/SvelteHead.svelte";
 </script>
 
 <SvelteHead title="Projects" />
