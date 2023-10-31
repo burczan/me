@@ -12,28 +12,21 @@
   <div class="columns">
     <div class="left">
       <p>
-        Software engineer with a background in <span
-          class="nes-text is-success">
-          software testing
-        </span>
-        .
+        Software engineer with a background in
+        <span class="nes-text is-success">software testing</span>.
       </p>
       <p>
         Interested primarily in
         <span class="nes-text is-success">backend development</span>
-        in
-        <span class="nes-text is-success">TypeScript</span>
-        but also
-        <span class="nes-text is-success">
-          open to <a href="{base}/techstack">tech stack</a>
-        </span>
-        .
+        in <span class="nes-text is-success">TypeScript</span> but also
+        <span class="nes-text is-success"
+          >open to
+          <a href="{base}/techstack">tech stack</a></span
+        >.
       </p>
       <p>
-        Focused on writing a <span class="nes-text is-success">clean</span>
-        ,
-        <span class="nes-text is-success">understandable</span>
-        , and
+        Focused on writing a <span class="nes-text is-success">clean</span>,
+        <span class="nes-text is-success">understandable</span>, and
         <span class="nes-text is-success">high quality</span>
         code.
       </p>

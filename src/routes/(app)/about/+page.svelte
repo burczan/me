@@ -58,7 +58,8 @@
               <a
                 href="https://www.linkedin.com/in/nataliapospieszynska/"
                 rel="noopener"
-                target="_blank">
+                target="_blank"
+              >
                 LinkedIn <i class="nes-icon linkedin is-small" />
               </a>
             </li>
@@ -66,7 +67,8 @@
               <a
                 href="https://github.com/burczan"
                 rel="noopener"
-                target="_blank">
+                target="_blank"
+              >
                 GitHub <i class="nes-icon github-square is-small" />
               </a>
             </li>
