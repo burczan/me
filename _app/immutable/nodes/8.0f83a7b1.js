@@ -1,4 +1,4 @@
-import{s as y,n as b}from"../chunks/scheduler.e903ca9d.js";import{S as C,i as k,k as p,s as g,l as m,f as w,m as u,g as l,n as f,o as d,d as r,p as v,e as _,c as $,x as h,y as x}from"../chunks/index.53a158f6.js";import{b as S}from"../chunks/paths.3767174c.js";import{S as z,C as H}from"../chunks/SvelteHead.0004d980.js";function q(o){let s,i="Natalia Pospieszyńska",a,n,e=`<div class="left svelte-ezv04w"><p>Software engineer with a background in
+import{s as y,n as b}from"../chunks/scheduler.e903ca9d.js";import{S as C,i as k,k as p,s as g,l as m,f as w,m as u,g as l,n as f,o as d,d as r,p as v,e as _,c as $,x as h,y as x}from"../chunks/index.53a158f6.js";import{b as S}from"../chunks/paths.b22d8c5a.js";import{S as z,C as H}from"../chunks/SvelteHead.0004d980.js";function q(o){let s,i="Natalia Pospieszyńska",a,n,e=`<div class="left svelte-ezv04w"><p>Software engineer with a background in
         <span class="nes-text is-success">software testing</span>.</p> <p>Interested primarily in
         <span class="nes-text is-success">backend development</span>
         in <span class="nes-text is-success">TypeScript</span> but also
