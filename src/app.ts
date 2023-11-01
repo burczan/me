@@ -1,5 +1,8 @@
 type APP_Education = {
   school: string;
+  city: string;
+  field: string;
+  subfield?: string;
   degree: string;
   dateRange: string;
 };
