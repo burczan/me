@@ -13,7 +13,7 @@
 
 <SvelteHead title="Experience" />
 
-<div class="grid-container">
+<div class="tabs-grid-container">
   <div class="tabs">
     {#each roles as role, id}
       <p>
@@ -64,32 +64,18 @@
 </div>
 
 <style>
-  .grid-container {
-    display: grid;
-    grid-template-areas: "tabs content";
-    grid-template-columns: 0.6fr 1.4fr;
-  }
-
-  .tabs {
-    grid-area: tabs;
-  }
-
-  .content {
-    grid-area: content;
-  }
-
-  .content .columns {
+  .columns {
     display: grid;
     grid-template-areas: "left right";
     grid-template-columns: 1.3fr 0.7fr;
     gap: 2em;
   }
 
-  .content .columns .left {
+  .columns .left {
     grid-area: left;
   }
 
-  .content .columns .right {
+  .columns .right {
     grid-area: right;
   }
 </style>

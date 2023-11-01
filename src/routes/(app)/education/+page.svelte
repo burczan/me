@@ -12,7 +12,7 @@
 
 <SvelteHead title="Education" />
 
-<div class="grid-container">
+<div class="tabs-grid-container">
   <div class="tabs">
     {#each fields as field, id}
       <p>
@@ -46,19 +46,3 @@
     {/each}
   </div>
 </div>
-
-<style>
-  .grid-container {
-    display: grid;
-    grid-template-areas: "tabs content";
-    grid-template-columns: 0.6fr 1.4fr;
-  }
-
-  .tabs {
-    grid-area: tabs;
-  }
-
-  .content {
-    grid-area: content;
-  }
-</style>

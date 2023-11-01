@@ -39,7 +39,7 @@
 
 <SvelteHead title="Projects" />
 
-<div class="grid-container">
+<div class="tabs-grid-container">
   <div class="tabs">
     {#each projectNames as name, id}
       <p>
@@ -55,6 +55,7 @@
       </p>
     {/each}
   </div>
+
   <div class="content">
     {#each projects as { title, component }, id}
       {#if activeTabId === id}
@@ -66,19 +67,3 @@
     {/each}
   </div>
 </div>
-
-<style>
-  .grid-container {
-    display: grid;
-    grid-template-areas: "tabs content";
-    grid-template-columns: 0.6fr 1.4fr;
-  }
-
-  .tabs {
-    grid-area: tabs;
-  }
-
-  .content {
-    grid-area: content;
-  }
-</style>
