@@ -1,57 +1,94 @@
 <script lang="ts">
-  import Container from "$lib/app/components/Container.svelte";
   import List from "$lib/app/components/List.svelte";
-  import Subcontainer from "$lib/app/components/Subcontainer.svelte";
   import SvelteHead from "$lib/app/components/SvelteHead.svelte";
 
   export let data;
+
+  const roles = data.experience.map((entry) => entry.role);
+
+  const setActiveTab = (tabId: number) => () => (activeTabId = tabId);
+
+  let activeTabId = 0;
 </script>
 
 <SvelteHead title="Experience" />
 
-<Container>
-  {#each data.experience as { role, company, startDate, endDate, description, skills }}
-    <Subcontainer>
-      <h2>
-        <span class="nes-text is-success">{role}</span>
-        <span class="nes-text is-primary">@ {company}</span>
-      </h2>
-      <h3>{startDate} - {endDate}</h3>
+<div class="nes-container is-dark grid-container">
+  <div class="tabs">
+    {#each roles as role, id}
+      <p>
+        <button
+          id={id.toString()}
+          type="button"
+          class="nes-btn"
+          class:is-primary={id === activeTabId}
+          on:click={setActiveTab(id)}
+        >
+          {role}
+        </button></p
+      >
+    {/each}
+  </div>
+  <div class="content">
+    {#each data.experience as { role, company, startDate, endDate, description, skills }, id}
+      {#if activeTabId === id}
+        <div class="nes-container is-rounded is-dark">
+          <h2>
+            <span class="nes-text is-success">{role}</span>
+            <span class="nes-text is-primary">@ {company}</span>
+          </h2>
+          <h3>{startDate} - {endDate}</h3>
 
-      <div class="columns">
-        <div class="left">
-          <List caption="Description">
-            {#each description as entry}
-              <li>{entry}</li>
-            {/each}
-          </List>
-        </div>
+          <div class="columns">
+            <div class="left">
+              <List caption="Description">
+                {#each description as entry}
+                  <li>{entry}</li>
+                {/each}
+              </List>
+            </div>
 
-        <div class="right">
-          <List caption="Skills">
-            {#each skills as skill}
-              <li>{skill}</li>
-            {/each}
-          </List>
+            <div class="right">
+              <List caption="Skills">
+                {#each skills as skill}
+                  <li>{skill}</li>
+                {/each}
+              </List>
+            </div>
+          </div>
         </div>
-      </div>
-    </Subcontainer>
-  {/each}
-</Container>
+      {/if}
+    {/each}
+  </div>
+</div>
 
 <style>
-  .columns {
+  .grid-container {
+    display: grid;
+    grid-template-areas: "tabs content";
+    grid-template-columns: 0.6fr 1.4fr;
+  }
+
+  .tabs {
+    grid-area: tabs;
+  }
+
+  .content {
+    grid-area: content;
+  }
+
+  .content .columns {
     display: grid;
     grid-template-areas: "left right";
-    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-columns: 1.3fr 0.7fr;
     gap: 2em;
   }
 
-  .left {
+  .content .columns .left {
     grid-area: left;
   }
 
-  .right {
+  .content .columns .right {
     grid-area: right;
   }
 </style>
