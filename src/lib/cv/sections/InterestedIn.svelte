@@ -1,5 +1,5 @@
 <script lang="ts">
-  const generallyInterested: Resume["techstack"]["generallyInterested"] = [
+  const generallyInterested: GenerallyInterestedIn = [
     "Algorithms and Data Structures",
     "Blockchain",
     "Crocheting",

@@ -1,5 +1,5 @@
 <script lang="ts">
-  const softSkills: Resume["softSkills"] = [
+  const softSkills: SoftSkill[] = [
     "Analytical skills",
     "Attention to detail",
     "Laziness",

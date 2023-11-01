@@ -7,7 +7,7 @@
   import Toiper from "$lib/app/sections/projects/Toiper.svelte";
   import UnderPressure from "$lib/app/sections/projects/UnderPressure.svelte";
 
-  const projects: APP_Project<ComponentType>[] = [
+  const projects: Project<ComponentType>[] = [
     {
       title: "Toiper",
       component: Toiper,

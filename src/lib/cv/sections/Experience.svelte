@@ -1,5 +1,5 @@
 <script lang="ts">
-  const experience: Resume["experience"] = [
+  const experience: Experience = [
     {
       role: "Backend Engineer",
       company: "Capbase",
@@ -11,7 +11,7 @@
         "Debugging",
         "Writing unit and integration tests",
       ],
-      skills: [
+      techSkills: [
         "Bash",
         "Node.js",
         "React",
@@ -30,7 +30,7 @@
         "Building reusable components for the newly created frontend",
         "Writing unit and integration tests",
       ],
-      skills: [
+      techSkills: [
         "JavaScript",
         "React",
         "GraphQL",
@@ -49,8 +49,7 @@
         "Writing various kinds of automated tests",
         "Developing functionalities in React",
       ],
-      skills: [
-        "Mentoring",
+      techSkills: [
         "Test automation",
         "JavaScript",
         "React",
@@ -68,7 +67,7 @@
         "Working in close cooperation with the developers for the implementation of new functionalities",
         "Testing the production environment after each release",
       ],
-      skills: [
+      techSkills: [
         "Burp Suite",
         "Test automation",
         "Manual testing",
@@ -88,7 +87,7 @@
         "Making suggestions for improvements to projects",
         "Finding and reporting bugs",
       ],
-      skills: ["Manual testing", "API testing"],
+      techSkills: ["Manual testing", "API testing"],
     },
   ];
 </script>

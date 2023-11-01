@@ -12,15 +12,20 @@
   <div class="columns">
     <div class="left">
       <List caption="Current tech stack">
-        {#each data.currentTechstack as entry}
-          <li>{@html entry}</li>
+        {#each data.currentTechstack as { tech, favourite }}
+          <li>
+            {tech}
+            {#if favourite}
+              <i class="nes-icon is-small heart" />
+            {/if}
+          </li>
         {/each}
       </List>
     </div>
 
     <div class="central">
       <List caption="Happy to learn">
-        {#each data.happyToLearn as entry}
+        {#each data.futureTechstack as entry}
           <li>{entry}</li>
         {/each}
       </List>

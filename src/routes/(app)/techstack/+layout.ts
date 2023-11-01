@@ -1,30 +1,57 @@
 import type { LayoutLoad } from "./$types";
 
 export const load = (async () => {
-  const currentTechstack = [
-    "AWS",
-    'Crochet Hook <i class="nes-icon is-small heart" />',
-    "JavaScript",
-    'Linux <i class="nes-icon is-small heart" />',
-    'Node.js <i class="nes-icon is-small heart" />',
-    "React",
-    'Svelte <i class="nes-icon is-small heart" />',
-    'TypeScript <i class="nes-icon is-small heart" />',
+  const currentTechstack: CurrentTechstack = [
+    {
+      tech: "AWS",
+      favourite: false,
+    },
+    {
+      tech: "Crochet Hook",
+      favourite: true,
+    },
+    {
+      tech: "Bash",
+      favourite: false,
+    },
+    {
+      tech: "JavaScript",
+      favourite: false,
+    },
+    {
+      tech: "Linux",
+      favourite: true,
+    },
+    {
+      tech: "Node.js",
+      favourite: true,
+    },
+    {
+      tech: "React",
+      favourite: false,
+    },
+    {
+      tech: "Svelte",
+      favourite: true,
+    },
+    {
+      tech: "TypeScript",
+      favourite: true,
+    },
   ];
 
-  const happyToLearn = [
+  const futureTechstack: FutureTechnology[] = [
     "C",
     "C++",
     "C#",
     "Java",
-    "Kotlin",
     "Python",
     "Rust",
     "Solidity",
     "(but not limited to)",
   ];
 
-  const generallyInterested = [
+  const generallyInterested: GenerallyInterestedIn = [
     "algorithms and data structures",
     "blockchain",
     "devops",
@@ -43,7 +70,7 @@ export const load = (async () => {
 
   return {
     currentTechstack,
-    happyToLearn,
+    futureTechstack,
     generallyInterested,
   };
 }) satisfies LayoutLoad;

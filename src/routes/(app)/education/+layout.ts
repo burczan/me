@@ -1,9 +1,9 @@
 import type { LayoutLoad } from "./$types";
 
 export const load = (async () => {
-  const education: APP_Education[] = [
+  const education: Education = [
     {
-      school: "Polish Naval Academy of the Heroes of Westerplatte",
+      school: "Polish Naval Academy",
       city: "Gdynia",
       field: "Cybersecurity",
       degree: "Postgraduate studies",

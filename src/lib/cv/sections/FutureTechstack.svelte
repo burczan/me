@@ -1,5 +1,5 @@
 <script lang="ts">
-  const happyToLearn: Resume["techstack"]["happyToLearn"] = [
+  const futureTechstack: FutureTechnology[] = [
     "C",
     "C++",
     "C#",
@@ -17,8 +17,8 @@
     Happy to learn
   </figcaption>
   <ul class="hideMarkers">
-    {#each happyToLearn as entry}
-      <li>{@html entry}</li>
+    {#each futureTechstack as tech}
+      <li>{tech}</li>
     {/each}
   </ul>
 </figure>

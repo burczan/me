@@ -1,5 +1,5 @@
 <script lang="ts">
-  const languages: Resume["spokenLanguages"] = [
+  const languages: SpokenLanguages = [
     {
       language: "Polish",
       level: "Native proficiency",

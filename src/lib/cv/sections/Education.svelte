@@ -1,37 +1,49 @@
 <script lang="ts">
-  const education: Resume["education"] = [
+  const education: Education = [
     {
-      school: "Polish Naval Academy (Gdynia)",
-      degree: "Postgraduate studies, <strong>Cybersecurity</strong>",
+      school: "Polish Naval Academy",
+      city: "Gdynia",
+      field: "Cybersecurity",
+      degree: "Postgraduate studies",
       dateRange: "2019 - 2020",
     },
     {
-      school: "Adam Mickiewicz University (Poznań)",
-      degree:
-        "Master studies, <strong>Philosophy</strong>, Social Communication",
+      school: "Adam Mickiewicz University",
+      city: "Poznań",
+      field: "Philosophy",
+      subfield: "Social Communication",
+      degree: "Master studies",
       dateRange: "2013 - 2016",
     },
     {
-      school: "Post-Secondary School (Poznań)",
-      degree: "Technician, <strong>Sound Engineering</strong>",
+      school: "Post-Secondary School",
+      city: "Poznań",
+      field: "Sound Engineering",
+      degree: "Technician",
       dateRange: "2011 - 2013",
     },
     {
-      school: "Adam Mickiewicz University (Poznań)",
-      degree:
-        "Bachelor's degree, <strong>Educational/Instructional Technology</strong>",
+      school: "Adam Mickiewicz University",
+      city: "Poznań",
+      field: "Instructional Technology",
+      degree: "Bachelor's degree",
       dateRange: "2010 - 2013",
     },
   ];
 </script>
 
-{#each education as { school, degree, dateRange }}
+{#each education as { school, city, degree, field, subfield, dateRange }}
   <div class="border-top">
     <h3>
       <i class="fa-solid fa-graduation-cap fa-xs" />
-      {school}
+      {school} ({city})
     </h3>
-    <h4 class="iconWidthIndent">{@html degree}</h4>
+    <h4 class="iconWidthIndent">
+      {degree}, <strong>{field}</strong>{#if subfield}
+        ,
+        {subfield}
+      {/if}
+    </h4>
     <h5 class="iconWidthIndent">{dateRange}</h5>
   </div>
 {/each}

@@ -30,7 +30,7 @@
     {/each}
   </div>
   <div class="content">
-    {#each data.experience as { role, company, startDate, endDate, description, skills }, id}
+    {#each data.experience as { role, company, startDate, endDate, description, techSkills }, id}
       {#if activeTabId === id}
         <div class="nes-container is-rounded is-dark">
           <h2>
@@ -50,7 +50,7 @@
 
             <div class="right">
               <List caption="Skills">
-                {#each skills as skill}
+                {#each techSkills as skill}
                   <li>{skill}</li>
                 {/each}
               </List>

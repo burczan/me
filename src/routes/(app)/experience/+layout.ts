@@ -1,7 +1,7 @@
 import type { LayoutLoad } from "./$types";
 
 export const load = (async () => {
-  const experience: Experience[] = [
+  const experience: Experience = [
     {
       role: "Backend Engineer",
       company: "Capbase",
@@ -13,7 +13,14 @@ export const load = (async () => {
         "Debugging",
         "Writing unit and integration tests",
       ],
-      skills: ["Node.js", "React", "Linux", "TypeScript", "AWS", "Express.js"],
+      techSkills: [
+        "Node.js",
+        "React",
+        "Linux",
+        "TypeScript",
+        "AWS",
+        "Express.js",
+      ],
     },
     {
       role: "Frontend Engineer",
@@ -24,7 +31,7 @@ export const load = (async () => {
         "Building reusable components for the newly created frontend",
         "Writing unit and integration tests",
       ],
-      skills: [
+      techSkills: [
         "JavaScript",
         "React",
         "GraphQL",
@@ -43,8 +50,7 @@ export const load = (async () => {
         "Writing various kinds of automated tests",
         "Developing functionalities in React",
       ],
-      skills: [
-        "Mentoring",
+      techSkills: [
         "Test automation",
         "JavaScript",
         "React",
@@ -62,7 +68,7 @@ export const load = (async () => {
         "Working in close cooperation with the developers for the implementation of new functionalities",
         "Testing the production environment after each release",
       ],
-      skills: [
+      techSkills: [
         "Burp Suite",
         "Test automation",
         "Manual testing",
@@ -82,7 +88,7 @@ export const load = (async () => {
         "Making suggestions for improvements to projects",
         "Finding and reporting bugs",
       ],
-      skills: ["Manual testing", "API testing"],
+      techSkills: ["Manual testing", "API testing"],
     },
   ];
 

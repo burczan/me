@@ -1,5 +1,5 @@
 <script lang="ts">
-  const currentTechstack = [
+  const currentTechstack: CurrentTechstack = [
     {
       tech: "AWS",
       favourite: false,
