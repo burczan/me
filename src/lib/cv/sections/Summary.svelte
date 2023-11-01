@@ -1,6 +1,10 @@
+<script lang="ts">
+  import { faIconClass } from "$lib/data";
+</script>
+
 <figure>
   <figcaption>
-    <i class="fa-solid fa-user-pen" />
+    <i class={faIconClass.summary} />
     Summary
   </figcaption>
   <ul class="hideMarkers">

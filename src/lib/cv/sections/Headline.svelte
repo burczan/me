@@ -1,15 +1,19 @@
+<script lang="ts">
+  import { about, faIconClass } from "$lib/data";
+</script>
+
 <div class="grid-container">
   <div class="left">
-    <h1><strong>Natalia Pospieszyńska</strong></h1>
+    <h1><strong>{about.name}</strong></h1>
   </div>
 
   <div class="center">
     <h1>
-      <i class="fa-solid fa-code" />
+      <i class={faIconClass.headline} />
     </h1>
   </div>
   <div class="right">
-    <h1><strong>Software Engineer</strong></h1>
+    <h1><strong>{about.role}</strong></h1>
   </div>
 </div>
 

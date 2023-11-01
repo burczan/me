@@ -1,43 +1,10 @@
 <script lang="ts">
-  const currentTechstack: CurrentTechstack = [
-    {
-      tech: "AWS",
-      favourite: false,
-    },
-    {
-      tech: "Bash",
-      favourite: false,
-    },
-    {
-      tech: "JavaScript",
-      favourite: false,
-    },
-    {
-      tech: "Linux",
-      favourite: true,
-    },
-    {
-      tech: "Node.js",
-      favourite: true,
-    },
-    {
-      tech: "React",
-      favourite: false,
-    },
-    {
-      tech: "Svelte",
-      favourite: true,
-    },
-    {
-      tech: "TypeScript",
-      favourite: true,
-    },
-  ];
+  import { currentTechstack, faIconClass } from "$lib/data";
 </script>
 
 <figure>
   <figcaption>
-    <i class="fa-solid fa-gears" />
+    <i class={faIconClass.currentTechstack} />
     Current techstack
   </figcaption>
   <ul class="hideMarkers">
@@ -45,7 +12,7 @@
       <li>
         {tech}
         {#if favourite}
-          <i class="fa-solid fa-heart fa-xs" />
+          <i class="{faIconClass.favourite} fa-xs" />
         {/if}
       </li>
     {/each}

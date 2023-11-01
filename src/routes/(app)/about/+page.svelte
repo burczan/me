@@ -13,12 +13,15 @@
     <div class="left">
       <dt><span class="nes-text is-primary">Role</span></dt>
       <dd>
-        <p>Software Engineer</p>
+        <p>{data.about.role}</p>
       </dd>
 
       <dt><span class="nes-text is-primary">Location</span></dt>
       <dd>
-        <p>Trutnov, Hradec Králové, Czechia</p>
+        <p>
+          {data.about.location.city}, {data.about.location.region},
+          <span class="nes-text is-success">{data.about.location.country}</span>
+        </p>
         <List hideListStyleType>
           <li>
             <i class="nes-icon check nes-text is-success is-small" />
@@ -45,8 +48,10 @@
         <dt><span class="nes-text is-primary">Spoken languages</span></dt>
         <dd>
           <List>
-            {#each data.languages as { language, level }}
-              <li>{language} ({level})</li>
+            {#each data.spokenLanguages as { language, level }}
+              <li>
+                <span class="nes-text is-success">{language}</span> ({level})
+              </li>
             {/each}
           </List>
         </dd>
@@ -56,7 +61,7 @@
           <List>
             <li>
               <a
-                href="https://www.linkedin.com/in/nataliapospieszynska/"
+                href={data.about.contact.linkedin.href}
                 rel="noopener"
                 target="_blank"
               >
@@ -65,7 +70,7 @@
             </li>
             <li>
               <a
-                href="https://github.com/burczan"
+                href={data.about.contact.github.href}
                 rel="noopener"
                 target="_blank"
               >

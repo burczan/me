@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from "svelte";
+  import { afterUpdate, onMount } from "svelte";
   import Contact from "$lib/cv/sections/Contact.svelte";
   import CurrentTechstack from "$lib/cv/sections/CurrentTechstack.svelte";
   import Education from "$lib/cv/sections/Education.svelte";
@@ -14,7 +14,9 @@
 
   onMount(() => {
     document.body.classList.add("A4");
+  });
 
+  afterUpdate(() => {
     const faIcons = document.querySelectorAll('i[class^="fa-"]');
     faIcons.forEach((icon) => {
       icon.classList.add("fa-fw");

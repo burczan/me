@@ -1,27 +1,14 @@
 <script lang="ts">
-  const languages: SpokenLanguages = [
-    {
-      language: "Polish",
-      level: "Native proficiency",
-    },
-    {
-      language: "English",
-      level: "Full professional proficiency",
-    },
-    {
-      language: "Czech",
-      level: "Limited working proficiency",
-    },
-  ];
+  import { faIconClass, spokenLanguages } from "$lib/data";
 </script>
 
 <figure>
   <figcaption>
-    <i class="fa-solid fa-language" />
+    <i class={faIconClass.spokenLanguages} />
     Spoken languages
   </figcaption>
   <ul class="hideMarkers">
-    {#each languages as { language, level }}
+    {#each spokenLanguages as { language, level }}
       <li>
         <strong>{language}</strong>
         <br />

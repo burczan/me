@@ -1,19 +1,10 @@
 <script lang="ts">
-  const softSkills: SoftSkill[] = [
-    "Analytical skills",
-    "Attention to detail",
-    "Laziness",
-    "Mentoring",
-    "Open-mindedness",
-    "Problem solving",
-    "Remote working",
-    "Self learning",
-  ];
+  import { faIconClass, softSkills } from "$lib/data";
 </script>
 
 <figure>
   <figcaption>
-    <i class="fa-solid fa-people-pulling" />
+    <i class={faIconClass.softSkills} />
     Soft skils
   </figcaption>
   <ul class="hideMarkers">

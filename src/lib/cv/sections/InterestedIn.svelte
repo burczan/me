@@ -1,26 +1,10 @@
 <script lang="ts">
-  const generallyInterested: GenerallyInterestedIn = [
-    "Algorithms and Data Structures",
-    "Blockchain",
-    "Crocheting",
-    "DevOps",
-    "Distributed Systems",
-    "Electronics",
-    "Knitting",
-    "Machine Learning",
-    "Math",
-    "Neuroscience",
-    "Resilience Engineering",
-    "Security",
-    "Theoretical Computer Science",
-    "Tunisian Crochet",
-    "Web3",
-  ];
+  import { faIconClass, generallyInterested } from "$lib/data";
 </script>
 
 <figure>
   <figcaption>
-    <i class="fa-solid fa-brain" />
+    <i class={faIconClass.generallyInterested} />
     Generally interested in
   </figcaption>
   <ul class="hideMarkers">

@@ -1,3 +1,4 @@
+import { about } from "$lib/data";
 import type { LayoutLoad } from "./$types";
 
 export const load = (async () => {
@@ -30,6 +31,7 @@ export const load = (async () => {
 
   return {
     navbarItems,
+    name: about.name,
   };
 }) satisfies LayoutLoad;
 

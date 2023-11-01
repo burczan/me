@@ -1,26 +1,9 @@
+import { about, spokenLanguages } from "$lib/data";
 import type { LayoutLoad } from "./$types";
 
 export const load = (async () => {
-  const languages: SpokenLanguages = [
-    {
-      language: "Polish",
-      level: "Native proficiency",
-    },
-    {
-      language: "English",
-      level: "Full professional proficiency",
-    },
-    {
-      language: "Czech",
-      level: "Limited working proficiency",
-    },
-    {
-      language: "Spanish",
-      level: "Elementary proficiency",
-    },
-  ];
-
   return {
-    languages,
+    about,
+    spokenLanguages,
   };
 }) satisfies LayoutLoad;

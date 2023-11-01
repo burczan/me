@@ -2,12 +2,14 @@
   import { base } from "$app/paths";
   import Container from "$lib/app/components/Container.svelte";
   import SvelteHead from "$lib/app/components/SvelteHead.svelte";
+
+  export let data;
 </script>
 
 <SvelteHead title="Home" />
 
 <Container>
-  <h2 class="text-rainbow-animation">Natalia Pospieszyńska</h2>
+  <h2 class="text-rainbow-animation">{data.name}</h2>
 
   <div class="columns">
     <div class="left">

@@ -1,3 +1,22 @@
+type About = {
+  name: string;
+  role: string;
+  location: {
+    city: string;
+    region: string;
+    country: string;
+    icon: string;
+    mapUrl: string;
+  };
+  contact: {
+    [key in "github" | "linkedin" | "web"]: {
+      href: string;
+      displayValue: string;
+      faIconClass: string;
+    };
+  };
+};
+
 type Education = {
   school: string;
   city: string;
@@ -28,7 +47,13 @@ type SoftSkill =
 
 type TechSkill =
   | CurrentTechnology
-  | ("API testing" | "Manual testing" | "Test automation" | "Unit testing");
+  | (
+      | "API testing"
+      | "Debugging"
+      | "Manual testing"
+      | "Test automation"
+      | "Unit testing"
+    );
 
 type CurrentTechnology =
   | "AWS"

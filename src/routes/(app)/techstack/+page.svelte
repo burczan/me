@@ -34,7 +34,7 @@
     <div class="right">
       <List caption="Generally interested in">
         {#each data.generallyInterested as entry}
-          <li style:text-transform="capitalize">{entry}</li>
+          <li>{entry}</li>
         {/each}
       </List>
     </div>

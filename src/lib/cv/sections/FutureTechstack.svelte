@@ -1,19 +1,10 @@
 <script lang="ts">
-  const futureTechstack: FutureTechnology[] = [
-    "C",
-    "C++",
-    "C#",
-    "Java",
-    "Python",
-    "Rust",
-    "Solidity",
-    "(but not limited to)",
-  ];
+  import { faIconClass, futureTechstack } from "$lib/data";
 </script>
 
 <figure>
   <figcaption>
-    <i class="fa-solid fa-book-open-reader" />
+    <i class={faIconClass.futureTechstack} />
     Happy to learn
   </figcaption>
   <ul class="hideMarkers">
