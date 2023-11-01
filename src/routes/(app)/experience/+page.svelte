@@ -25,8 +25,8 @@
           on:click={setActiveTab(id)}
         >
           {role}
-        </button></p
-      >
+        </button>
+      </p>
     {/each}
   </div>
   <div class="content">
