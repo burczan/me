@@ -31,6 +31,18 @@ type APP_Skill =
   | "TypeScript"
   | "Unit testing";
 
+type APP_ProjectTitle =
+  | "Toiper"
+  | "Intraview"
+  | "Anki Scripts"
+  | "Under Pressure"
+  | "Crocheting Admin Tools";
+
+type APP_Project<T> = {
+  title: APP_ProjectTitle;
+  component: T;
+};
+
 type APP_Language = {
   language: string;
   level:
