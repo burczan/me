@@ -32,59 +32,19 @@ type Experience = {
   startDate: string;
   endDate: string;
   description: string[];
-  techSkills: TechSkill[];
+  techSkills: TechSkill[] | CurrentTechnology[];
 }[];
 
-type SoftSkill =
-  | "Analytical skills"
-  | "Attention to detail"
-  | "Laziness"
-  | "Mentoring"
-  | "Open-mindedness"
-  | "Problem solving"
-  | "Remote working"
-  | "Self learning";
+type SoftSkill = string;
 
-type TechSkill =
-  | CurrentTechnology
-  | (
-      | "API testing"
-      | "Debugging"
-      | "Manual testing"
-      | "Test automation"
-      | "Unit testing"
-    );
-
-type CurrentTechnology =
-  | "AWS"
-  | "Bash"
-  | "Burp Suite"
-  | "Crochet Hook"
-  | "Express.js"
-  | "GraphQL"
-  | "JavaScript"
-  | "Linux"
-  | "Node.js"
-  | "React"
-  | "Redux"
-  | "Ruby"
-  | "Svelte"
-  | "TypeScript";
+type TechSkill = string;
 
 type CurrentTechstack = {
-  tech: CurrentTechnology;
+  tech: string;
   favourite: boolean;
 }[];
 
-type FutureTechnology =
-  | "C"
-  | "C++"
-  | "C#"
-  | "Java"
-  | "Python"
-  | "Rust"
-  | "Solidity"
-  | "(but not limited to)";
+type FutureTechstack = string;
 
 type GenerallyInterestedIn = string[];
 

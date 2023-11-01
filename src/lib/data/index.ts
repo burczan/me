@@ -191,7 +191,7 @@ export const experience: Experience = [
   },
 ];
 
-export const futureTechstack: FutureTechnology[] = [
+export const futureTechstack: FutureTechstack[] = [
   "C",
   "C++",
   "C#",
@@ -229,6 +229,14 @@ export const softSkills: SoftSkill[] = [
   "Problem solving",
   "Remote working",
   "Self learning",
+];
+
+export const techSkills: TechSkill[] = [
+  "API testing",
+  "Debugging",
+  "Manual testing",
+  "Test automation",
+  "Unit testing",
 ];
 
 export const spokenLanguages: SpokenLanguages = [
