@@ -39,7 +39,7 @@
 
 <SvelteHead title="Projects" />
 
-<div class="nes-container is-dark grid-container">
+<div class="grid-container">
   <div class="tabs">
     {#each projectNames as name, id}
       <p>

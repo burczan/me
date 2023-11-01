@@ -12,7 +12,7 @@
 
 <SvelteHead title="Education" />
 
-<div class="nes-container is-dark grid-container">
+<div class="grid-container">
   <div class="tabs">
     {#each fields as field, id}
       <p>
@@ -28,6 +28,7 @@
       </p>
     {/each}
   </div>
+
   <div class="content">
     {#each data.education as { school, city, field, subfield, degree, dateRange }, id}
       {#if activeTabId === id}

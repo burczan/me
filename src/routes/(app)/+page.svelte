@@ -1,6 +1,5 @@
 <script>
   import { base } from "$app/paths";
-  import Container from "$lib/app/components/Container.svelte";
   import SvelteHead from "$lib/app/components/SvelteHead.svelte";
 
   export let data;
@@ -8,37 +7,35 @@
 
 <SvelteHead title="Home" />
 
-<Container>
-  <h2 class="text-rainbow-animation">{data.name}</h2>
+<h2 class="text-rainbow-animation">{data.name}</h2>
 
-  <div class="columns">
-    <div class="left">
-      <p>
-        Software engineer with a background in
-        <span class="nes-text is-success">software testing</span>.
-      </p>
-      <p>
-        Interested primarily in
-        <span class="nes-text is-success">backend development</span>
-        in <span class="nes-text is-success">TypeScript</span> but also
-        <span class="nes-text is-success"
-          >open to
-          <a href="{base}/techstack">tech stack</a></span
-        >.
-      </p>
-      <p>
-        Focused on writing a <span class="nes-text is-success">clean</span>,
-        <span class="nes-text is-success">understandable</span>, and
-        <span class="nes-text is-success">high quality</span>
-        code.
-      </p>
-    </div>
-
-    <div class="right">
-      <p><i class="nes-charmander" /></p>
-    </div>
+<div class="columns">
+  <div class="left">
+    <p>
+      Software engineer with a background in
+      <span class="nes-text is-success">software testing</span>.
+    </p>
+    <p>
+      Interested primarily in
+      <span class="nes-text is-success">backend development</span>
+      in <span class="nes-text is-success">TypeScript</span> but also
+      <span class="nes-text is-success"
+        >open to
+        <a href="{base}/techstack">tech stack</a></span
+      >.
+    </p>
+    <p>
+      Focused on writing a <span class="nes-text is-success">clean</span>,
+      <span class="nes-text is-success">understandable</span>, and
+      <span class="nes-text is-success">high quality</span>
+      code.
+    </p>
   </div>
-</Container>
+
+  <div class="right">
+    <p><i class="nes-charmander" /></p>
+  </div>
+</div>
 
 <style>
   .columns {

@@ -13,7 +13,7 @@
 
 <SvelteHead title="Experience" />
 
-<div class="nes-container is-dark grid-container">
+<div class="grid-container">
   <div class="tabs">
     {#each roles as role, id}
       <p>
@@ -29,6 +29,7 @@
       </p>
     {/each}
   </div>
+
   <div class="content">
     {#each data.experience as { role, company, startDate, endDate, description, techSkills }, id}
       {#if activeTabId === id}

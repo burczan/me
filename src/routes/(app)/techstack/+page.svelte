@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Container from "$lib/app/components/Container.svelte";
   import List from "$lib/app/components/List.svelte";
   import SvelteHead from "$lib/app/components/SvelteHead.svelte";
 
@@ -8,38 +7,36 @@
 
 <SvelteHead title="Tech stack" />
 
-<Container>
-  <div class="columns">
-    <div class="left">
-      <List caption="Current tech stack">
-        {#each data.currentTechstack as { tech, favourite }}
-          <li>
-            {tech}
-            {#if favourite}
-              <i class="nes-icon is-small heart" />
-            {/if}
-          </li>
-        {/each}
-      </List>
-    </div>
-
-    <div class="central">
-      <List caption="Happy to learn">
-        {#each data.futureTechstack as entry}
-          <li>{entry}</li>
-        {/each}
-      </List>
-    </div>
-
-    <div class="right">
-      <List caption="Generally interested in">
-        {#each data.generallyInterested as entry}
-          <li>{entry}</li>
-        {/each}
-      </List>
-    </div>
+<div class="columns">
+  <div class="left">
+    <List caption="Current tech stack">
+      {#each data.currentTechstack as { tech, favourite }}
+        <li>
+          {tech}
+          {#if favourite}
+            <i class="nes-icon is-small heart" />
+          {/if}
+        </li>
+      {/each}
+    </List>
   </div>
-</Container>
+
+  <div class="central">
+    <List caption="Happy to learn">
+      {#each data.futureTechstack as entry}
+        <li>{entry}</li>
+      {/each}
+    </List>
+  </div>
+
+  <div class="right">
+    <List caption="Generally interested in">
+      {#each data.generallyInterested as entry}
+        <li>{entry}</li>
+      {/each}
+    </List>
+  </div>
+</div>
 
 <style>
   .columns {

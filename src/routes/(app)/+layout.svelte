@@ -25,7 +25,7 @@
   </style>
 </svelte:head>
 
-<div class="container">
+<div class="grid-container">
   <nav>
     {#each data.navbarItems as { name, href }}
       <a href="{base}{href}">
@@ -41,7 +41,9 @@
   </nav>
 
   <main>
-    <slot />
+    <div class="nes-container is-dark">
+      <slot />
+    </div>
   </main>
 
   <footer>
@@ -50,7 +52,7 @@
 </div>
 
 <style>
-  .container {
+  .grid-container {
     height: 100vh;
     padding: 3rem;
     display: grid;
