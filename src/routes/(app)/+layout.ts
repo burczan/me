@@ -9,27 +9,27 @@ export const load = (async () => {
     },
     {
       name: "About",
-      href: "/about",
+      href: "/about/",
     },
     {
       name: "Soft skills",
-      href: "/soft_skills",
+      href: "/soft_skills/",
     },
     {
       name: "Tech stack",
-      href: "/techstack",
+      href: "/techstack/",
     },
     {
       name: "Experience",
-      href: "/experience",
+      href: "/experience/",
     },
     {
       name: "Education",
-      href: "/education",
+      href: "/education/",
     },
     {
       name: "Projects",
-      href: "/projects",
+      href: "/projects/",
     },
   ];
 

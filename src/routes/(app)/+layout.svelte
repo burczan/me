@@ -33,7 +33,7 @@
         <button
           type="button"
           class="nes-btn"
-          class:is-primary={`${href}/` === $page.url.pathname}
+          class:is-primary={`${base}${href}` === $page.url.pathname}
         >
           {name}
         </button>
