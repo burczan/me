@@ -20,7 +20,7 @@
         {data.about.location.city}, {data.about.location.region},
         <span class="nes-text is-success">{data.about.location.country}</span>
       </p>
-      <List hideListStyleType>
+      <List showMarkers={false}>
         <li>
           <i class="nes-icon check nes-text is-success is-small" />
           Visiting office from time to time
