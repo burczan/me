@@ -1,4 +1,4 @@
-import{s as g}from"../chunks/scheduler.e903ca9d.js";import{S as w,i as y,k as $,s as v,e as _,t as b,l as S,f,c as h,a as k,b as H,d as r,y as z,m as x,n as q,g as d,h as T,j as C,o as I,p as L,q as M}from"../chunks/index.e8a2aa98.js";import{b as j}from"../chunks/paths.cd191fa0.js";import{S as D}from"../chunks/SvelteHead.e1498644.js";function E(p){let s,c,t,n=p[0].name+"",o,m,i,u=`<div class="left svelte-ezv04w"><p>Software engineer with a background in
+import{s as g}from"../chunks/scheduler.e903ca9d.js";import{S as w,i as y,k as $,s as v,e as _,t as b,l as S,f,c as h,a as k,b as H,d as r,y as z,m as x,n as q,g as d,h as T,j as C,o as I,p as L,q as M}from"../chunks/index.e8a2aa98.js";import{b as j}from"../chunks/paths.9ba8207f.js";import{S as D}from"../chunks/SvelteHead.e1498644.js";function E(p){let s,c,t,n=p[0].name+"",o,m,i,u=`<div class="left svelte-ezv04w"><p>Software engineer with a background in
       <span class="nes-text is-success">software testing</span>.</p> <p>Interested primarily in
       <span class="nes-text is-success">backend development</span>
       in <span class="nes-text is-success">TypeScript</span> but also
