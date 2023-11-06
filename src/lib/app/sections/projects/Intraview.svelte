@@ -1,3 +1,11 @@
+<script lang="ts">
+  import List from "$lib/app/components/List.svelte";
+</script>
+
+<List caption="Status" showMarkers={false}>
+  <li>Active development.</li>
+</List>
+
 <p>Prepare for behavioral interviews like a pro.</p>
 
 <p>

@@ -1,3 +1,11 @@
+<script lang="ts">
+  import List from "$lib/app/components/List.svelte";
+</script>
+
+<List caption="Status" showMarkers={false}>
+  <li>Deprecated.</li>
+</List>
+
 <p>
   Display pressure values from last 4 hours for Liberec station and warn if
   change can be dangerous.

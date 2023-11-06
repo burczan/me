@@ -39,7 +39,6 @@
         </li>
       </List>
     </dd>
-    <dl />
   </div>
 
   <div class="right">

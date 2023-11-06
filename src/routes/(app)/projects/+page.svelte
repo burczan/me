@@ -1,32 +1,34 @@
 <script lang="ts">
   import type { ComponentType } from "svelte";
-  import AnkiScripts from "$lib/app/sections/projects/AnkiScripts.svelte";
-  import CrochetAdminTools from "$lib/app/sections/projects/CrochetAdminTools.svelte";
-  import Intraview from "$lib/app/sections/projects/Intraview.svelte";
   import SvelteHead from "$lib/app/components/SvelteHead.svelte";
-  import Toiper from "$lib/app/sections/projects/Toiper.svelte";
-  import UnderPressure from "$lib/app/sections/projects/UnderPressure.svelte";
+  import {
+    AnkiScripts,
+    CrochetAdminTools,
+    Intraview,
+    Toiper,
+    UnderPressure,
+  } from "$lib/app/sections/projects";
 
   const projects: Project<ComponentType>[] = [
     {
-      title: "Toiper",
-      component: Toiper,
+      title: "Anki Scripts",
+      component: AnkiScripts,
+    },
+    {
+      title: "Crocheting Admin Tools",
+      component: CrochetAdminTools,
     },
     {
       title: "Intraview",
       component: Intraview,
     },
     {
-      title: "Anki Scripts",
-      component: AnkiScripts,
+      title: "Toiper",
+      component: Toiper,
     },
     {
       title: "Under Pressure",
       component: UnderPressure,
-    },
-    {
-      title: "Crocheting Admin Tools",
-      component: CrochetAdminTools,
     },
   ];
 

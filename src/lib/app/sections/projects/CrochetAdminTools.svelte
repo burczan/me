@@ -1,6 +1,10 @@
-<script>
+<script lang="ts">
   import List from "$lib/app/components/List.svelte";
 </script>
+
+<List caption="Status" showMarkers={false}>
+  <li>Maintained/active development.</li>
+</List>
 
 <List>
   <li>Database of crochet patterns.</li>
