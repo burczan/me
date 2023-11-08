@@ -1,41 +1,6 @@
 <script lang="ts">
   import SvelteHead from "$lib/app/components/SvelteHead.svelte";
-  import {
-    AnkiScripts,
-    CrochetAdminTools,
-    Intraview,
-    PlantUML,
-    Toiper,
-    UnderPressure,
-  } from "$lib/app/sections/projects";
-  import type { ProjectComponent } from "$lib/types";
-
-  const projects: ProjectComponent[] = [
-    {
-      title: "Anki Scripts",
-      component: AnkiScripts,
-    },
-    {
-      title: "Crocheting Admin Tools",
-      component: CrochetAdminTools,
-    },
-    {
-      title: "Intraview",
-      component: Intraview,
-    },
-    {
-      title: "PlantUML-is-your-friend",
-      component: PlantUML,
-    },
-    {
-      title: "Toiper",
-      component: Toiper,
-    },
-    {
-      title: "Under Pressure",
-      component: UnderPressure,
-    },
-  ];
+  import { projects } from "$lib/data";
 
   const projectNames = projects.map((project) => project.title);
 
@@ -64,11 +29,11 @@
   </div>
 
   <div class="content">
-    {#each projects as { title, component }, id}
+    {#each projects as project, id}
       {#if activeTabId === id}
         <div class="nes-container is-rounded is-dark">
-          <h2 class="nes-text is-success">{title}</h2>
-          <svelte:component this={component} />
+          <h2 class="nes-text is-success">{project.title}</h2>
+          <svelte:component this={project.component} {project} />
         </div>
       {/if}
     {/each}
