@@ -1,5 +1,4 @@
 <script lang="ts">
-  import type { ComponentType } from "svelte";
   import SvelteHead from "$lib/app/components/SvelteHead.svelte";
   import {
     AnkiScripts,
@@ -9,8 +8,9 @@
     Toiper,
     UnderPressure,
   } from "$lib/app/sections/projects";
+  import type { ProjectComponent } from "$lib/types";
 
-  const projects: Project<ComponentType>[] = [
+  const projects: ProjectComponent[] = [
     {
       title: "Anki Scripts",
       component: AnkiScripts,

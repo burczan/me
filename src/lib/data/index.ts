@@ -1,3 +1,15 @@
+import type {
+  About,
+  CurrentTechstack,
+  Education,
+  Experience,
+  GenerallyInterestedIn,
+  SoftSkill,
+  SpokenLanguages,
+  Technology,
+  TechSkill,
+} from "$lib/types";
+
 export const about: About = {
   name: "Natalia Pospieszyńska",
   role: "Software Engineer",
@@ -191,7 +203,7 @@ export const experience: Experience = [
   },
 ];
 
-export const futureTechstack: FutureTechstack[] = [
+export const futureTechstack: Technology[] = [
   "C",
   "C++",
   "C#",
