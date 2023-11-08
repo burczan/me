@@ -1,0 +1,1 @@
+import{d as e,f as t,g as r}from"../chunks/index.015abb7d.js";import{component as l}from"./0.d08f6a70.js";const o=async()=>({currentTechstack:e,futureTechstack:t,generallyInterested:r}),n=Object.freeze(Object.defineProperty({__proto__:null,load:o},Symbol.toStringTag,{value:"Module"}));export{l as component,n as universal};
