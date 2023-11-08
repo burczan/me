@@ -5,6 +5,7 @@
     AnkiScripts,
     CrochetAdminTools,
     Intraview,
+    PlantUML,
     Toiper,
     UnderPressure,
   } from "$lib/app/sections/projects";
@@ -21,6 +22,10 @@
     {
       title: "Intraview",
       component: Intraview,
+    },
+    {
+      title: "PlantUML-is-your-friend",
+      component: PlantUML,
     },
     {
       title: "Toiper",

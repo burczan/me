@@ -58,11 +58,12 @@ type SpokenLanguages = {
 }[];
 
 type ProjectTitle =
-  | "Toiper"
-  | "Intraview"
   | "Anki Scripts"
-  | "Under Pressure"
-  | "Crocheting Admin Tools";
+  | "Crocheting Admin Tools"
+  | "Intraview"
+  | "PlantUML-is-your-friend"
+  | "Toiper"
+  | "Under Pressure";
 
 type Project<T> = {
   title: ProjectTitle;
