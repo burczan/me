@@ -55,12 +55,12 @@ export const currentTechstack: CurrentTechstack = [
     favourite: false,
   },
   {
-    tech: "Crochet Hook",
-    favourite: true,
-  },
-  {
     tech: "Bash",
     favourite: false,
+  },
+  {
+    tech: "Crochet Hook",
+    favourite: true,
   },
   {
     tech: "JavaScript",
@@ -215,7 +215,6 @@ export const experience: Experience = [
 export const futureTechstack: Technology[] = [
   "C",
   "C++",
-  "C#",
   "Java",
   "Python",
   "Rust",
@@ -233,7 +232,6 @@ export const generallyInterested: GenerallyInterestedIn = [
   "Knitting",
   "Machine Learning",
   "Math",
-  "Neuroscience",
   "Resilience Engineering",
   "Security",
   "Theoretical Computer Science",
