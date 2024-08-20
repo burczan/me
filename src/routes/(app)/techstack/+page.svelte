@@ -30,8 +30,8 @@
   </div>
 
   <div class="right">
-    <List caption="Generally interested in">
-      {#each data.generallyInterested as entry}
+    <List caption="General Interests">
+      {#each data.generalInterests as entry}
         <li>{entry}</li>
       {/each}
     </List>

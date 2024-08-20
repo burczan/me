@@ -16,15 +16,18 @@
     </li>
     <li>
       <p>
-        Interested primarily in <strong>backend development</strong> in
-        <strong>TypeScript</strong> <br /> but also <strong>open</strong> to other
-        technologies.
+        Currently exploring opportunities in <strong>backend</strong> or
+        <strong>full-stack</strong> development in <strong>TypeScipt</strong>,
+        though also interested in gaining experience in <strong>DevOps</strong> at
+        a junior level.
       </p>
     </li>
     <li>
       <p>
-        Focused on writing a <strong>clean</strong>,
-        <strong>understandable</strong>, and <strong>high quality</strong> code.
+        Strongly focused on writing <strong>clean</strong>,
+        <strong>efficient</strong>, and <strong>maintainable</strong> code
+        <br />with an emphasis on <strong>quality</strong>, and
+        <strong>craftsmanship</strong>.
       </p>
     </li>
   </ul>

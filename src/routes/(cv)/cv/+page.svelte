@@ -7,10 +7,11 @@
   import Footer from "$lib/cv/sections/Footer.svelte";
   import FutureTechstack from "$lib/cv/sections/FutureTechstack.svelte";
   import Headline from "$lib/cv/sections/Headline.svelte";
-  import InterestedIn from "$lib/cv/sections/InterestedIn.svelte";
+  import GeneralInterests from "$lib/cv/sections/GeneralInterests.svelte";
   import SoftSkills from "$lib/cv/sections/SoftSkills.svelte";
   import SpokenLanguages from "$lib/cv/sections/SpokenLanguages.svelte";
   import Summary from "$lib/cv/sections/Summary.svelte";
+  import TechSkills from "$lib/cv/sections/TechSkills.svelte";
 
   onMount(() => {
     document.body.classList.add("A4");
@@ -58,9 +59,8 @@
     </main>
 
     <aside class="sidebar">
-      <CurrentTechstack />
-      <FutureTechstack />
-      <SpokenLanguages />
+      <TechSkills />
+      <SoftSkills />
     </aside>
   </div>
 </div>
@@ -84,13 +84,13 @@
     </main>
 
     <aside class="sidebar">
-      <SoftSkills />
-      <InterestedIn />
+      <SpokenLanguages />
+      <GeneralInterests />
     </aside>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <Footer />
-    </footer>
+    </footer> -->
   </div>
 </div>
 
@@ -99,7 +99,7 @@
     margin-top: 2rem;
     min-height: 100%;
     display: grid;
-    grid-template-columns: 1.4fr 0.6fr;
+    grid-template-columns: 1.4fr 0.45fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
       "header header"
@@ -110,7 +110,7 @@
   .header {
     display: grid;
     grid-area: header;
-    grid-template-columns: 1.4fr 0.6fr;
+    grid-template-columns: 1.4fr 0.45fr;
     grid-template-areas:
       "headline headline"
       "summary contact"

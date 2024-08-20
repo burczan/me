@@ -6,7 +6,7 @@
   <div class="border-top">
     <h3>
       <i class="{faIconClass.education} fa-xs" />
-      {school} ({city})
+      {school}
     </h3>
     <h4 class="iconWidthIndent">
       {degree}, <strong>{field}</strong>{#if subfield}
@@ -14,7 +14,7 @@
         {subfield}
       {/if}
     </h4>
-    <h5 class="iconWidthIndent">{dateRange}</h5>
+    <h5 class="iconWidthIndent">{dateRange}, {city}</h5>
   </div>
 {/each}
 

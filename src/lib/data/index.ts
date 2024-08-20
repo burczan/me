@@ -105,7 +105,7 @@ export const education: Education = [
     dateRange: "2013 - 2016",
   },
   {
-    school: "Post-Secondary School",
+    school: "Post-Secondary Vocational School",
     city: "Poznań",
     field: "Sound Engineering",
     degree: "Technician",
@@ -127,10 +127,10 @@ export const experience: Experience = [
     startDate: "Apr 2021",
     endDate: "Jul 2022",
     description: [
-      "Delivering new features and improvements to the product",
-      "Developing an API for the internal usage",
-      "Debugging",
-      "Writing unit and integration tests",
+      "Implemented and enhanced new product features in TypeScript, Node.js and React, improving user experience and addressing customer feedback.",
+      "Developed and optimized an internal API with Express.js and AWS, enabling seamless data integration.",
+      "Diagnosed and resolved technical issues, improving application stability.",
+      "Wrote and maintained comprehensive unit and integration tests, ensuring high code quality and bugs reduction.",
     ],
     techSkills: [
       "AWS",
@@ -148,8 +148,8 @@ export const experience: Experience = [
     startDate: "Dec 2019",
     endDate: "Aug 2020",
     description: [
-      "Building reusable components for the newly created frontend",
-      "Writing unit and integration tests",
+      "Developed reusable components in React and TypeScript for a newly created frontend, ensuring consistency and efficiency across the application.",
+      "Implemented unit and integration tests using Jest and React Testing Library, improving code reliability and reducing bugs.",
     ],
     techSkills: [
       "GraphQL",
@@ -166,9 +166,9 @@ export const experience: Experience = [
     startDate: "Jan 2019",
     endDate: "Nov 2019",
     description: [
-      "Remote mentoring of QA specialist, including introduction into programming and test automation",
-      "Writing various kinds of automated tests",
-      "Developing functionalities in React",
+      "Remotely mentored QA specialist, introducing her to programming and test automation practices, enhancing the team's technical capabilities.",
+      "Developed and maintained various automated tests in JavaScript and Ruby, improving test coverage and ensuring product quality.",
+      "Contributed to frontend development by implementing basic functionalities in React, supporting the development team in delivering features.",
     ],
     techSkills: [
       "API testing",
@@ -184,9 +184,10 @@ export const experience: Experience = [
     startDate: "Feb 2018",
     endDate: "Dec 2018",
     description: [
-      "Manual functional and API testing",
-      "Working in close cooperation with the developers for the implementation of new functionalities",
-      "Testing the production environment after each release",
+      "Conducted manual functional and API testing using Burp Suite and Postman, ensuring the reliability and accuracy of software features before deployment.",
+      "Collaborated closely with developers to implement new functionalities, providing critical feedback during the development process to enhance product quality and ensure seamless integration of new features.",
+      "Learned and applied test automation using JavaScript and Ruby, developing my skills in writing automated tests and contributing to the overall improvement of the testing process.",
+      "Performed production environment testing after each release, using manual testing techniques to identify and resolve post-deployment issues, maintaining system stability.",
     ],
     techSkills: [
       "API testing",
@@ -203,10 +204,10 @@ export const experience: Experience = [
     startDate: "Apr 2017",
     endDate: "Jan 2018",
     description: [
-      "Manual testing",
-      "Proposing and implementing more efficient testing procedures",
-      "Making suggestions for improvements to projects",
-      "Finding and reporting bugs",
+      "Performed manual testing to identify and document defects, ensuring the quality of software products before release.",
+      "Proposed and implemented more efficient testing procedures, streamlining the testing process and reducing the time needed for test execution.",
+      "Suggested improvements to projects by actively finding and reporting bugs, contributing to the overall enhancement of software quality.",
+      "Actively learned new concepts and techniques in software testing, expanding my knowledge of manual and API testing, and applying these insights to improve testing effectiveness.",
     ],
     techSkills: ["API testing", "Manual testing"],
   },
@@ -215,6 +216,7 @@ export const experience: Experience = [
 export const futureTechstack: Technology[] = [
   "C",
   "C++",
+  ".NET",
   "Java",
   "Python",
   "Rust",
@@ -222,39 +224,48 @@ export const futureTechstack: Technology[] = [
   "(but not limited to)",
 ];
 
-export const generallyInterested: GenerallyInterestedIn = [
+export const generalInterests: GenerallyInterestedIn = [
   "Algorithms and Data Structures",
+  "Artificial Intelligence",
   "Blockchain",
   "Crocheting",
+  "Data Science",
+  "Databases",
   "DevOps",
   "Distributed Systems",
-  "Electronics",
-  "Knitting",
-  "Machine Learning",
-  "Math",
+  "Mathematics",
   "Resilience Engineering",
   "Security",
-  "Theoretical Computer Science",
-  "Tunisian Crochet",
-  "Web3",
 ];
 
 export const softSkills: SoftSkill[] = [
   "Analytical skills",
+  "Asking questions",
   "Attention to detail",
-  "Laziness",
+  "Continuous learning",
+  "Growth mindset",
   "Mentoring",
   "Open-mindedness",
+  "Openness to feedback",
+  "Persistence",
   "Problem solving",
   "Remote working",
-  "Self learning",
+  "Resilience",
+  "Self-motivation",
 ];
 
 export const techSkills: TechSkill[] = [
   "API testing",
-  "Debugging",
-  "Manual testing",
+  "AWS",
+  "Bash",
+  "Crochet Hook",
+  "JavaScript",
+  "Linux",
+  "Node.js",
+  "React",
+  "Svelte",
   "Test automation",
+  "TypeScript",
   "Unit testing",
 ];
 
@@ -345,7 +356,7 @@ export const faIconClass = {
   experience: "fa-solid fa-person-digging",
   favourite: "fa-solid fa-heart",
   futureTechstack: "fa-solid fa-book-open-reader",
-  generallyInterested: "fa-solid fa-brain",
+  generalInterests: "fa-solid fa-brain",
   headline: "fa-solid fa-code",
   softSkills: "fa-solid fa-people-pulling",
   spokenLanguages: "fa-solid fa-language",
