@@ -22,10 +22,12 @@ export type About = {
 export type Education = {
   school: string;
   city: string;
+  country: string;
   field: string;
   subfield?: string;
   degree: string;
   dateRange: string;
+  website?: string;
 }[];
 
 export type SoftSkill = string;
@@ -45,7 +47,8 @@ export type Experience = {
   startDate: string;
   endDate: string;
   description: string[];
-  techSkills: TechSkill[] | Technology[];
+  descriptionShortened: string[];
+  technologies: TechSkill[] | Technology[];
 }[];
 
 export type GenerallyInterestedIn = string[];

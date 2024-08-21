@@ -5,11 +5,12 @@
   const { github, linkedin, web } = about.contact;
 </script>
 
-<figure>
+<figure id="contact">
   <figcaption>
     <i class={faIconClass.contact} />
     Contact
   </figcaption>
+
   <ul class="hideMarkers">
     <li>
       <a href={web.href} rel="noopener" target="_blank">

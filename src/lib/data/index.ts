@@ -92,31 +92,38 @@ export const education: Education = [
   {
     school: "Polish Naval Academy",
     city: "Gdynia",
+    country: "Poland",
     field: "Cybersecurity",
     degree: "Postgraduate studies",
-    dateRange: "2019 - 2020",
+    dateRange: "2019–2020",
+    website: "https://www.amw.gdynia.pl",
   },
   {
     school: "Adam Mickiewicz University",
     city: "Poznań",
+    country: "Poland",
     field: "Philosophy",
     subfield: "Social Communication",
     degree: "Master studies",
-    dateRange: "2013 - 2016",
+    dateRange: "2013–2016",
+    website: "https://amu.edu.pl/",
   },
   {
     school: "Post-Secondary Vocational School",
     city: "Poznań",
+    country: "Poland",
     field: "Sound Engineering",
     degree: "Technician",
-    dateRange: "2011 - 2013",
+    dateRange: "2011–2013",
   },
   {
     school: "Adam Mickiewicz University",
     city: "Poznań",
+    country: "Poland",
     field: "Instructional Technology",
     degree: "Bachelor's degree",
-    dateRange: "2010 - 2013",
+    dateRange: "2010–2013",
+    website: "https://amu.edu.pl/",
   },
 ];
 
@@ -124,15 +131,21 @@ export const experience: Experience = [
   {
     role: "Backend Engineer",
     company: "Capbase",
-    startDate: "Apr 2021",
-    endDate: "Jul 2022",
+    startDate: "04/2021",
+    endDate: "07/2022",
     description: [
       "Implemented and enhanced new product features in TypeScript, Node.js and React, improving user experience and addressing customer feedback.",
       "Developed and optimized an internal API with Express.js and AWS, enabling seamless data integration.",
       "Diagnosed and resolved technical issues, improving application stability.",
       "Wrote and maintained comprehensive unit and integration tests, ensuring high code quality and bugs reduction.",
     ],
-    techSkills: [
+    descriptionShortened: [
+      "Implemented and enhanced new features in TypeScript, Node.js and React.",
+      "Developed and optimized an internal API with Express.js and AWS.",
+      "Diagnosed and resolved technical issues.",
+      "Wrote and maintained comprehensive unit and integration tests.",
+    ],
+    technologies: [
       "AWS",
       "Bash",
       "Express.js",
@@ -145,13 +158,17 @@ export const experience: Experience = [
   {
     role: "Frontend Engineer",
     company: "Beta District",
-    startDate: "Dec 2019",
-    endDate: "Aug 2020",
+    startDate: "12/2019",
+    endDate: "08/2020",
     description: [
       "Developed reusable components in React and TypeScript for a newly created frontend, ensuring consistency and efficiency across the application.",
       "Implemented unit and integration tests using Jest and React Testing Library, improving code reliability and reducing bugs.",
     ],
-    techSkills: [
+    descriptionShortened: [
+      "Developed reusable components in React and TypeScript for a newly created frontend.",
+      "Implemented unit and integration tests using Jest and React Testing Library.",
+    ],
+    technologies: [
       "GraphQL",
       "JavaScript",
       "React",
@@ -161,16 +178,21 @@ export const experience: Experience = [
     ],
   },
   {
-    role: "Software Test Engineer",
+    role: "Test Engineer",
     company: "Beta District",
-    startDate: "Jan 2019",
-    endDate: "Nov 2019",
+    startDate: "01/2019",
+    endDate: "11/2019",
     description: [
       "Remotely mentored QA specialist, introducing her to programming and test automation practices, enhancing the team's technical capabilities.",
       "Developed and maintained various automated tests in JavaScript and Ruby, improving test coverage and ensuring product quality.",
       "Contributed to frontend development by implementing basic functionalities in React, supporting the development team in delivering features.",
     ],
-    techSkills: [
+    descriptionShortened: [
+      "Remotely mentored QA specialist.",
+      "Developed and maintained automated tests in JavaScript and Ruby.",
+      "Contributed to frontend development by implementing basic functionalities in React.",
+    ],
+    technologies: [
       "API testing",
       "JavaScript",
       "React",
@@ -181,15 +203,21 @@ export const experience: Experience = [
   {
     role: "QA Specialist",
     company: "Beta District",
-    startDate: "Feb 2018",
-    endDate: "Dec 2018",
+    startDate: "02/2018",
+    endDate: "12/2018",
     description: [
       "Conducted manual functional and API testing using Burp Suite and Postman, ensuring the reliability and accuracy of software features before deployment.",
       "Collaborated closely with developers to implement new functionalities, providing critical feedback during the development process to enhance product quality and ensure seamless integration of new features.",
       "Learned and applied test automation using JavaScript and Ruby, developing my skills in writing automated tests and contributing to the overall improvement of the testing process.",
       "Performed production environment testing after each release, using manual testing techniques to identify and resolve post-deployment issues, maintaining system stability.",
     ],
-    techSkills: [
+    descriptionShortened: [
+      "Conducted manual functional and API testing using Burp Suite and Postman.",
+      "Collaborated closely with developers to implement new features.",
+      "Developing my skills in writing automated tests.",
+      "Performed production environment testing after each release.",
+    ],
+    technologies: [
       "API testing",
       "Burp Suite",
       "JavaScript",
@@ -201,27 +229,22 @@ export const experience: Experience = [
   {
     role: "Junior QA Specialist",
     company: "Beta District",
-    startDate: "Apr 2017",
-    endDate: "Jan 2018",
+    startDate: "04/2017",
+    endDate: "01/2018",
     description: [
       "Performed manual testing to identify and document defects, ensuring the quality of software products before release.",
       "Proposed and implemented more efficient testing procedures, streamlining the testing process and reducing the time needed for test execution.",
       "Suggested improvements to projects by actively finding and reporting bugs, contributing to the overall enhancement of software quality.",
       "Actively learned new concepts and techniques in software testing, expanding my knowledge of manual and API testing, and applying these insights to improve testing effectiveness.",
     ],
-    techSkills: ["API testing", "Manual testing"],
+    descriptionShortened: [
+      "Performed manual testing to identify and document defects.",
+      "Proposed and implemented more efficient testing procedures.",
+      "Suggested improvements to projects by finding and reporting bugs.",
+      "Actively learned new concepts and techniques in software testing.",
+    ],
+    technologies: ["API testing", "Manual testing"],
   },
-];
-
-export const futureTechstack: Technology[] = [
-  "C",
-  "C++",
-  ".NET",
-  "Java",
-  "Python",
-  "Rust",
-  "Solidity",
-  "(but not limited to)",
 ];
 
 export const generalInterests: GenerallyInterestedIn = [
@@ -254,19 +277,15 @@ export const softSkills: SoftSkill[] = [
   "Self-motivation",
 ];
 
-export const techSkills: TechSkill[] = [
-  "API testing",
+export const technologies: TechSkill[] = [
   "AWS",
   "Bash",
-  "Crochet Hook",
   "JavaScript",
   "Linux",
   "Node.js",
   "React",
   "Svelte",
-  "Test automation",
   "TypeScript",
-  "Unit testing",
 ];
 
 export const projects: Project[] = [
@@ -351,7 +370,6 @@ export const spokenLanguages: SpokenLanguages = [
 
 export const faIconClass = {
   contact: "fa-solid fa-address-book",
-  currentTechstack: "fa-solid fa-gears",
   education: "fa-solid fa-graduation-cap",
   experience: "fa-solid fa-person-digging",
   favourite: "fa-solid fa-heart",
@@ -361,4 +379,5 @@ export const faIconClass = {
   softSkills: "fa-solid fa-people-pulling",
   spokenLanguages: "fa-solid fa-language",
   summary: "fa-solid fa-user-pen",
+  technologies: "fa-solid fa-gears",
 };

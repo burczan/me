@@ -2,27 +2,34 @@
   import { experience, faIconClass } from "$lib/data";
 </script>
 
-{#each experience as { role, company, startDate, endDate, description }}
-  <div class="border-top">
-    <h3>
-      <i class="{faIconClass.experience} fa-xs" />
-      <strong>{role}</strong>
-      @
-      {company}
-    </h3>
+<div id="work-experience">
+  {#each experience as { role, company, startDate, endDate, descriptionShortened }}
+    <div class="border-top">
+      <span class="role">
+        <i class={faIconClass.experience} />
+        <strong>{role}</strong>
+        @{company} ({startDate} &ndash; {endDate})
+      </span>
 
-    <h5 class="iconWidthIndent">{startDate} - {endDate}</h5>
-
-    <ul>
-      {#each description as entry}
-        <li><span>{entry}</span></li>
-      {/each}
-    </ul>
-  </div>
-{/each}
+      <ul>
+        {#each descriptionShortened as entry}
+          <li>{entry}</li>
+        {/each}
+      </ul>
+    </div>
+  {/each}
+</div>
 
 <style>
-  h3 {
-    margin-bottom: 0;
+  .role {
+    font-size: larger;
+  }
+
+  ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-inline-start: 3.1rem;
+    list-style-position: outside;
+    list-style-type: disc;
   }
 </style>

@@ -1,17 +1,15 @@
 <script lang="ts">
   import { afterUpdate, onMount } from "svelte";
   import Contact from "$lib/cv/sections/Contact.svelte";
-  import CurrentTechstack from "$lib/cv/sections/CurrentTechstack.svelte";
+  import Craftsmanship from "$lib/cv/sections/Craftsmanship.svelte";
   import Education from "$lib/cv/sections/Education.svelte";
   import Experience from "$lib/cv/sections/Experience.svelte";
-  import Footer from "$lib/cv/sections/Footer.svelte";
-  import FutureTechstack from "$lib/cv/sections/FutureTechstack.svelte";
-  import Headline from "$lib/cv/sections/Headline.svelte";
+  import FutureCareerGoals from "$lib/cv/sections/FutureCareerGoals.svelte";
   import GeneralInterests from "$lib/cv/sections/GeneralInterests.svelte";
   import SoftSkills from "$lib/cv/sections/SoftSkills.svelte";
   import SpokenLanguages from "$lib/cv/sections/SpokenLanguages.svelte";
   import Summary from "$lib/cv/sections/Summary.svelte";
-  import TechSkills from "$lib/cv/sections/TechSkills.svelte";
+  import Technologies from "$lib/cv/sections/Technologies.svelte";
 
   onMount(() => {
     document.body.classList.add("A4");
@@ -43,15 +41,7 @@
 <div id="page1" class="sheet">
   <div class="container grid-container">
     <header class="header">
-      <div class="headline">
-        <Headline />
-      </div>
-      <div class="summary">
-        <Summary />
-      </div>
-      <div id="contact" class="contact">
-        <Contact />
-      </div>
+      <Summary />
     </header>
 
     <main class="main">
@@ -59,7 +49,8 @@
     </main>
 
     <aside class="sidebar">
-      <TechSkills />
+      <Contact />
+      <Technologies />
       <SoftSkills />
     </aside>
   </div>
@@ -67,20 +58,10 @@
 
 <div id="page2" class="sheet">
   <div class="container grid-container">
-    <header class="header">
-      <div class="headline">
-        <Headline />
-      </div>
-      <div class="summary">
-        <Summary />
-      </div>
-      <div class="contact">
-        <Contact />
-      </div>
-    </header>
-
     <main class="main">
+      <FutureCareerGoals />
       <Education />
+      <Craftsmanship />
     </main>
 
     <aside class="sidebar">
@@ -88,9 +69,7 @@
       <GeneralInterests />
     </aside>
 
-    <!-- <footer class="footer">
-      <Footer />
-    </footer> -->
+    <footer class="footer"></footer>
   </div>
 </div>
 
@@ -99,7 +78,7 @@
     margin-top: 2rem;
     min-height: 100%;
     display: grid;
-    grid-template-columns: 1.4fr 0.45fr;
+    grid-template-columns: 1.5fr 0.5fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas:
       "header header"
@@ -110,32 +89,20 @@
   .header {
     display: grid;
     grid-area: header;
-    grid-template-columns: 1.4fr 0.45fr;
-    grid-template-areas:
-      "headline headline"
-      "summary contact"
-      "summary contact";
     align-content: baseline;
     align-items: center;
-  }
-
-  .contact {
-    grid-area: contact;
-  }
-
-  .headline {
-    grid-area: headline;
-  }
-
-  .summary {
-    grid-area: summary;
+    margin-bottom: 2rem;
   }
 
   .main {
     display: grid;
     grid-auto-flow: row;
     grid-area: main;
+    grid-row-gap: 3rem;
     align-content: baseline;
+    align-items: baseline;
+
+    width: 96%;
   }
 
   .sidebar {

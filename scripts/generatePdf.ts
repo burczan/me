@@ -30,6 +30,7 @@ async function embedMetadata(pdf: Buffer) {
     content: `.sheet {
     box-shadow: none;
     margin: 0;
+    padding: 5mm;
   }`,
   });
 

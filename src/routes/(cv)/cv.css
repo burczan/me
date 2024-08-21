@@ -1,20 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700&family=Noto+Sans+Symbols+2&display=swap");
 
 @page {
   size: A4;
 }
 
 :root {
-  --border: 2px solid rgb(96, 108, 118);
+  --border-color: rgb(96, 108, 118);
+  --border-color-opacity50: rgba(96, 108, 118, 0.5);
 }
 
 html {
-  font-size: 0.52rem;
+  font-size: 0.62rem;
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Nunito, Roboto, "Noto Emoji", sans-serif;
+  letter-spacing: normal;
+  line-height: 1.4;
 }
 
 figure {
@@ -23,53 +26,46 @@ figure {
 
 figure figcaption {
   font-weight: bold;
-  font-size: larger;
-}
-
-li {
-  margin-bottom: 0;
-}
-
-li p {
-  margin-bottom: 1rem;
-  line-height: 1.2;
+  font-size: large;
 }
 
 ul.hideMarkers {
   list-style-type: none;
 }
 
-header.header {
-  border: var(--border);
-  padding: 1rem;
-  margin-bottom: 2rem;
-}
-
-header figure ul {
-  margin-bottom: 0;
-}
-
-main ul {
-  margin-bottom: 1rem;
-  margin-inline-start: 3.2rem;
-  list-style-position: outside;
-  list-style-type: disc;
+li {
+  margin-bottom: 0.2rem;
 }
 
 main div.border-top:not(:first-child) {
-  border-top: var(--border);
-  padding-top: 1rem;
-  width: 95%;
+  border-top: 1px dashed var(--border-color-opacity50);
+  padding-top: 0.5em;
+  margin-top: 1em;
 }
 
-main .iconWidthIndent {
-  padding-left: 3.2rem;
+.box {
+  border: 2px solid var(--border-color);
+  padding: 1rem;
+}
+
+.box-title {
+  font-size: x-large;
+}
+
+.box-content {
+  margin-top: 1rem;
+}
+
+.box-content p {
   margin-bottom: 1rem;
+}
+
+.box-content p:last-child {
+  margin-bottom: 0;
 }
 
 footer {
   font-size: xx-small;
-  font-family: "Playpen Sans", cursive;
   bottom: 0;
   position: sticky;
 }
