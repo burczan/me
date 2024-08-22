@@ -48,7 +48,7 @@ export type Experience = {
   endDate: string;
   description: string[];
   descriptionShortened: string[];
-  technologies: TechSkill[] | Technology[];
+  technologies?: TechSkill[] | Technology[];
 }[];
 
 export type GenerallyInterestedIn = string[];

@@ -1,9 +1,13 @@
 <script lang="ts">
   import { experience, faIconClass } from "$lib/data";
+
+  const expWithoutLLidero = experience.filter(
+    (exp) => exp.company !== "LLidero",
+  );
 </script>
 
 <div id="work-experience">
-  {#each experience as { role, company, startDate, endDate, descriptionShortened }}
+  {#each expWithoutLLidero as { role, company, startDate, endDate, descriptionShortened }}
     <div class="border-top">
       <span class="role">
         <i class={faIconClass.experience} />

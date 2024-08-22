@@ -245,6 +245,24 @@ export const experience: Experience = [
     ],
     technologies: ["API testing", "Manual testing"],
   },
+  {
+    role: "Instructional Designer",
+    company: "LLidero",
+    startDate: "05/2014",
+    endDate: "06/2016",
+    description: [
+      "Designed and developed educational courses tailored to various learner needs, applying instructional design principles and pedagogical techniques to create effective learning experiences.",
+      "Set clear learning goals and objectives for each course, ensuring alignment with educational standards and learner outcomes.",
+      "Conducted thorough testing of courses, demonstrating strong attention to detail to identify and resolve any issues, ensuring the quality and effectiveness of instructional materials.",
+      "Collaborated with subject matter experts to gather content and ensure accuracy, integrating their expertise into the course design to enhance the learning experience.",
+    ],
+    descriptionShortened: [
+      "Designed and developed educational courses tailored to various learner needs.",
+      "Set clear learning goals and objectives for each course.",
+      "Conducted thorough testing of courses.",
+      "Collaborated with subject matter experts to gather content and ensure accuracy.",
+    ],
+  },
 ];
 
 export const generalInterests: GenerallyInterestedIn = [

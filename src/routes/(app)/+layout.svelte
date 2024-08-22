@@ -62,6 +62,8 @@
       "main"
       "footer";
     grid-template-rows: 4em 1fr 4em;
+    width: 80%;
+    margin: auto;
   }
 
   nav {

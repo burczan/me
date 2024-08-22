@@ -1,5 +1,4 @@
 <script>
-  import { base } from "$app/paths";
   import SvelteHead from "$lib/app/components/SvelteHead.svelte";
 
   export let data;
@@ -7,28 +6,30 @@
 
 <SvelteHead title="Home" />
 
-<h2 class="text-rainbow-animation">{data.name}</h2>
-
 <div class="columns">
   <div class="left">
+    <h1 class="text-rainbow-animation">{data.about.name}</h1>
+
+    <h2 class="nes-text is-success">
+      <a href={data.about.contact.linkedin.href} rel="noopener" target="_blank">
+        {data.about.role}
+      </a>
+    </h2>
+
     <p>
-      Software engineer with a background in
-      <span class="nes-text is-success">software testing</span>.
+      I am a software engineer with a background in <span
+        class="nes-text is-success">software testing</span
+      >
+      and a deep interest in <span class="nes-text is-success">backend</span>
+      development with
+      <span class="nes-text is-success">TypeScript</span>.
     </p>
     <p>
-      Interested primarily in
-      <span class="nes-text is-success">backend development</span>
-      in <span class="nes-text is-success">TypeScript</span> but also
-      <span class="nes-text is-success"
-        >open to
-        <a href="{base}/techstack">tech stack</a></span
-      >.
-    </p>
-    <p>
-      Focused on writing a <span class="nes-text is-success">clean</span>,
-      <span class="nes-text is-success">understandable</span>, and
-      <span class="nes-text is-success">high quality</span>
-      code.
+      My primary focus is on backend roles, though I am also open to <span
+        class="nes-text is-success">full-stack</span
+      >
+      development and interested in gaining experience in
+      <span class="nes-text is-success">DevOps</span> at a junior level.
     </p>
   </div>
 
@@ -38,11 +39,19 @@
 </div>
 
 <style>
+  h1 {
+    margin-bottom: 1em;
+  }
+
+  h2 {
+    margin-bottom: 2em;
+  }
+
   .columns {
     display: grid;
     grid-template-areas: "left right";
-    grid-template-columns: 1.5fr 0.5fr;
-    margin-top: 2em;
+    grid-template-columns: 1fr 0.5fr;
+    column-gap: 5em;
   }
 
   .left {

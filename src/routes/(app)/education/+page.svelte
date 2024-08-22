@@ -30,10 +30,19 @@
   </div>
 
   <div class="content">
-    {#each data.education as { school, city, field, subfield, degree, dateRange }, id}
+    {#each data.education as { school, city, country, website, field, subfield, degree, dateRange }, id}
       {#if activeTabId === id}
         <div class="nes-container is-rounded is-dark">
-          <h2 class="nes-text is-primary">{school} ({city})</h2>
+          <h2 class="nes-text is-primary">
+            {#if website}
+              <a href={website} title={school} rel="noopener" target="_blank"
+                >{school}</a
+              >
+            {:else}
+              {school}
+            {/if}
+          </h2>
+          <h3 class="nes-text">({city}, {country})</h3>
           <h3>
             {degree},
             <span class="nes-text is-success">{field}</span>{#if subfield},

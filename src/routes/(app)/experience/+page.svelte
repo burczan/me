@@ -31,7 +31,7 @@
   </div>
 
   <div class="content">
-    {#each data.experience as { role, company, startDate, endDate, description, techSkills }, id}
+    {#each data.experience as { role, company, startDate, endDate, descriptionShortened, technologies }, id}
       {#if activeTabId === id}
         <div class="nes-container is-rounded is-dark">
           <h2>
@@ -43,19 +43,21 @@
           <div class="columns">
             <div class="left">
               <List caption="Description">
-                {#each description as entry}
+                {#each descriptionShortened as entry}
                   <li>{entry}</li>
                 {/each}
               </List>
             </div>
 
-            <div class="right">
-              <List caption="Skills">
-                {#each techSkills as skill}
-                  <li>{skill}</li>
-                {/each}
-              </List>
-            </div>
+            {#if technologies}
+              <div class="right">
+                <List caption="Technologies">
+                  {#each technologies as tech}
+                    <li>{tech}</li>
+                  {/each}
+                </List>
+              </div>
+            {/if}
           </div>
         </div>
       {/if}

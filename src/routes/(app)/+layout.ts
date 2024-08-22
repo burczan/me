@@ -8,16 +8,12 @@ export const load = (async () => {
       href: "/",
     },
     {
-      name: "About",
+      name: "About me",
       href: "/about/",
     },
     {
-      name: "Soft skills",
-      href: "/soft_skills/",
-    },
-    {
-      name: "Tech stack",
-      href: "/techstack/",
+      name: "Skills",
+      href: "/skills/",
     },
     {
       name: "Experience",
@@ -35,7 +31,7 @@ export const load = (async () => {
 
   return {
     navbarItems,
-    name: about.name,
+    about,
   };
 }) satisfies LayoutLoad;
 
