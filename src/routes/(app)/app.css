@@ -1,17 +1,38 @@
-body {
-  line-height: 1.7;
+:root {
+  --pink: #ff00c8;
+  --red: #ff0301;
+  --yellow: #ffc800;
+  --orange: #ff9500;
+  --green: #95f01a;
+  --green-neon: #00fb00;
 }
 
-.tabs-grid-container {
-  display: grid;
-  grid-template-areas: "tabs content";
-  grid-template-columns: 0.7fr 1.3fr;
+.icon-h2 {
+  height: 1.75rem;
+  width: 1.75rem;
+  vertical-align: top;
+  color: inherit;
 }
 
-.tabs-grid-container .tabs {
-  grid-area: tabs;
+strong,
+.green {
+  color: var(--green);
 }
 
-.tabs-grid-container .content {
-  grid-area: content;
+.pink {
+  color: var(--pink);
+}
+
+.yellow {
+  color: var(--orange);
+}
+
+.red {
+  color: var(--red);
+}
+
+.box {
+  background-color: var(--pico-code-background-color);
+  border-radius: var(--pico-border-radius);
+  padding: 2rem;
 }

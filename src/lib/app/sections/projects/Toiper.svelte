@@ -5,7 +5,7 @@
   export let project: Project;
 </script>
 
-<List caption="Status" showMarkers={false}>
+<List caption="Status">
   <li>{project.status}</li>
 </List>
 

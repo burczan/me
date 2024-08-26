@@ -17,9 +17,8 @@
       <p>
         <button
           id={id.toString()}
-          type="button"
-          class="nes-btn"
-          class:is-primary={id === activeTabId}
+          class:primary={id === activeTabId}
+          class:outline={id !== activeTabId}
           on:click={setActiveTab(id)}
         >
           {name}
@@ -32,10 +31,26 @@
     {#each projects as project, id}
       {#if activeTabId === id}
         <div class="nes-container is-rounded is-dark">
-          <h2 class="nes-text is-success">{project.title}</h2>
+          <h2 class="green">{project.title}</h2>
           <svelte:component this={project.component} {project} />
         </div>
       {/if}
     {/each}
   </div>
 </div>
+
+<style>
+  .tabs-grid-container {
+    display: grid;
+    grid-template-areas: "tabs content";
+    grid-template-columns: 0.7fr 1.3fr;
+  }
+
+  .tabs-grid-container .tabs {
+    grid-area: tabs;
+  }
+
+  .tabs-grid-container .content {
+    grid-area: content;
+  }
+</style>

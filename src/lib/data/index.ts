@@ -15,7 +15,6 @@ import type {
   Project,
   SoftSkill,
   SpokenLanguages,
-  Technology,
   TechSkill,
 } from "$lib/types";
 
@@ -384,6 +383,7 @@ export const spokenLanguages: SpokenLanguages = [
     language: "Czech",
     level: "Limited working proficiency",
   },
+  { language: "Spanish", level: "Elementary proficiency" },
 ];
 
 export const faIconClass = {

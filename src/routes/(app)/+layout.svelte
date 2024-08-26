@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { CodeXml, Construction } from "lucide-svelte";
   import { base } from "$app/paths";
   import { page } from "$app/stores";
   import "./app.css";
@@ -9,53 +10,50 @@
 <svelte:head>
   <link
     rel="stylesheet"
-    href="https://unpkg.com/nes.css@latest/css/nes.min.css"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
   />
   <link
     rel="stylesheet"
-    href="https://unpkg.com/nes.icons@latest/css/nes-icons.min.css"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css"
   />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-    rel="stylesheet"
-  />
-  <style>
-    body {
-      background-color: #4e4e4e;
-    }
-  </style>
+  <meta name="color-scheme" content="light dark" />
 </svelte:head>
 
 <div class="grid-container">
   <nav>
-    {#each data.navbarItems as { name, href }}
-      <a href="{base}{href}">
-        <button
-          type="button"
-          class="nes-btn"
-          class:is-primary={`${base}${href}` === $page.url.pathname}
-        >
-          {name}
-        </button>
-      </a>
-    {/each}
+    <ul>
+      <li><a href="{base}/">{data.about.name} <CodeXml /></a></li>
+    </ul>
+    <ul>
+      {#each data.navbarItems as { name, href }}
+        <li>
+          <a
+            href="{base}{href}"
+            class:yellow={`${base}${href}` === $page.url.pathname}
+            class:contrast={`${base}${href}` === $page.url.pathname}
+          >
+            {name}
+          </a>
+        </li>
+      {/each}
+    </ul>
   </nav>
 
   <main>
-    <div class="nes-container is-dark">
-      <slot />
-    </div>
+    <slot />
   </main>
 
   <footer>
-    <p>0% [█ █ █ █ █ █ █ █ █ █] 100%</p>
+    <span
+      ><Construction /> &MediumSpace; ▅ ▅ ▅ ▅ ▅ ▅ ▅ ▁ ▁ ▁ &MediumSpace; <Construction
+      />
+    </span>
   </footer>
 </div>
 
 <style>
   .grid-container {
     height: 100vh;
-    padding: 3rem;
     display: grid;
     grid-template-areas:
       "nav"
@@ -74,12 +72,17 @@
 
   main {
     grid-area: main;
+    padding: 1rem;
   }
 
   footer {
     grid-area: footer;
+    margin: auto;
+    width: 50%;
+    font-size: smaller;
     display: flex;
-    justify-content: center;
-    padding: 1em;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
   }
 </style>
