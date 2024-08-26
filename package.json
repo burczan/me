@@ -38,5 +38,9 @@
     "tsx": "^4.6.2",
     "typescript": "^5.3.3",
     "vite": "^4.4.12"
+  },
+  "dependencies": {
+    "@picocss/pico": "^2.0.6",
+    "lucide-svelte": "^0.435.0"
   }
 }
