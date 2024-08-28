@@ -1,1 +1,0 @@
-import{c as e}from"../chunks/index.edb6a422.js";import{component as c}from"./0.76f185ab.js";const o=async()=>({experience:e}),t=Object.freeze(Object.defineProperty({__proto__:null,load:o},Symbol.toStringTag,{value:"Module"}));export{c as component,t as universal};
