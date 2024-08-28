@@ -1,6 +1,7 @@
 import {
   AnkiScripts,
   CrochetAdminTools,
+  EngineeringtheIntangible,
   Intraview,
   PlantUML,
   Toiper,
@@ -13,6 +14,7 @@ import type {
   Experience,
   GenerallyInterestedIn,
   Project,
+  ProjectLegacy,
   SoftSkill,
   SpokenLanguages,
   TechSkill,
@@ -306,6 +308,16 @@ export const technologies: TechSkill[] = [
 ];
 
 export const projects: Project[] = [
+  {
+    slug: "engineering-intangible",
+    title:
+      "Engineering the Intangible: The Essential Handbook for Engineers Who Refuse to Lose Their Minds While Navigating a World Where the Only Certainty Is That Your Stack Will Never Stop Changing",
+    started: "07/2024",
+    component: EngineeringtheIntangible,
+  },
+];
+
+export const projectsLegacy: ProjectLegacy[] = [
   {
     title: "Anki Scripts",
     shortDescription: "Scripts and styling for Anki flashcards.",

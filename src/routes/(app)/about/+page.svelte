@@ -23,7 +23,7 @@
 <SvelteHead title="About me" />
 
 <div id="about-me">
-  <h2 class="yellow"><Ghost class="icon-h2" /> About me</h2>
+  <h2 class="orange"><Ghost class="icon-h2" /> About me</h2>
 
   <div class="box">
     <details>
@@ -101,17 +101,3 @@
     </details>
   </div>
 </div>
-
-<style>
-  details summary {
-    font-weight: bold;
-    text-decoration: underline;
-    text-transform: capitalize;
-  }
-
-  details div.content {
-    width: 70%;
-    padding: 1rem;
-    text-align: justify;
-  }
-</style>

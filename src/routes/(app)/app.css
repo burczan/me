@@ -14,6 +14,13 @@
   color: inherit;
 }
 
+.icon-small {
+  height: 0.875em;
+  width: 0.875em;
+  vertical-align: baseline;
+  color: inherit;
+}
+
 strong,
 .green {
   color: var(--green);
@@ -23,7 +30,7 @@ strong,
   color: var(--pink);
 }
 
-.yellow {
+.orange {
   color: var(--orange);
 }
 
@@ -35,4 +42,42 @@ strong,
   background-color: var(--pico-code-background-color);
   border-radius: var(--pico-border-radius);
   padding: 2rem;
+}
+
+details summary {
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+details div.content {
+  width: 70%;
+  padding: 1rem;
+  text-align: justify;
+}
+
+article {
+  all: revert;
+
+  width: 70%;
+  margin: auto;
+  text-align: justify;
+}
+
+article h3 {
+  text-align: center;
+  color: var(--green);
+}
+
+article section h4 {
+  color: var(--orange);
+}
+
+.text-center {
+  text-align: center;
+}
+
+div[role="group"] {
+  margin-top: 1rem;
+  flex-wrap: wrap;
 }

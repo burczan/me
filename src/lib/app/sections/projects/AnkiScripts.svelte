@@ -1,8 +1,8 @@
 <script lang="ts">
   import List from "$lib/app/components/List.svelte";
-  import type { Project } from "$lib/types";
+  import type { ProjectLegacy } from "$lib/types";
 
-  export let project: Project;
+  export let project: ProjectLegacy;
 </script>
 
 <List caption="Status">

@@ -11,7 +11,7 @@
 <SvelteHead title="Experience" />
 
 <div id="experience">
-  <h2 class="yellow"><Shovel class="icon-h2" /> Experience</h2>
+  <h2 class="orange"><Shovel class="icon-h2" /> Experience</h2>
 
   <div role="group">
     {#each roles as role, id}
@@ -45,10 +45,3 @@
     {/each}
   </div>
 </div>
-
-<style>
-  div[role="group"] {
-    margin-top: 1rem;
-    flex-wrap: wrap;
-  }
-</style>

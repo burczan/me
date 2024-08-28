@@ -11,7 +11,7 @@
 <SvelteHead title="Education" />
 
 <div id="education">
-  <h2 class="yellow"><GraduationCap class="icon-h2" /> Education</h2>
+  <h2 class="orange"><GraduationCap class="icon-h2" /> Education</h2>
 
   <div role="group">
     {#each fields as field, id}
@@ -49,10 +49,3 @@
     {/each}
   </div>
 </div>
-
-<style>
-  div[role="group"] {
-    margin-top: 1rem;
-    flex-wrap: wrap;
-  }
-</style>

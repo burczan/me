@@ -12,6 +12,10 @@ export const load = (async () => {
       href: "/about/",
     },
     {
+      name: "Projects",
+      href: "/projects/",
+    },
+    {
       name: "Experience",
       href: "/experience/",
     },

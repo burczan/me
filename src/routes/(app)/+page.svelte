@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { BrainCircuit, CodeXml } from "lucide-svelte";
   import SvelteHead from "$lib/app/components/SvelteHead.svelte";
   export let data;
@@ -7,7 +7,7 @@
 <SvelteHead title="Home" />
 
 <div id="home">
-  <h2 class="yellow"><CodeXml class="icon-h2" /> {data.about.role}</h2>
+  <h2 class="orange"><CodeXml class="icon-h2" /> {data.about.role}</h2>
 
   <div class="box columns">
     <div class="left">
@@ -28,7 +28,7 @@
     </div>
 
     <div class="right">
-      <BrainCircuit class="yellow" size="128" absoluteStrokeWidth={true} />
+      <BrainCircuit class="orange" size="128" absoluteStrokeWidth={true} />
     </div>
   </div>
 </div>

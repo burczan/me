@@ -29,7 +29,7 @@
         <li>
           <a
             href="{base}{href}"
-            class:yellow={`${base}${href}` === $page.url.pathname}
+            class:orange={`${base}${href}` === $page.url.pathname}
             class:contrast={`${base}${href}` === $page.url.pathname}
           >
             {name}

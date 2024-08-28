@@ -18,7 +18,7 @@
 <SvelteHead title="Contact" />
 
 <div id="contact">
-  <h2 class="yellow"><Contact class="icon-h2" /> Contact</h2>
+  <h2 class="orange"><Contact class="icon-h2" /> Contact</h2>
 
   <div class="box center">
     <p>
@@ -43,7 +43,7 @@
         <Check color={"var(--green)"} /> Visiting office from time to time
       </li>
       <li>
-        <MessageCircleQuestion color={"var(--yellow)"} /> Visiting office once a
+        <MessageCircleQuestion color={"var(--orange)"} /> Visiting office once a
         month
       </li>
       <li><X color={"var(--red)"} /> Visiting office once a week</li>

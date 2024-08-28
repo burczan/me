@@ -71,6 +71,13 @@ export type ProjectTitle =
   | "Under Pressure";
 
 export type Project = {
+  slug: string;
+  title: string;
+  started: string;
+  component: ComponentType;
+};
+
+export type ProjectLegacy = {
   title: ProjectTitle;
   shortDescription: string;
   status: string;
@@ -82,4 +89,4 @@ export type Project = {
   component: ComponentType;
 };
 
-export type ProjectComponent = Pick<Project, "title" | "component">;
+export type ProjectComponent = Pick<ProjectLegacy, "title" | "component">;
