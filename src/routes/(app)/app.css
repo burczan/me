@@ -1,10 +1,30 @@
 :root {
-  --pink: #ff00c8;
-  --red: #ff0301;
-  --yellow: #ffc800;
-  --orange: #ff9500;
-  --green: #95f01a;
-  --green-neon: #00fb00;
+  --red: var(--pico-color-red-450);
+  --yellow: var(--pico-color-yellow-100);
+  --orange: var(--pico-color-pumpkin);
+  --lime: var(--pico-color-lime-200);
+  --fuchsia: var(--pico-color-fuchsia-500);
+}
+
+strong,
+.green {
+  color: var(--lime);
+}
+
+.pink {
+  color: var(--pink);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.red {
+  color: var(--red);
 }
 
 .icon-h2 {
@@ -19,23 +39,6 @@
   width: 0.875em;
   vertical-align: baseline;
   color: inherit;
-}
-
-strong,
-.green {
-  color: var(--green);
-}
-
-.pink {
-  color: var(--pink);
-}
-
-.orange {
-  color: var(--orange);
-}
-
-.red {
-  color: var(--red);
 }
 
 .box {
@@ -66,7 +69,7 @@ article {
 
 article h3 {
   text-align: center;
-  color: var(--green);
+  color: var(--lime);
 }
 
 article section h4 {
