@@ -40,7 +40,7 @@
 
     <ul class="hide-bullets">
       <li>
-        <Check color={"var(--green)"} /> Visiting office from time to time
+        <Check color={"var(--lime)"} /> Visiting office from time to time
       </li>
       <li>
         <MessageCircleQuestion color={"var(--orange)"} /> Visiting office once a

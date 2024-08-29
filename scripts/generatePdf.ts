@@ -6,7 +6,7 @@ import { PDFDocument } from "pdf-lib";
 const url = "http://localhost:5173/cv";
 const pdfPath = path.resolve("./", "cv_pospieszynska_natalia.pdf");
 
-async function embedMetadata(pdf: Buffer) {
+async function embedMetadata(pdf: Uint8Array) {
   const pdfDoc = await PDFDocument.load(pdf);
   const author = "Pospieszyńska Natalia";
 
@@ -19,7 +19,7 @@ async function embedMetadata(pdf: Buffer) {
 }
 
 (async () => {
-  const browser = await puppeteer.launch({ headless: "new" });
+  const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
 
   await page.goto(url, { waitUntil: "networkidle2" });
