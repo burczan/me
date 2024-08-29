@@ -14,5 +14,5 @@ export const load: PageLoad = ({ params }) => {
     };
   }
 
-  throw redirect(303, `${base}/projects/`);
+  redirect(303, `${base}/projects/`);
 };
