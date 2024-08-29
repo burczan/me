@@ -1,0 +1,1 @@
+import{a as o,s as e,b as t,t as a}from"../chunks/index.CFUa8ltO.js";import{component as c}from"./0.DMBz1zI0.js";const s=async()=>({about:o,softSkills:e,spokenLanguages:t,technologies:a}),r=Object.freeze(Object.defineProperty({__proto__:null,load:s},Symbol.toStringTag,{value:"Module"}));export{c as component,r as universal};
