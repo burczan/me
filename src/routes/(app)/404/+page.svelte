@@ -6,9 +6,9 @@
 <SvelteHead title="404" />
 
 <div>
-  <h2 class="red">
+  <h1 class="red">
     404: The Browser Made a Request, but the Server Threw an Exception.
-  </h2>
+  </h1>
 
   <div class="box">
     <p>
