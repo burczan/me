@@ -9,4 +9,11 @@ export default defineConfig({
     port: 5173,
     strictPort: true,
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import 'src/styles/variables.scss';`,
+      },
+    },
+  },
 });

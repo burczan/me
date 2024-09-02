@@ -7,7 +7,7 @@
 <SvelteHead title="Home" />
 
 <div id="home">
-  <h2 class="orange"><CodeXml class="icon-h2" /> {data.about.role}</h2>
+  <h1 class="orange"><CodeXml class="icon-h1" /> {data.about.role}</h1>
 
   <div class="box columns">
     <div class="left">

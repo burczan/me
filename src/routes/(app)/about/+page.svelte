@@ -23,7 +23,7 @@
 <SvelteHead title="About me" />
 
 <div id="about-me">
-  <h2 class="orange"><Ghost class="icon-h2" /> About me</h2>
+  <h1 class="orange"><Ghost class="icon-h1" /> About me</h1>
 
   <div class="box">
     <details>

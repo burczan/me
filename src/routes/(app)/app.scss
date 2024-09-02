@@ -1,0 +1,88 @@
+:root {
+  --red: var(--pico-color-red-450);
+  --yellow: var(--pico-color-yellow-100);
+  --orange: var(--pico-color-pumpkin);
+  --lime: var(--pico-color-lime-200);
+  --fuchsia: var(--pico-color-fuchsia-500);
+}
+
+strong,
+.green {
+  color: var(--lime);
+}
+
+.pink {
+  color: var(--pink);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.red {
+  color: var(--red);
+}
+
+.icon-h2 {
+  height: 1.75rem;
+  width: 1.75rem;
+  vertical-align: top;
+  color: inherit;
+}
+
+.icon-small {
+  height: 0.875em;
+  width: 0.875em;
+  vertical-align: baseline;
+  color: inherit;
+}
+
+.box {
+  background-color: var(--pico-code-background-color);
+  border-radius: var(--pico-border-radius);
+  padding: 2rem;
+}
+
+details {
+  summary {
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: capitalize;
+  }
+
+  div.content {
+    width: 70%;
+    padding: 1rem;
+    text-align: justify;
+  }
+}
+
+article {
+  all: revert;
+
+  width: 70%;
+  margin: auto;
+  text-align: justify;
+
+  h3 {
+    text-align: center;
+    color: var(--lime);
+  }
+
+  section h4 {
+    color: var(--orange);
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+div[role="group"] {
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}

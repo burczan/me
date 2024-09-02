@@ -6,7 +6,7 @@
 <SvelteHead title="Projects" />
 
 <div id="projects">
-  <h2 class="orange"><Projector class="icon-h2" /> Projects</h2>
+  <h1 class="orange"><Projector class="icon-h1" /> Projects</h1>
 
   <div class="box">
     <slot />

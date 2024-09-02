@@ -11,7 +11,7 @@
 <SvelteHead title="Experience" />
 
 <div id="experience">
-  <h2 class="orange"><Shovel class="icon-h2" /> Experience</h2>
+  <h1 class="orange"><Shovel class="icon-h1" /> Experience</h1>
 
   <div role="group">
     {#each roles as role, id}
