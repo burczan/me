@@ -18,7 +18,7 @@
 <SvelteHead title="Contact" />
 
 <div id="contact">
-  <h1 class="orange"><Contact class="icon-h1" /> Contact</h1>
+  <h1><Contact class="icon-h1" /> Contact</h1>
 
   <div class="box center">
     <p>

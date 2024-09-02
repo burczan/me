@@ -11,7 +11,7 @@
 <SvelteHead title="Education" />
 
 <div id="education">
-  <h1 class="orange"><GraduationCap class="icon-h1" /> Education</h1>
+  <h1><GraduationCap class="icon-h1" /> Education</h1>
 
   <div role="group">
     {#each fields as field, id}
