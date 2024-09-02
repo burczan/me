@@ -1,29 +1,61 @@
 <script lang="ts">
   import { CalendarRange } from "lucide-svelte";
+  import { onMount } from "svelte";
   import type { Project } from "$lib/types";
+  import { generateToC } from "$lib/utils/generateToC";
+  import FlipTable from "$lib/app/components/FlipTable.svelte";
+  import FixTable from "$lib/app/components/FixTable.svelte";
 
   export let project: Project;
+
+  onMount(() => {
+    generateToC();
+  });
 </script>
 
 <article>
-  <p class="text-center">
-    <small>
-      <CalendarRange class="icon-small" />
-      {project.started} &ndash; Present
-    </small>
-  </p>
-
-  <h3>
+  <h2>
     Engineering the Intangible:<br />The Essential Handbook for Engineers Who
     Refuse to Lose Their Minds While Navigating a World Where the Only Certainty
     Is That Your Stack Will Never Stop Changing
-  </h3>
+  </h2>
 
   <p class="text-center">
-    <small>(╯°□°）╯︵ ┻━┻</small>
+    <small>
+      <CalendarRange class="icon-small" />
+      {project.started} &ndash; Present (Research Phase)
+    </small>
   </p>
 
-  <section id="introduction">
+  <section id="toc"></section>
+
+  <section>
+    <h3>Summary</h3>
+    <p>
+      The <i>Engineering the Intangible</i> project emerged from my own experience
+      as a software engineer, when I realized the importance of balancing rapidly
+      changing technical skills with lasting human abilities. In a world where technology
+      quickly becomes outdated, skills like effective communication and adaptability
+      are crucial for long-term success.
+    </p>
+    <p>
+      This insight made me see a gap: many existing resources are either too
+      generic, overly complex, or not well-suited for the analytical mindset of
+      technical professionals. <i>Engineering the Intangible</i> aims to fill this
+      gap by offering an approach tailored specifically for engineers and tech professionals.
+      My aim is to create a tool that's easy to access and use, helping people improve
+      their job performance while also fostering their personal growth.
+    </p>
+    <p>
+      This project is my way of providing a straightforward and intuitive
+      resource that supports the continuous development of these essential,
+      intangible skills. By focusing on these competencies, it helps individuals
+      grow both professionally and personally in a constantly changing world.
+    </p>
+  </section>
+
+  <section>
+    <h3>Introduction</h3>
     <p>
       The <i>Engineering the Intangible</i> project was born to tackle a challenge
       every engineer faces: the need to stay up-to-date with rapidly changing technologies
@@ -41,8 +73,8 @@
     </p>
   </section>
 
-  <section id="context">
-    <h4>Context</h4>
+  <section>
+    <h3>Problem</h3>
     <p>
       In the rapidly changing IT world, where new technologies mushroom, certain
       core competencies—such as adaptability and effective communication—remain
@@ -54,10 +86,12 @@
       competencies provide a stable foundation, helping you stay adaptable and
       valuable no matter how the industry changes.
     </p>
+
+    <FlipTable />
   </section>
 
-  <section id="motivation-behind-this-project">
-    <h4>Motivation Behind This Project</h4>
+  <section>
+    <h3>Motivation Behind the Project</h3>
     <p>
       This project is born from my own experience in the IT field, where I saw a
       growing need to develop non-technical skills alongside technical
@@ -89,8 +123,8 @@
     </ul>
   </section>
 
-  <section id="theoretical-foundation">
-    <h4>Theoretical Foundation</h4>
+  <section>
+    <h3>Theoretical Foundation</h3>
     <p>
       The <i>Engineering the Intangible</i> project draws on established competency
       models, particularly those by Spencer & Spencer (1993), who define competencies
@@ -107,8 +141,29 @@
     </p>
   </section>
 
-  <section id="goal-of-the-project">
-    <h4>Goal of the Project</h4>
+  <section>
+    <h4>Selected Bibliography</h4>
+    <ul>
+      <li>
+        Lucia, A. D., & Lepsinger, R. (1999). <cite
+          >The art and science of competency models: Pinpointing critical
+          success factors in organizations</cite
+        >. Jossey-Bass/Pfeiffer.
+      </li>
+      <li>
+        McClelland, D.C. (1987). <cite>Human motivation</cite>. Cambridge:
+        Cambridge University Press.
+      </li>
+      <li>
+        Spencer, L. M., & Spencer, S. M. (1993). <cite
+          >Competence at work: Models for superior performance</cite
+        >. Wiley.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Goal of the Project</h3>
     <p>
       The primary goal of this project is to develop a structured, accessible
       approach for tracking and enhancing intangible skills, especially for
@@ -118,8 +173,8 @@
     </p>
   </section>
 
-  <section id="target-audience">
-    <h4>Target Audience</h4>
+  <section>
+    <h3>Target Audience</h3>
     <p>
       While this framework is developed from a software engineer's perspective,
       its focus on timeless competencies makes it relevant to anyone looking to
@@ -138,8 +193,8 @@
     </p>
   </section>
 
-  <section id="key-use-cases">
-    <h4>Key Use Cases</h4>
+  <section>
+    <h3>Key Use Cases</h3>
     <ul>
       <li>
         <b>Interview Preparation</b><br />Strengthen key competencies to better
@@ -162,8 +217,8 @@
     </p>
   </section>
 
-  <section id="benefits">
-    <h4>Benefits</h4>
+  <section>
+    <h3>Benefits</h3>
     <ul>
       <li>
         <b>Increased Self-Awareness</b><br />
@@ -188,7 +243,5 @@
     </ul>
   </section>
 
-  <p class="text-center">
-    <small>(ヘ･_･)ヘ┳━┳</small>
-  </p>
+  <FixTable />
 </article>
