@@ -23,16 +23,15 @@ async function embedMetadata(pdf: Uint8Array) {
   const page = await browser.newPage();
 
   await page.goto(url, { waitUntil: "networkidle2" });
-  await page.emulateMediaType("screen");
+  await page.emulateMediaType("print");
 
-  // overwrite paper-css .sheet class for correct pdf generation
-  await page.addStyleTag({
-    content: `.sheet {
-    box-shadow: none;
-    margin: 0;
-    padding: 5mm;
-  }`,
-  });
+  const client = await page.createCDPSession();
+  await client.send("Page.enable");
+  // Browser font size setting
+  // 9 - very small
+  // 12 - small
+  // 16 - medium (recommended)
+  await client.send("Page.setFontSizes", { fontSizes: { standard: 16 } });
 
   const pdf = await page.pdf({
     path: pdfPath,

@@ -26,20 +26,12 @@
 <svelte:head>
   <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
-  />
-  <link
-    rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.4.1/paper.min.css"
   />
 </svelte:head>
 
-<div id="page1" class="sheet">
-  <div class="container grid-container">
+<div id="page1" class="sheet padding-10mm">
+  <div class="grid-container">
     <header class="header">
       <Summary />
     </header>
@@ -56,8 +48,8 @@
   </div>
 </div>
 
-<div id="page2" class="sheet">
-  <div class="container grid-container">
+<div id="page2" class="sheet padding-10mm">
+  <div class="grid-container">
     <main class="main">
       <FutureCareerGoals />
       <Education />
@@ -75,7 +67,6 @@
 
 <style>
   .grid-container {
-    margin-top: 2rem;
     min-height: 100%;
     display: grid;
     grid-template-columns: 1.5fr 0.5fr;
