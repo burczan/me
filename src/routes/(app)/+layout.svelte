@@ -4,6 +4,7 @@
   import { CodeXml, Construction } from "lucide-svelte";
   import { base } from "$app/paths";
   import { page } from "$app/stores";
+  import GoToTop from "$lib/app/components/GoToTop.svelte";
   import "./app.scss";
 
   export let data;
@@ -43,6 +44,8 @@
       />
     </span>
   </footer>
+
+  <GoToTop showAtPixel={0} />
 </div>
 
 <style>
@@ -54,8 +57,19 @@
       "main"
       "footer";
     grid-template-rows: 4em 1fr 4em;
-    width: 80%;
     margin: auto;
+
+    @media (min-width: 768px) {
+      width: 90%;
+    }
+
+    @media (min-width: 1280px) {
+      width: 80%;
+    }
+
+    @media (min-width: 1523px) {
+      width: 70%;
+    }
   }
 
   nav {

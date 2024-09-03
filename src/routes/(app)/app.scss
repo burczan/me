@@ -18,6 +18,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 strong,
 .green {
   color: var(--lime);
@@ -89,9 +93,24 @@ details {
 article {
   all: revert;
 
-  width: 70%;
   margin: auto;
   text-align: justify;
+
+  @media (min-width: 768px) {
+    width: 90%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 80%;
+  }
+
+  @media (min-width: 1280px) {
+    width: 70%;
+  }
+
+  @media (min-width: 1536px) {
+    width: 60%;
+  }
 
   h2 {
     text-align: center;

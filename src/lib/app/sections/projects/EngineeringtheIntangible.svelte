@@ -10,6 +10,12 @@
 
   onMount(() => {
     generateToC();
+
+    const { hash } = document.location;
+    const scrollTo = hash && document.getElementById(hash.slice(1));
+    if (scrollTo) {
+      scrollTo.scrollIntoView();
+    }
   });
 </script>
 

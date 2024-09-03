@@ -4,10 +4,6 @@ import type { LayoutLoad } from "./$types";
 export const load = (async () => {
   const navbarItems = [
     {
-      name: "Home",
-      href: "/",
-    },
-    {
       name: "About me",
       href: "/about/",
     },
