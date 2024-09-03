@@ -1,19 +1,38 @@
-export function generateToC() {
+type Level = 1 | 2 | 3 | 4 | 5 | 6;
+
+type Options = {
+  insertTocHeading: boolean;
+};
+
+export function generateToC(
+  startLevel: Level,
+  options: Options = {
+    insertTocHeading: true,
+  },
+) {
   const toc = document.getElementById("toc");
 
   if (!toc) {
     return;
   }
 
+  const range = (start: Level, stop: Level = 6) => {
+    return Array.from({ length: stop - start + 1 }, (_, i) => `h${start + i}`);
+  };
+
+  const hSelectors = range(startLevel).join(", ");
   const headings: HTMLHeadingElement[] = Array.from(
-    document.body.querySelectorAll("article section :is(h3, h4, h5, h6)"),
+    document.body.querySelectorAll(`article section :is(${hSelectors})`),
   );
 
   const ul = document.createElement("ul");
   toc.appendChild(ul);
 
   headings.forEach((heading) => {
-    const id = heading.innerText.replace(/\s+/g, "-").toLowerCase();
+    const id = heading.innerText
+      .replace(/\s+/g, "-")
+      .replace(/[^a-zA-Z0-9-]/g, "")
+      .toLowerCase();
     heading.setAttribute("id", id);
 
     const li = ul.appendChild(document.createElement("li"));
@@ -24,7 +43,9 @@ export function generateToC() {
     a.innerText = heading.innerText;
   });
 
-  const sectionTitle = document.createElement("h3");
-  sectionTitle.innerText = "Contents";
-  toc.insertAdjacentElement("afterbegin", sectionTitle);
+  if (options.insertTocHeading) {
+    const sectionTitle = document.createElement(`h${startLevel}`);
+    sectionTitle.innerText = "Contents";
+    toc.insertAdjacentElement("afterbegin", sectionTitle);
+  }
 }

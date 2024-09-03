@@ -1,22 +1,19 @@
 <script lang="ts">
-  import { afterUpdate } from "svelte";
+  import { onMount } from "svelte";
   import { Ghost } from "lucide-svelte";
+  import { generateToC } from "$lib/utils/generateToC";
   import SvelteHead from "$lib/app/components/SvelteHead.svelte";
 
   export let data;
 
-  afterUpdate(() => {
-    const details = document.querySelectorAll("details");
+  onMount(() => {
+    generateToC(2, { insertTocHeading: false });
 
-    details.forEach((targetDetail) => {
-      targetDetail.addEventListener("click", () => {
-        details.forEach((detail) => {
-          if (detail !== targetDetail) {
-            detail.removeAttribute("open");
-          }
-        });
-      });
-    });
+    const { hash } = document.location;
+    const scrollTo = hash && document.getElementById(hash.slice(1));
+    if (scrollTo) {
+      scrollTo.scrollIntoView();
+    }
   });
 </script>
 
@@ -26,9 +23,11 @@
   <h1><Ghost class="icon-h1" /> About me</h1>
 
   <div class="box">
-    <details>
-      <summary>My code compiles, therefore I am</summary>
-      <div class="content">
+    <article class="essay">
+      <section id="toc"></section>
+
+      <section>
+        <h2>My code compiles, therefore I am</h2>
         <p>
           I approach software development with a strong focus on <strong
             >quality</strong
@@ -44,23 +43,19 @@
           my appreciation for craftsmanship, and helps me maintain a healthy
           work-life balance.
         </p>
-      </div>
-    </details>
+      </section>
 
-    <details>
-      <summary>Soft Skills Daemon: Running in the Background</summary>
-      <div class="content">
+      <section>
+        <h2>Soft Skills Daemon: Running in the Background</h2>
         <ul>
           {#each data.softSkills as skill}
             <li>{skill}</li>
           {/each}
         </ul>
-      </div>
-    </details>
+      </section>
 
-    <details>
-      <summary>Blocks, Chains, and Data Pains</summary>
-      <div class="content">
+      <section>
+        <h2>Blocks, Chains, and Data Pains</h2>
         <p>
           I have a growing interest in <strong>blockchain</strong>,
           <strong>data science</strong>, and
@@ -75,29 +70,31 @@
           <strong>mathematics</strong>, and theoretical
           <strong>computer science</strong> drive me to explore these fields.
         </p>
-      </div>
-    </details>
+      </section>
 
-    <details>
-      <summary>Speech API: Running on Multiple Ports</summary>
-      <div class="content">
+      <section>
+        <h2>Speech API: Running on Multiple Ports</h2>
         <ul>
           {#each data.spokenLanguages as { language, level }}
             <li><strong>{language}</strong> ({level})</li>
           {/each}
         </ul>
-      </div>
-    </details>
+      </section>
 
-    <details>
-      <summary>Hacks & Stacks: My Toolkit Unpacked</summary>
-      <div class="content">
+      <section>
+        <h2>Hacks & Stacks: My Toolkit Unpacked</h2>
         <ul>
           {#each data.technologies as technology}
             <li>{technology}</li>
           {/each}
         </ul>
-      </div>
-    </details>
+      </section>
+    </article>
   </div>
 </div>
+
+<style>
+  section#toc {
+    margin-bottom: 2rem;
+  }
+</style>

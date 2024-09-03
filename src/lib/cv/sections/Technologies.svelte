@@ -4,7 +4,7 @@
 
 <section id="technologies">
   <h2>
-    <i class={faIconClass.technologies} /> Technologies
+    <i class={faIconClass.technologies} /> Tech stack
   </h2>
 
   <ul class="hideMarkers">
