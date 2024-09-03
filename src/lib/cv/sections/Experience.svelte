@@ -1,19 +1,22 @@
 <script lang="ts">
   import { experience, faIconClass } from "$lib/data";
 
-  const expWithoutLLidero = experience.filter(
-    (exp) => exp.company !== "LLidero",
-  );
+  // const expWithoutLLidero = experience.filter(
+  //   (exp) => exp.company !== "LLidero",
+  // );
 </script>
 
-<div id="work-experience">
-  {#each expWithoutLLidero as { role, company, startDate, endDate, descriptionShortened }}
-    <div class="border-top">
-      <span class="role">
-        <i class={faIconClass.experience} />
+<section id="work-experience">
+  <h2>
+    <i class={faIconClass.experience} /> Experience
+  </h2>
+
+  {#each experience as { role, company, startDate, endDate, descriptionShortened }}
+    <div class="entry">
+      <div class="head">
         <strong>{role}</strong>
         @{company} ({startDate} &ndash; {endDate})
-      </span>
+      </div>
 
       <ul>
         {#each descriptionShortened as entry}
@@ -22,18 +25,11 @@
       </ul>
     </div>
   {/each}
-</div>
+</section>
 
 <style>
-  .role {
-    font-size: larger;
-  }
-
   ul {
-    margin-top: 1rem;
     margin-bottom: 1rem;
-    margin-inline-start: 3.1rem;
-    list-style-position: outside;
-    list-style-type: disc;
+    margin-inline-start: 2.5rem;
   }
 </style>

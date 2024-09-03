@@ -2,11 +2,10 @@
   import { faIconClass, spokenLanguages } from "$lib/data";
 </script>
 
-<figure id="spoken-languages">
-  <figcaption>
-    <i class={faIconClass.spokenLanguages} />
-    Languages
-  </figcaption>
+<section id="spoken-languages">
+  <h2>
+    <i class={faIconClass.spokenLanguages} /> Languages
+  </h2>
 
   <ul class="hideMarkers">
     {#each spokenLanguages as { language, level }}
@@ -17,4 +16,4 @@
       </li>
     {/each}
   </ul>
-</figure>
+</section>

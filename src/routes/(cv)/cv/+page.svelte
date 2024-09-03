@@ -1,11 +1,10 @@
 <script lang="ts">
   import { afterUpdate, onMount } from "svelte";
   import Contact from "$lib/cv/sections/Contact.svelte";
-  import Craftsmanship from "$lib/cv/sections/Craftsmanship.svelte";
   import Education from "$lib/cv/sections/Education.svelte";
   import Experience from "$lib/cv/sections/Experience.svelte";
-  import FutureCareerGoals from "$lib/cv/sections/FutureCareerGoals.svelte";
   import GeneralInterests from "$lib/cv/sections/GeneralInterests.svelte";
+  import Projects from "$lib/cv/sections/Projects.svelte";
   import SoftSkills from "$lib/cv/sections/SoftSkills.svelte";
   import SpokenLanguages from "$lib/cv/sections/SpokenLanguages.svelte";
   import Summary from "$lib/cv/sections/Summary.svelte";
@@ -51,9 +50,8 @@
 <div id="page2" class="sheet padding-10mm">
   <div class="grid-container">
     <main class="main">
-      <FutureCareerGoals />
       <Education />
-      <Craftsmanship />
+      <Projects />
     </main>
 
     <aside class="sidebar">
@@ -75,6 +73,7 @@
       "header header"
       "main sidebar"
       "footer footer";
+    column-gap: 2rem;
   }
 
   .header {
@@ -89,11 +88,9 @@
     display: grid;
     grid-auto-flow: row;
     grid-area: main;
-    grid-row-gap: 3rem;
+    row-gap: 3rem;
     align-content: baseline;
     align-items: baseline;
-
-    width: 96%;
   }
 
   .sidebar {

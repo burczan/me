@@ -73,7 +73,9 @@ export type ProjectTitle =
 export type Project = {
   slug: string;
   title: string;
+  shortTitle: string;
   started: string;
+  ended: string;
   component: ComponentType;
 };
 

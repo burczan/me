@@ -2,11 +2,14 @@
   import { education, faIconClass } from "$lib/data";
 </script>
 
-<div id="education">
+<section id="education">
+  <h2>
+    <i class={faIconClass.education} /> Education
+  </h2>
+
   {#each education as { school, city, country, degree, field, subfield, dateRange, website }}
-    <div class="border-top">
-      <div class="school">
-        <i class={faIconClass.education} />
+    <div class="entry">
+      <div class="head">
         {#if website}
           <a href={website} title={school} rel="noopener" target="_blank"
             >{school}</a
@@ -17,36 +20,15 @@
         ({city}, {country})
       </div>
 
-      <div class="degree">
-        <i class="{faIconClass.education} fa-blank" />
+      <div>
         {degree},
         <strong>{field}</strong>{#if subfield}, {subfield}
         {/if}
       </div>
 
-      <div class="date-range">
-        <i class="{faIconClass.education} fa-blank" />
+      <div>
         {dateRange}
       </div>
     </div>
   {/each}
-</div>
-
-<style>
-  .fa-blank {
-    visibility: hidden !important;
-    font-size: large;
-  }
-
-  .school {
-    font-size: large;
-  }
-
-  .degree {
-    font-size: medium;
-  }
-
-  .date-range {
-    font-size: medium;
-  }
-</style>
+</section>

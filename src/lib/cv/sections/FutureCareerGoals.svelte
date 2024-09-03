@@ -1,7 +1,5 @@
 <div id="future-career-goals" class="box">
-  <div class="box-title">
-    <strong>Blocks, Chains, and Data Pains &#129394;</strong>
-  </div>
+  <div class="box-title">Blocks, Chains, and Data Pains &#129394;</div>
 
   <div class="box-content">
     <p>

@@ -5,11 +5,10 @@
   const { github, linkedin, web } = about.contact;
 </script>
 
-<figure id="contact">
-  <figcaption>
-    <i class={faIconClass.contact} />
-    Contact
-  </figcaption>
+<section id="contact">
+  <h2>
+    <i class={faIconClass.contact} /> Contact
+  </h2>
 
   <ul class="hideMarkers">
     <li>
@@ -38,4 +37,4 @@
       </a>
     </li>
   </ul>
-</figure>
+</section>

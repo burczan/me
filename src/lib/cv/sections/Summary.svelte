@@ -3,18 +3,16 @@
 </script>
 
 <div class="box">
-  <div id="headline" class="grid-container">
-    <div class="left">
-      <span class="headline"><strong>{about.name}</strong></span>
-    </div>
+  <div id="headline">
+    <h1 class="grid-container">
+      <span class="left">{about.name}</span>
 
-    <div class="center">
-      <span class="headline"><i class={faIconClass.headline} /></span>
-    </div>
+      <span class="center">
+        <i class={faIconClass.headline} />
+      </span>
 
-    <div class="right">
-      <span class="headline"><strong>{about.role}</strong></span>
-    </div>
+      <span class="right">{about.role}</span>
+    </h1>
   </div>
 
   <div id="summary-content" class="box-content">
@@ -23,12 +21,8 @@
         >software testing</strong
       >
       and a deep interest in <strong>backend</strong> development with
-      <strong>TypeScript</strong>.
-    </p>
-    <p>
-      My primary focus is on backend roles, though I am also open to <strong
-        >full-stack</strong
-      >
+      <strong>TypeScript</strong>. My primary focus is on backend roles, though
+      I am also open to <strong>full-stack</strong>
       development and interested in gaining experience in
       <strong>DevOps</strong> at a junior level.
     </p>
@@ -54,9 +48,5 @@
   .right {
     grid-area: right;
     justify-self: end;
-  }
-
-  span.headline {
-    font-size: xx-large;
   }
 </style>

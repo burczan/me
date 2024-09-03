@@ -1,7 +1,5 @@
-<div id="craftsmanship" class="box">
-  <div class="box-title">
-    <strong>My code compiles, therefore I am &#129697;</strong>
-  </div>
+<section id="craftsmanship" class="box">
+  <div class="box-title">My code compiles, therefore I am &#129697;</div>
 
   <div class="box-content">
     <p>
@@ -21,4 +19,4 @@
       balance.
     </p>
   </div>
-</div>
+</section>

@@ -215,7 +215,7 @@ export const experience: Experience = [
     descriptionShortened: [
       "Conducted manual functional and API testing using Burp Suite and Postman.",
       "Collaborated closely with developers to implement new features.",
-      "Developing my skills in writing automated tests.",
+      // "Developing my skills in writing automated tests.",
       "Performed production environment testing after each release.",
     ],
     technologies: [
@@ -260,7 +260,7 @@ export const experience: Experience = [
     descriptionShortened: [
       "Designed and developed educational courses tailored to various learner needs.",
       "Set clear learning goals and objectives for each course.",
-      "Conducted thorough testing of courses.",
+      // "Conducted thorough testing of courses.",
       "Collaborated with subject matter experts to gather content and ensure accuracy.",
     ],
   },
@@ -270,17 +270,17 @@ export const generalInterests: GenerallyInterestedIn = [
   "Algorithms and Data Structures",
   "Artificial Intelligence",
   "Blockchain",
-  "Crocheting",
   "Data Science",
   "Databases",
   "DevOps",
   "Distributed Systems",
   "Mathematics",
-  "Resilience Engineering",
+  "Psychology",
   "Security",
 ];
 
 export const softSkills: SoftSkill[] = [
+  "Adaptability",
   "Analytical skills",
   "Asking questions",
   "Attention to detail",
@@ -312,7 +312,9 @@ export const projects: Project[] = [
     slug: "engineering-intangible",
     title:
       "Engineering the Intangible: The Essential Handbook for Engineers Who Refuse to Lose Their Minds While Navigating a World Where the Only Certainty Is That Your Stack Will Never Stop Changing",
+    shortTitle: "Engineering the Intangible",
     started: "07/2024",
+    ended: "Present (Research Phase)",
     component: EngineeringtheIntangible,
   },
 ];
@@ -399,15 +401,19 @@ export const spokenLanguages: SpokenLanguages = [
 ];
 
 export const faIconClass = {
+  aboutMe: "fa-solid fa-ghost",
   contact: "fa-solid fa-address-book",
-  education: "fa-solid fa-graduation-cap",
+  education: "fa-solid fa-user-graduate",
   experience: "fa-solid fa-person-digging",
+  externalLink: "fa-solid fa-link",
   favourite: "fa-solid fa-heart",
   futureTechstack: "fa-solid fa-book-open-reader",
-  generalInterests: "fa-solid fa-brain",
+  generalInterests: "fa-solid fa-book-open-reader",
   headline: "fa-solid fa-code",
+  projects: "fa-solid fa-person-walking-luggage",
   softSkills: "fa-solid fa-people-pulling",
   spokenLanguages: "fa-solid fa-language",
   summary: "fa-solid fa-user-pen",
-  technologies: "fa-solid fa-gears",
+  // technologies: "fa-solid fa-gears",
+  technologies: "fa-solid fa-user-astronaut",
 };

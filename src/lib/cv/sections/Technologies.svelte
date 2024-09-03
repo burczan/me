@@ -2,15 +2,14 @@
   import { faIconClass, technologies } from "$lib/data";
 </script>
 
-<figure id="technologies">
-  <figcaption>
-    <i class={faIconClass.technologies} />
-    Technologies
-  </figcaption>
+<section id="technologies">
+  <h2>
+    <i class={faIconClass.technologies} /> Technologies
+  </h2>
 
   <ul class="hideMarkers">
     {#each technologies as technology}
       <li>{technology}</li>
     {/each}
   </ul>
-</figure>
+</section>
