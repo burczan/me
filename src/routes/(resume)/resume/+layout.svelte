@@ -1,5 +1,5 @@
 <script>
-  import "../cv.scss";
+  import "../resume.scss";
   import "../pdf.scss";
 </script>
 

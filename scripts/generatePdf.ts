@@ -3,7 +3,7 @@ import path from "path";
 import puppeteer from "puppeteer";
 import { PDFDocument } from "pdf-lib";
 
-const url = "http://localhost:5173/cv";
+const url = "http://localhost:5173/resume";
 const pdfPath = path.resolve("./", "cv_pospieszynska_natalia.pdf");
 
 async function embedMetadata(pdf: Uint8Array) {

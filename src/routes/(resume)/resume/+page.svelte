@@ -1,14 +1,14 @@
 <script lang="ts">
   import { afterUpdate, onMount } from "svelte";
-  import Contact from "$lib/cv/sections/Contact.svelte";
-  import Education from "$lib/cv/sections/Education.svelte";
-  import Experience from "$lib/cv/sections/Experience.svelte";
-  import GeneralInterests from "$lib/cv/sections/GeneralInterests.svelte";
-  import Projects from "$lib/cv/sections/Projects.svelte";
-  import SoftSkills from "$lib/cv/sections/SoftSkills.svelte";
-  import SpokenLanguages from "$lib/cv/sections/SpokenLanguages.svelte";
-  import Summary from "$lib/cv/sections/Summary.svelte";
-  import Technologies from "$lib/cv/sections/Technologies.svelte";
+  import Contact from "$lib/resume/sections/Contact.svelte";
+  import Education from "$lib/resume/sections/Education.svelte";
+  import Experience from "$lib/resume/sections/Experience.svelte";
+  import GeneralInterests from "$lib/resume/sections/GeneralInterests.svelte";
+  import Projects from "$lib/resume/sections/Projects.svelte";
+  import SoftSkills from "$lib/resume/sections/SoftSkills.svelte";
+  import SpokenLanguages from "$lib/resume/sections/SpokenLanguages.svelte";
+  import Summary from "$lib/resume/sections/Summary.svelte";
+  import Technologies from "$lib/resume/sections/Technologies.svelte";
 
   onMount(() => {
     document.body.classList.add("A4");
