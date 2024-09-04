@@ -34,16 +34,17 @@
         <p>
           I am a software engineer with a background in
           <strong>software testing</strong> and a deep interest in
-          <strong>backend</strong> development. My primary focus is on backend
-          roles, though I am also open to <strong>full-stack</strong> positions
-          with a backend emphasis. Additionally, I am eager to expand my
-          <strong>DevOps</strong> skills at a junior level.
+          <strong>backend</strong> development. While I primarily focus on
+          backend roles, I am also open to <strong>full-stack</strong>
+          positions. Additionally, I am eager to expand my
+          <strong>DevOps</strong> skills and gain further experience at a junior
+          level.
         </p>
         <p>
-          While I currently focus on mastering technical skills, I also find
-          great fulfillment in <strong>mentoring</strong> others. As I progress
-          in my career, I am open to exploring <strong>leadership</strong> roles,
-          where I can nurture technical talent while driving impactful solutions.
+          Currently, my focus is on mastering technical skills and deepening my
+          expertise. However, in the future, I am interested in transitioning
+          into <strong>leadership</strong> roles, where I can leverage both my
+          technical knowledge and <strong>mentoring</strong> experience.
         </p>
       </section>
 
@@ -56,10 +57,10 @@
         </p>
         <p>
           Although <strong>TypeScript</strong> is my primary programming
-          language, I take <strong>technology-agnostic</strong> approach, always
+          language, I take a <strong>technology-agnostic</strong> approach, always
           striving to choose the right tools to deliver optimal solutions. My understanding
-          of the theoretical foundations of computer science allows me to quickly
-          and efficiently learn new languages and technologies.
+          of computer science fundamentals allows me to quickly and efficiently learn
+          new languages and technologies.
         </p>
         <p>
           Outside of work, I enjoy <strong>crocheting</strong>—an activity that
@@ -72,9 +73,8 @@
       <section>
         <h2>Version Control: My Next Career Update</h2>
         <p>
-          As I look ahead in my career, I am increasingly drawn to <strong
-            >artificial intelligence</strong
-          >, <strong>data science</strong>, and <strong>blockchain</strong>.
+          Looking ahead, I am increasingly drawn to <strong>AI</strong>,
+          <strong>data science</strong>, and <strong>blockchain</strong>.
         </p>
         <p>
           While my academic background is not in STEM, my commitment to

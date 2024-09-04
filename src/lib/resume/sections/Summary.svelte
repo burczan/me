@@ -20,11 +20,11 @@
       I am a software engineer with a background in <strong
         >software testing</strong
       >
-      and a deep interest in <strong>backend</strong> development with
-      <strong>TypeScript</strong>. My primary focus is on backend roles, though
-      I am also open to <strong>full-stack</strong>
-      development and interested in gaining experience in
-      <strong>DevOps</strong> at a junior level.
+      and a deep interest in <strong>backend</strong> development. While I
+      primarily focus on backend roles, I am also open to
+      <strong>full-stack</strong> positions. Additionally, I am eager to expand
+      my
+      <strong>DevOps</strong> skills and gain further experience at a junior level.
     </p>
   </div>
 </div>
