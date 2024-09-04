@@ -16,7 +16,7 @@
           >software testing</strong
         >
         and a deep interest in <strong>backend</strong>
-        development with <strong>TypeScript</strong>.
+        development, particularly with <strong>TypeScript</strong>.
       </p>
       <p>
         My primary focus is on backend roles, though I am also open to <strong
