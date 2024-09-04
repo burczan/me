@@ -29,7 +29,6 @@
   <section>
     <p class="text-center">
       <small>
-        <CalendarRange class="icon-small" />
         {project.started} &ndash; Present (Research Phase)
       </small>
     </p>

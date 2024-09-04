@@ -4,6 +4,7 @@
   import { base } from "$app/paths";
   import { generateToC } from "$lib/utils/generateToC";
   import SvelteHead from "$lib/app/components/SvelteHead.svelte";
+  import viridiAchievementsImg from "$lib/assets/viridi_achievements.png";
 
   export let data;
 
@@ -110,7 +111,9 @@
             Feedback is a key to improvement, so I value constructive criticism.
           </li>
           <li>
-            <strong>Persistence</strong> and <strong>resilience</strong><br />
+            <strong>Persistence</strong>
+            <sup><a href="#fn1" id="r1">[1]</a></sup>
+            and <strong>resilience</strong><br />
             These traits help me push through challenges and stay focused on long-term
             goals.
           </li>
@@ -161,6 +164,31 @@
         </ul>
 
         <p>As well as hammer, shovel, and other hardware tools.</p>
+      </section>
+
+      <section id="footnotes">
+        <hr />
+        <p id="fn1">
+          <sup><a href="#r1">[1]</a></sup> It took me almost 2 years to unlock
+          all
+          <a
+            href={viridiAchievementsImg}
+            rel="noopener"
+            target="_blank"
+            title="Viridi Achievements Stats"
+          >
+            47 achievements
+          </a>
+          in
+          <a
+            href="https://store.steampowered.com/app/375950/Viridi/"
+            rel="noopener"
+            target="_blank"
+            title="Viridi on Steam"
+          >
+            Viridi
+          </a>.
+        </p>
       </section>
     </article>
   </div>
