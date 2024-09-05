@@ -138,6 +138,21 @@
       </section>
 
       <section>
+        <h2>Dependencies Installed: My Tech Skills</h2>
+
+        <dl>
+          {#each Object.keys(data.techSkills) as section}
+            <dt><strong>{data.techSkills[section].display}</strong></dt>
+            <dd>
+              <p>{data.techSkills[section].skills.join(", ")}</p>
+            </dd>
+          {/each}
+        </dl>
+
+        <p>As well as hammer, shovel, and other hardware tools.</p>
+      </section>
+
+      <section>
         <h2>Idle Threads: What Keeps Me Thinking</h2>
         <ul>
           {#each data.generalInterests as interest}
@@ -153,17 +168,6 @@
             <li><strong>{language}</strong> ({level})</li>
           {/each}
         </ul>
-      </section>
-
-      <section>
-        <h2>Dependencies Installed: My Tech Stack</h2>
-        <ul>
-          {#each data.technologies as technology}
-            <li>{technology}</li>
-          {/each}
-        </ul>
-
-        <p>As well as hammer, shovel, and other hardware tools.</p>
       </section>
 
       <section id="footnotes">
@@ -187,7 +191,7 @@
             title="Viridi on Steam"
           >
             Viridi
-          </a>.
+          </a>. But I have more example of my persistence.
         </p>
       </section>
     </article>

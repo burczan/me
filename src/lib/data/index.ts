@@ -267,7 +267,6 @@ export const experience: Experience = [
 ];
 
 export const generalInterests: GenerallyInterestedIn = [
-  "Algorithms and Data Structures",
   "Mathematics",
   "Philosophy",
   "Psychology",
@@ -279,8 +278,9 @@ export const softSkills: SoftSkill[] = [
   "Analytical skills",
   "Asking questions",
   "Attention to detail",
-  "Communication",
+  "Collaboration",
   "Continuous learning",
+  "Critical thinking",
   "Growth mindset",
   "Mentoring",
   "Open-mindedness",
@@ -295,10 +295,14 @@ export const softSkills: SoftSkill[] = [
 export const technologies: TechSkill[] = [
   "AWS",
   "Bash",
+  "GraphQL",
+  "Git",
   "JavaScript",
   "Linux",
   "Node.js",
   "React",
+  "Ruby",
+  "SQL",
   "Svelte",
   "TypeScript",
 ];

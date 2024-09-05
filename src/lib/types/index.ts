@@ -30,6 +30,13 @@ export type Education = {
   website?: string;
 }[];
 
+export type TechSkills = {
+  [key: string]: {
+    display: string;
+    skills: string[];
+  };
+};
+
 export type SoftSkill = string;
 
 export type TechSkill = string;
