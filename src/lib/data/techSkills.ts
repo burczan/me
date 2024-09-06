@@ -10,12 +10,16 @@ export const techSkills: TechSkills = {
     skills: ["React", "Svelte", "Vanilla JS", "HTML", "CSS", "Tailwind"],
   },
   backendDevelopment: {
-    display: "Backend Development",
-    skills: ["Node.js", "Express.js", "REST API design and implementation"],
-  },
-  databases: {
-    display: "Databases",
-    skills: ["SQL", "NoSQL", "AWS DynamoDB", "PostgreSQL"],
+    display: "Backend Development & Databases",
+    skills: [
+      "Node.js",
+      "Express.js",
+      "REST API design and implementation",
+      "SQL",
+      "NoSQL",
+      "AWS DynamoDB",
+      "PostgreSQL",
+    ],
   },
   cloudPlatforms: {
     display: "Cloud Platforms",

@@ -91,6 +91,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
 </style>

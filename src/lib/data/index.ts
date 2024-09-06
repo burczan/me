@@ -13,6 +13,7 @@ import type {
   Education,
   Experience,
   GenerallyInterestedIn,
+  Interest,
   Project,
   ProjectLegacy,
   SoftSkill,
@@ -271,6 +272,29 @@ export const generalInterests: GenerallyInterestedIn = [
   "Philosophy",
   "Psychology",
   "Theoretical Computer Science",
+];
+
+export const interests: Interest[] = [
+  {
+    name: "Mathematics",
+    description:
+      "Uncovering the hidden order and underlying patterns that govern the universe.",
+  },
+  {
+    name: "Philosophy",
+    description:
+      "Searching the meaning behind the order and chaos that mathematics reveals.",
+  },
+  {
+    name: "Psychology",
+    description:
+      "Exploring the complexities of human thought, mirroring the pursuit of order amid the chaos revealed by mathematics and questioned by philosophy.",
+  },
+  {
+    name: "Theoretical Computer Science",
+    description:
+      "Investigating the limits of computation, where chaos, order, and meaning intersect in the search for knowledge.",
+  },
 ];
 
 export const softSkills: SoftSkill[] = [

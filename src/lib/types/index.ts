@@ -48,6 +48,11 @@ export type CurrentTechstack = {
   favourite: boolean;
 }[];
 
+export type Interest = {
+  name: string;
+  description: string;
+};
+
 export type Experience = {
   role: string;
   company: string;

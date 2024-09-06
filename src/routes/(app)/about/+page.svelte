@@ -37,9 +37,8 @@
           <strong>software testing</strong> and a deep interest in
           <strong>backend</strong> development. While I primarily focus on
           backend roles, I am also open to <strong>full-stack</strong>
-          positions. Additionally, I am eager to expand my
-          <strong>DevOps</strong> skills and gain further experience at a junior
-          level.
+          positions. Additionally, I am eager to deepen my
+          <strong>DevOps</strong> skills and gain more experience at a junior level.
         </p>
         <p>
           Currently, my focus is on mastering technical skills and deepening my
@@ -57,17 +56,17 @@
           >, <strong>pragmatism</strong>, and <strong>craftsmanship</strong>.
         </p>
         <p>
-          Although <strong>TypeScript</strong> is my primary programming
-          language, I take a <strong>technology-agnostic</strong> approach, always
-          striving to choose the right tools to deliver optimal solutions. My understanding
+          While <strong>TypeScript</strong> is my primary programming language,
+          I take a <strong>technology-agnostic</strong> approach, always striving
+          to select the right tools for delivering optimal solutions. My understanding
           of computer science fundamentals allows me to quickly and efficiently learn
           new languages and technologies.
         </p>
         <p>
           Outside of work, I enjoy <strong>crocheting</strong>—an activity that
           mirrors my approach to development: thoughtful, precise, and
-          rewarding. It also helps me maintain a healthy
-          <strong>work-life balance</strong>.
+          rewarding. It also helps me maintain a
+          <strong>healthy balance</strong> between work and life.
         </p>
       </section>
 
@@ -82,7 +81,7 @@
           <strong>continuous learning</strong>, driven by a
           <strong>growth mindset</strong>, and a solid foundation in computer
           science drive me to explore these fields. My
-          <strong>diverse experience</strong>, from instructional design to
+          <strong>diverse experiences</strong>, from instructional design to
           sound engineering, have given me a unique perspective and the ability
           to approach complex challenges <strong>creatively</strong> and
           <strong>pragmatically</strong>.
@@ -96,28 +95,40 @@
           soft skills play a significant role in my approach to work.
         </p>
 
-        <ul>
-          <li>
-            <strong>Continuous learning</strong><br />
-            I actively seek out new knowledge and skills to keep up with the rapidly
-            changing world.
-          </li>
-          <li>
-            <strong>Growth mindset</strong><br />
-            I view every challenge as an opportunity for growth.
-          </li>
-          <li>
-            <strong>Openness to feedback</strong><br />
-            Feedback is a key to improvement, so I value constructive criticism.
-          </li>
-          <li>
+        <dl>
+          <dt><strong>Continuous learning</strong></dt>
+          <dd>
+            <p>
+              I continually seek new knowledge and skills to stay ahead in the
+              rapidly changing world.
+            </p>
+          </dd>
+
+          <dt><strong>Growth mindset</strong></dt>
+          <dd>
+            <p>I view every challenge as an opportunity for growth.</p>
+          </dd>
+
+          <dt><strong>Openness to feedback</strong></dt>
+          <dd>
+            <p>
+              Feedback is a key to improvement, and I highly value constructive
+              criticism.
+            </p>
+          </dd>
+
+          <dt>
             <strong>Persistence</strong>
             <sup><a href="#fn1" id="r1">[1]</a></sup>
-            and <strong>resilience</strong><br />
-            These traits help me push through challenges and stay focused on long-term
-            goals.
-          </li>
-        </ul>
+            and <strong>resilience</strong>
+          </dt>
+          <dd>
+            <p>
+              These traits help me push through challenges and stay focused on
+              long-term goals.
+            </p>
+          </dd>
+        </dl>
 
         <p>
           Additional skills include <strong>adaptability</strong>,
@@ -149,16 +160,18 @@
           {/each}
         </dl>
 
-        <p>As well as hammer, shovel, and other hardware tools.</p>
+        <p>I am also handy with a hammer, shovel, and other hardware tools.</p>
       </section>
 
       <section>
         <h2>Idle Threads: What Keeps Me Thinking</h2>
-        <ul>
-          {#each data.generalInterests as interest}
-            <li>{interest}</li>
+
+        <dl>
+          {#each data.interests as interest}
+            <dt><strong>{interest.name}</strong></dt>
+            <dd><p>{interest.description}</p></dd>
           {/each}
-        </ul>
+        </dl>
       </section>
 
       <section>

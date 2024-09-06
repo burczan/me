@@ -1,5 +1,5 @@
 import {
-  generalInterests,
+  interests,
   projects,
   softSkills,
   spokenLanguages,
@@ -10,7 +10,7 @@ import type { LayoutLoad } from "./$types";
 
 export const load = (async () => {
   return {
-    generalInterests,
+    interests,
     projects,
     softSkills,
     spokenLanguages,

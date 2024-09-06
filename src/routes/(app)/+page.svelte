@@ -20,8 +20,8 @@
       <p>
         While I primarily focus on backend roles, I am also open to
         <strong>full-stack</strong> positions. Additionally, I am eager to
-        expand my <strong>DevOps</strong> skills and gain further experience at a
-        junior level.
+        deepen my <strong>DevOps</strong> skills and gain more experience at a junior
+        level.
       </p>
 
       <p>
