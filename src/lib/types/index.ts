@@ -39,15 +39,6 @@ export type TechSkills = {
 
 export type SoftSkill = string;
 
-export type TechSkill = string;
-
-export type Technology = string;
-
-export type CurrentTechstack = {
-  tech: Technology;
-  favourite: boolean;
-}[];
-
 export type Interest = {
   name: string;
   description: string;
@@ -60,10 +51,8 @@ export type Experience = {
   endDate: string;
   description: string[];
   descriptionShortened: string[];
-  technologies?: TechSkill[] | Technology[];
+  technologies?: string[];
 }[];
-
-export type GenerallyInterestedIn = string[];
 
 export type SpokenLanguages = {
   language: string;
@@ -95,7 +84,7 @@ export type ProjectLegacy = {
   title: ProjectTitle;
   shortDescription: string;
   status: string;
-  techstack?: Technology[];
+  techstack?: string[];
   repository: {
     private: boolean;
     github?: string;

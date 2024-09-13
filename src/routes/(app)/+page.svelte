@@ -12,16 +12,19 @@
   <div class="box columns">
     <div class="left">
       <p>
-        I am a software engineer with a background in <strong
-          >software testing</strong
-        >
-        and a deep interest in <strong>backend</strong> development.
+        I'm a <strong>backend</strong> software engineer with a strong
+        foundation in <strong>software testing</strong>, passionate about
+        building efficient, scalable, and high-quality solutions. My expertise
+        lies in <strong>TypeScript</strong>, <strong>Node.js</strong>,
+        <strong>AWS</strong>, though I adopt a
+        <strong>technology-agnostic</strong> approach.
       </p>
+
       <p>
-        While I primarily focus on backend roles, I am also open to
-        <strong>full-stack</strong> positions. Additionally, I am eager to
-        deepen my <strong>DevOps</strong> skills and gain more experience at a junior
-        level.
+        While my primary focus is on backend roles, I'm open to contributing to
+        <strong>full-stack</strong> development when needed, and I am
+        continuously expanding my
+        <strong>DevOps</strong> skills.
       </p>
 
       <p>

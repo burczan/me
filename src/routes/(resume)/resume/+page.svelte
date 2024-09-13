@@ -3,12 +3,10 @@
   import Contact from "$lib/resume/sections/Contact.svelte";
   import Education from "$lib/resume/sections/Education.svelte";
   import Experience from "$lib/resume/sections/Experience.svelte";
-  import GeneralInterests from "$lib/resume/sections/GeneralInterests.svelte";
   import Projects from "$lib/resume/sections/Projects.svelte";
   import SoftSkills from "$lib/resume/sections/SoftSkills.svelte";
   import SpokenLanguages from "$lib/resume/sections/SpokenLanguages.svelte";
   import Summary from "$lib/resume/sections/Summary.svelte";
-  import Technologies from "$lib/resume/sections/Technologies.svelte";
 
   onMount(() => {
     document.body.classList.add("A4");
@@ -41,7 +39,6 @@
 
     <aside class="sidebar">
       <Contact />
-      <Technologies />
       <SoftSkills />
     </aside>
   </div>
@@ -56,7 +53,6 @@
 
     <aside class="sidebar">
       <SpokenLanguages />
-      <GeneralInterests />
     </aside>
 
     <footer class="footer"></footer>

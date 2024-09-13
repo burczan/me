@@ -2,10 +2,9 @@ import {
   interests,
   projects,
   softSkills,
+  techSkills,
   spokenLanguages,
-  technologies,
 } from "$lib/data";
-import { techSkills } from "$lib/data/techSkills";
 import type { LayoutLoad } from "./$types";
 
 export const load = (async () => {
@@ -14,7 +13,6 @@ export const load = (async () => {
     projects,
     softSkills,
     spokenLanguages,
-    technologies,
     techSkills,
   };
 }) satisfies LayoutLoad;

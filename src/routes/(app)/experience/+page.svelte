@@ -27,13 +27,13 @@
   </div>
 
   <div class="box">
-    {#each data.experience as { role, company, startDate, endDate, descriptionShortened, technologies }, id}
+    {#each data.experience as { role, company, startDate, endDate, description, technologies }, id}
       {#if activeTabId === id}
         <h2><span class="green">{role}</span> @{company}</h2>
         <h3>{startDate} &ndash; {endDate}</h3>
 
         <ul>
-          {#each descriptionShortened as entry}
+          {#each description as entry}
             <li>{entry}</li>
           {/each}
         </ul>

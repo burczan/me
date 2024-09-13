@@ -9,21 +9,19 @@ import {
 } from "$lib/app/sections/projects";
 import type {
   About,
-  CurrentTechstack,
   Education,
   Experience,
-  GenerallyInterestedIn,
   Interest,
   Project,
   ProjectLegacy,
   SoftSkill,
   SpokenLanguages,
-  TechSkill,
+  TechSkills,
 } from "$lib/types";
 
 export const about: About = {
   name: "Natalia Pospieszyńska",
-  role: "Software Engineer",
+  role: "Backend Software Engineer",
   location: {
     city: "Trutnov",
     region: "Hradec Králové",
@@ -50,45 +48,6 @@ export const about: About = {
     },
   },
 };
-
-export const currentTechstack: CurrentTechstack = [
-  {
-    tech: "AWS",
-    favourite: false,
-  },
-  {
-    tech: "Bash",
-    favourite: false,
-  },
-  {
-    tech: "Crochet Hook",
-    favourite: true,
-  },
-  {
-    tech: "JavaScript",
-    favourite: false,
-  },
-  {
-    tech: "Linux",
-    favourite: true,
-  },
-  {
-    tech: "Node.js",
-    favourite: true,
-  },
-  {
-    tech: "React",
-    favourite: false,
-  },
-  {
-    tech: "Svelte",
-    favourite: true,
-  },
-  {
-    tech: "TypeScript",
-    favourite: true,
-  },
-];
 
 export const education: Education = [
   {
@@ -131,18 +90,18 @@ export const education: Education = [
 
 export const experience: Experience = [
   {
-    role: "Backend Engineer",
+    role: "Backend Software Engineer",
     company: "Capbase",
     startDate: "04/2021",
     endDate: "07/2022",
     description: [
-      "Implemented and enhanced new product features in TypeScript, Node.js and React, improving user experience and addressing customer feedback.",
-      "Developed and optimized an internal API with Express.js and AWS, enabling seamless data integration.",
-      "Diagnosed and resolved technical issues, improving application stability.",
-      "Wrote and maintained comprehensive unit and integration tests, ensuring high code quality and bugs reduction.",
+      "Implemented and enhanced several product features in TypeScript, Node.js, and React, improving user experience and addressing customer feedback.",
+      "Developed and optimized an internal API with Express.js and AWS, enabling seamless data integration and improving internal workflows.",
+      "Diagnosed and resolved technical issues, improving application stability and ensuring smooth performance.",
+      "Wrote and maintained comprehensive unit and integration tests, leading to high code quality and fewer bugs in production.",
     ],
     descriptionShortened: [
-      "Implemented and enhanced new features in TypeScript, Node.js and React.",
+      "Implemented and enhanced several product features in TypeScript, Node.js, and React.",
       "Developed and optimized an internal API with Express.js and AWS.",
       "Diagnosed and resolved technical issues.",
       "Wrote and maintained comprehensive unit and integration tests.",
@@ -158,13 +117,13 @@ export const experience: Experience = [
     ],
   },
   {
-    role: "Frontend Engineer",
+    role: "Frontend Software Engineer",
     company: "Beta District",
     startDate: "12/2019",
     endDate: "08/2020",
     description: [
-      "Developed reusable components in React and TypeScript for a newly created frontend, ensuring consistency and efficiency across the application.",
-      "Implemented unit and integration tests using Jest and React Testing Library, improving code reliability and reducing bugs.",
+      "Developed reusable components in React and TypeScript, improving code consistency and speeding up the development process for future features.",
+      "Implemented unit and integration tests using Jest and React Testing Library, ensuring high code reliability and significantly reducing bug occurrences.",
     ],
     descriptionShortened: [
       "Developed reusable components in React and TypeScript for a newly created frontend.",
@@ -180,14 +139,14 @@ export const experience: Experience = [
     ],
   },
   {
-    role: "Test Engineer",
+    role: "Software Test Engineer",
     company: "Beta District",
     startDate: "01/2019",
     endDate: "11/2019",
     description: [
-      "Remotely mentored QA specialist, introducing her to programming and test automation practices, enhancing the team's technical capabilities.",
-      "Developed and maintained various automated tests in JavaScript and Ruby, improving test coverage and ensuring product quality.",
-      "Contributed to frontend development by implementing basic functionalities in React, supporting the development team in delivering features.",
+      "Remotely mentored a QA specialist, introducing programming and test automation practices, which enhanced the team's testing efficiency and technical capabilities.",
+      "Developed and maintained automated tests in JavaScript and Ruby, improving test coverage and helping ensure consistent product quality throughout the release cycle.",
+      "Contributed to frontend development by implementing basic functionalities in React, supporting the timely delivery of key features alongside the development team.",
     ],
     descriptionShortened: [
       "Remotely mentored QA specialist.",
@@ -208,10 +167,10 @@ export const experience: Experience = [
     startDate: "02/2018",
     endDate: "12/2018",
     description: [
-      "Conducted manual functional and API testing using Burp Suite and Postman, ensuring the reliability and accuracy of software features before deployment.",
-      "Collaborated closely with developers to implement new functionalities, providing critical feedback during the development process to enhance product quality and ensure seamless integration of new features.",
-      "Learned and applied test automation using JavaScript and Ruby, developing my skills in writing automated tests and contributing to the overall improvement of the testing process.",
-      "Performed production environment testing after each release, using manual testing techniques to identify and resolve post-deployment issues, maintaining system stability.",
+      "Conducted manual functional and API testing using Burp Suite and Postman, ensuring reliability and preventing major issues before deployment to production.",
+      "Collaborated closely with developers to implement new functionalities, providing critical feedback that improved product quality and streamlined the development process.",
+      "Learned and applied test automation using JavaScript and Ruby, contributing to enhanced test coverage and overall improvement in the team's testing process.",
+      "Performed post-release production environment testing using manual testing techniques, identifying and resolving issues that maintained system stability and reliability.",
     ],
     descriptionShortened: [
       "Conducted manual functional and API testing using Burp Suite and Postman.",
@@ -234,10 +193,10 @@ export const experience: Experience = [
     startDate: "04/2017",
     endDate: "01/2018",
     description: [
-      "Performed manual testing to identify and document defects, ensuring the quality of software products before release.",
-      "Proposed and implemented more efficient testing procedures, streamlining the testing process and reducing the time needed for test execution.",
-      "Suggested improvements to projects by actively finding and reporting bugs, contributing to the overall enhancement of software quality.",
-      "Actively learned new concepts and techniques in software testing, expanding my knowledge of manual and API testing, and applying these insights to improve testing effectiveness.",
+      "Performed manual testing to identify and document defects, ensuring high-quality software products and preventing critical issues before release.",
+      "Proposed and implemented more efficient testing procedures, streamlining the process and reducing test execution time.",
+      "Actively identified and reported bugs, suggesting improvements that contributed to enhancing the overall quality and performance of software projects.",
+      "Actively learned new concepts and techniques in manual and API testing, applying these insights to improve the team's testing effectiveness and product quality.",
     ],
     descriptionShortened: [
       "Performed manual testing to identify and document defects.",
@@ -267,13 +226,6 @@ export const experience: Experience = [
   },
 ];
 
-export const generalInterests: GenerallyInterestedIn = [
-  "Mathematics",
-  "Philosophy",
-  "Psychology",
-  "Theoretical Computer Science",
-];
-
 export const interests: Interest[] = [
   {
     name: "Mathematics",
@@ -297,6 +249,75 @@ export const interests: Interest[] = [
   },
 ];
 
+export const techSkills: TechSkills = {
+  programmingLanguages: {
+    display: "Programming Languages",
+    skills: ["JavaScript", "TypeScript", "Ruby", "Bash"],
+  },
+  frontendDevelopment: {
+    display: "Frontend Development",
+    skills: ["React", "Svelte", "Vanilla JS", "HTML", "CSS", "Tailwind"],
+  },
+  backendDevelopment: {
+    display: "Backend Development & Databases",
+    skills: [
+      "Node.js",
+      "Express.js",
+      "REST API",
+      "GraphQL",
+      "SQL",
+      "NoSQL",
+      "AWS DynamoDB",
+      "PostgreSQL",
+    ],
+  },
+  cloudPlatforms: {
+    display: "Cloud Platforms",
+    skills: ["Amazon Web Services (AWS)"],
+  },
+  systemDesignArchitecture: {
+    display: "System Design & Architecture",
+    skills: [
+      "Distributed Systems",
+      "System Architecture",
+      "Microservices",
+      "Serverless",
+    ],
+  },
+  diagrammingDocumentation: {
+    display: "Diagramming & Technical Documentation",
+    skills: ["PlantUML", "Structurizr", "Graphviz", "TikZ", "LaTeX"],
+  },
+  softwareEngineering: {
+    display: "Software Engineering",
+    skills: [
+      "Algorithms and Data Structures",
+      "Code Review",
+      "Debugging",
+      "Software Craftsmanship (KISS, DRY, YAGNI, etc.)",
+    ],
+  },
+  testingAutomation: {
+    display: "Testing & Automation",
+    skills: [
+      "API Testing (Postman)",
+      "Jest",
+      "Puppeteer",
+      "Security Testing (Burp Suite)",
+      "Test Automation (Frontend/Backend)",
+      "Unit Testing",
+    ],
+  },
+  versionControlCollaboration: {
+    display: "Version Control & Collaboration",
+    skills: ["Git", "GitHub", "Linear", "Obsidian"],
+  },
+  operatingSystems: {
+    display: "Operating Systems",
+    skills: ["Linux"],
+  },
+};
+
 export const softSkills: SoftSkill[] = [
   "Adaptability",
   "Analytical skills",
@@ -314,21 +335,6 @@ export const softSkills: SoftSkill[] = [
   "Remote working",
   "Resilience",
   "Self-motivation",
-];
-
-export const technologies: TechSkill[] = [
-  "AWS",
-  "Bash",
-  "GraphQL",
-  "Git",
-  "JavaScript",
-  "Linux",
-  "Node.js",
-  "React",
-  "Ruby",
-  "SQL",
-  "Svelte",
-  "TypeScript",
 ];
 
 export const projects: Project[] = [
