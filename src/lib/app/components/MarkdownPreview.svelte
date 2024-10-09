@@ -4,6 +4,19 @@
 
   export let content: string;
 
+  const images = import.meta.glob("$lib/assets/**/*.{png,jpg,jpeg,gif,svg}", {
+    eager: true,
+    import: "default",
+  });
+
+  const imageMap: Record<string, string> = Object.fromEntries(
+    Object.entries(images).map(([path, url]) => {
+      // Extract relative path from the full path (e.g., "subdir/img1.png")
+      const relativePath = path.replace("/src/lib/assets/", "");
+      return [relativePath, url as string];
+    }),
+  );
+
   const md = new MarkdownIt({
     linkify: true,
     typographer: true,
@@ -20,9 +33,11 @@
     }
 
     const src = token.attrs[srcIndex][1];
-    const isPathRelative = !src.startsWith("http") && !src.startsWith("/");
-    if (isPathRelative) {
-      token.attrs[srcIndex][1] = `/src/${src}`;
+
+    if (imageMap[src]) {
+      token.attrs[srcIndex][1] = imageMap[src];
+    } else {
+      throw new Error(`Invalid image path for ${src}`);
     }
 
     return self.renderToken(tokens, idx, options);

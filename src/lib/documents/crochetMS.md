@@ -321,13 +321,13 @@ This layered approach to the architecture ensures that each component has a clea
 
 The User interacts with the Crochet Management System through a Web Application running in the browser to manage yarns, patterns, and projects.
 
-![Component - API layer](lib/assets/crochetMS/system_context.svg)
+![Component - API layer](crochetMS/crochetMS_system_context.svg)
 
 ## C4 Model Level 2: Container View
 
 The Container View breaks down the system into its major components and describes how they communicate. In this system, we have the following containers:
 
-![Component - API layer](lib/assets/crochetMS/container_crochet_management_system.svg)
+![Component - API layer](crochetMS/crochetMS_container_crochet_management_system.svg)
 
 ### Web Application (Browser)
 
@@ -362,7 +362,7 @@ The API layer handles all business logic and serves as the intermediary between 
 
 The API Layer communicates with both the database and file storage containers to retrieve or update data as necessary. This division of responsibilities ensures modularity and maintainability.
 
-![Component - API layer](lib/assets/crochetMS/component_api_layer.svg)
+![Component - API layer](crochetMS/crochetMS_component_api_layer.svg)
 
 ### Database
 
