@@ -23,6 +23,7 @@
     "@sveltejs/adapter-static": "^3.0.4",
     "@sveltejs/kit": "^2.5.25",
     "@sveltejs/vite-plugin-svelte": "^3.1.2",
+    "@types/markdown-it": "^14.1.2",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "eslint": "^8.57.0",
@@ -44,6 +45,8 @@
   },
   "dependencies": {
     "@picocss/pico": "^2.0.6",
-    "lucide-svelte": "^0.436.0"
+    "isomorphic-dompurify": "^2.16.0",
+    "lucide-svelte": "^0.436.0",
+    "markdown-it": "^14.1.0"
   }
 }

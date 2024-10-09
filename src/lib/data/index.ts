@@ -1,6 +1,7 @@
 import {
   AnkiScripts,
   CrochetAdminTools,
+  CrochetManagementSystem,
   EngineeringtheIntangible,
   Intraview,
   PlantUML,
@@ -338,6 +339,14 @@ export const softSkills: SoftSkill[] = [
 ];
 
 export const projects: Project[] = [
+  {
+    slug: "crochet-management-system",
+    title: "Crochet Management System Design",
+    shortTitle: "Crochet Management System Design",
+    started: "10/2024",
+    ended: "10/2024",
+    component: CrochetManagementSystem,
+  },
   {
     slug: "engineering-intangible",
     title:
