@@ -1,1 +1,0 @@
-import{c as e}from"../chunks/index.9BhPN0SV.js";import{component as c}from"./0.DksDnsok.js";const o=async()=>({experience:e}),t=Object.freeze(Object.defineProperty({__proto__:null,load:o},Symbol.toStringTag,{value:"Module"}));export{c as component,t as universal};

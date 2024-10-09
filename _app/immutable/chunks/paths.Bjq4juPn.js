@@ -1,0 +1,1 @@
+var _;const e=((_=globalThis.__sveltekit_3of7ui                        )==null?void 0:_.base)??"/me";var s;const a=((s=globalThis.__sveltekit_3of7ui                        )==null?void 0:s.assets)??e;export{a,e as b};
