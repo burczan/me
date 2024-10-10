@@ -27,7 +27,7 @@
   <h1><Ghost class="icon-h1" /> About me</h1>
 
   <div class="box">
-    <article class="essay">
+    <article class="default">
       <section id="toc"></section>
 
       <section>

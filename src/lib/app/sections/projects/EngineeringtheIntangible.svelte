@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { CalendarRange } from "lucide-svelte";
   import { onMount } from "svelte";
   import type { Project } from "$lib/types";
   import { generateToC } from "$lib/utils/generateToC";
@@ -9,7 +8,7 @@
   export let project: Project;
 
   onMount(() => {
-    generateToC(3);
+    generateToC(2);
 
     const { hash } = document.location;
     const scrollTo = hash && document.getElementById(hash.slice(1));
@@ -19,12 +18,12 @@
   });
 </script>
 
-<article class="project">
-  <h2>
+<article class="default">
+  <h1>
     Engineering the Intangible:<br />The Essential Handbook for Engineers Who
     Refuse to Lose Their Minds While Navigating a World Where the Only Certainty
     Is That Your Stack Will Never Stop Changing
-  </h2>
+  </h1>
 
   <section>
     <p class="text-center">
@@ -36,7 +35,7 @@
     <section id="toc"></section>
 
     <section>
-      <h3>Summary</h3>
+      <h2>Summary</h2>
       <p>
         The <i>Engineering the Intangible</i> project emerged from my own experience
         as a software engineer, when I realized the importance of balancing rapidly
@@ -63,7 +62,7 @@
     </section>
 
     <section>
-      <h3>Introduction</h3>
+      <h2>Introduction</h2>
       <p>
         The <i>Engineering the Intangible</i> project was born to tackle a challenge
         every engineer faces: the need to stay up-to-date with rapidly changing technologies
@@ -82,7 +81,7 @@
     </section>
 
     <section>
-      <h3>Problem</h3>
+      <h2>Problem</h2>
       <p>
         In the rapidly changing IT world, where new technologies mushroom,
         certain core competencies—such as adaptability and effective
@@ -100,7 +99,7 @@
     </section>
 
     <section>
-      <h3>Motivation Behind the Project</h3>
+      <h2>Motivation Behind the Project</h2>
       <p>
         This project is born from my own experience in the IT field, where I saw
         a growing need to develop non-technical skills alongside technical
@@ -133,7 +132,7 @@
     </section>
 
     <section>
-      <h3>Theoretical Foundation</h3>
+      <h2>Theoretical Foundation</h2>
       <p>
         The <i>Engineering the Intangible</i> project draws on established competency
         models, particularly those by Spencer & Spencer (1993), who define competencies
@@ -151,7 +150,7 @@
     </section>
 
     <section>
-      <h4>Selected Bibliography</h4>
+      <h3>Selected Bibliography</h3>
       <ul>
         <li>
           Lucia, A. D., & Lepsinger, R. (1999). <cite
@@ -172,7 +171,7 @@
     </section>
 
     <section>
-      <h3>Goal of the Project</h3>
+      <h2>Goal of the Project</h2>
       <p>
         The primary goal of this project is to develop a structured, accessible
         approach for tracking and enhancing intangible skills, especially for
@@ -183,7 +182,7 @@
     </section>
 
     <section>
-      <h3>Target Audience</h3>
+      <h2>Target Audience</h2>
       <p>
         While this framework is developed from a software engineer's
         perspective, its focus on timeless competencies makes it relevant to
@@ -204,7 +203,7 @@
     </section>
 
     <section>
-      <h3>Key Use Cases</h3>
+      <h2>Key Use Cases</h2>
       <ul>
         <li>
           <b>Interview Preparation</b><br />Strengthen key competencies to
@@ -228,7 +227,7 @@
     </section>
 
     <section>
-      <h3>Benefits</h3>
+      <h2>Benefits</h2>
       <ul>
         <li>
           <b>Increased Self-Awareness</b><br />

@@ -132,7 +132,12 @@ article {
     }
   }
 
-  &.essay {
+  &.default {
+    h1 {
+      text-align: center;
+      color: var(--lime);
+    }
+
     section {
       h2,
       h3,
@@ -176,49 +181,6 @@ article {
 
     section#footnotes p {
       font-size: smaller;
-    }
-  }
-
-  &.project {
-    h2 {
-      text-align: center;
-      color: var(--lime);
-    }
-
-    section {
-      h3,
-      h4,
-      h5,
-      h6 {
-        color: var(--orange);
-      }
-    }
-
-    section#toc ul {
-      margin-inline-start: 0;
-      padding-inline-start: 0;
-
-      li {
-        list-style-type: none;
-        margin-left: 0;
-        padding-left: 0;
-
-        &.h3 {
-          margin-left: 0;
-        }
-
-        &.h4 {
-          margin-left: 1rem;
-        }
-
-        &.h5 {
-          margin-left: 2rem;
-        }
-
-        &.h6 {
-          margin-left: 3rem;
-        }
-      }
     }
   }
 }
