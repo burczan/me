@@ -79,17 +79,3 @@ export type Project = {
   ended: string;
   component: ComponentType;
 };
-
-export type ProjectLegacy = {
-  title: ProjectTitle;
-  shortDescription: string;
-  status: string;
-  techstack?: string[];
-  repository: {
-    private: boolean;
-    github?: string;
-  };
-  component: ComponentType;
-};
-
-export type ProjectComponent = Pick<ProjectLegacy, "title" | "component">;

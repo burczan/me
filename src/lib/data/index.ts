@@ -1,12 +1,6 @@
 import {
-  AnkiScripts,
-  CrochetAdminTools,
   CrochetManagementSystem,
   EngineeringtheIntangible,
-  Intraview,
-  PlantUML,
-  Toiper,
-  UnderPressure,
 } from "$lib/app/sections/projects";
 import type {
   About,
@@ -14,7 +8,6 @@ import type {
   Experience,
   Interest,
   Project,
-  ProjectLegacy,
   SoftSkill,
   SpokenLanguages,
   TechSkills,
@@ -355,71 +348,6 @@ export const projects: Project[] = [
     started: "07/2024",
     ended: "Present (Research Phase)",
     component: EngineeringtheIntangible,
-  },
-];
-
-export const projectsLegacy: ProjectLegacy[] = [
-  {
-    title: "Anki Scripts",
-    shortDescription: "Scripts and styling for Anki flashcards.",
-    status: "Maintained/active development.",
-    repository: {
-      private: true,
-    },
-    component: AnkiScripts,
-  },
-  {
-    title: "Crocheting Admin Tools",
-    shortDescription:
-      "Personal database of yarns and crochet patterns. Various tools and calculators for patterns/projects/yarns management.",
-    status: "Maintained/active development.",
-    repository: {
-      private: true,
-    },
-    component: CrochetAdminTools,
-  },
-  {
-    title: "Intraview",
-    shortDescription: "Prepare for behavioral interviews like a pro.",
-    status: "Active development.",
-    repository: {
-      private: true,
-      github: "Public soon",
-    },
-    component: Intraview,
-  },
-  {
-    title: "PlantUML-is-your-friend",
-    shortDescription: "Easy management of PlantUML diagrams.",
-    status: "Maintained/active development.",
-    repository: {
-      private: false,
-      github: "https://github.com/burczan/plantuml-is-your-friend",
-    },
-    component: PlantUML,
-  },
-  {
-    title: "Toiper",
-    shortDescription:
-      "Compare price of two toilet paper rolls depending on amount of layers and leafs.",
-    status:
-      "Current versions deprecated. Working on improved comparison algorithm.",
-    repository: {
-      private: false,
-      github: "https://github.com/burczan/toiper",
-    },
-    component: Toiper,
-  },
-  {
-    title: "Under Pressure",
-    shortDescription:
-      "Display pressure values from last 4 hours for Liberec station and warn if change can be dangerous.",
-    status: "Deprecated.",
-    repository: {
-      private: false,
-      github: "https://github.com/burczan/under-pressure",
-    },
-    component: UnderPressure,
   },
 ];
 
