@@ -3,6 +3,6 @@
   import crochetManagementSystem from "$lib/documents/crochetMS.md?raw";
 </script>
 
-<article class="system-design">
+<article class="default">
   <MarkdownPreview content={crochetManagementSystem} />
 </article>

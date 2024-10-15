@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
 :root {
+  --pico-font-family-sans-serif: Nunito, sans-serif;
   --red: var(--pico-color-red-450);
   --yellow: var(--pico-color-yellow-100);
   --orange: var(--pico-color-pumpkin);
@@ -103,49 +106,30 @@ article {
   }
 
   @media (min-width: 1280px) {
-    width: 70%;
+    width: 80%;
   }
 
   @media (min-width: 1536px) {
-    width: 60%;
+    width: 70%;
   }
 
   section {
     margin-bottom: 2rem;
   }
 
-  &.system-design {
-    @media (min-width: 768px) {
-      width: 90%;
-    }
-
-    @media (min-width: 1024px) {
-      width: 80%;
-    }
-
-    @media (min-width: 1280px) {
-      width: 80%;
-    }
-
-    @media (min-width: 1536px) {
-      width: 80%;
-    }
-  }
-
   &.default {
     h1 {
       text-align: center;
       color: var(--lime);
+      margin-bottom: 1rem;
     }
 
-    section {
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        color: var(--orange);
-      }
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--orange);
     }
 
     section#toc ul {

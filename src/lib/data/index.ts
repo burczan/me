@@ -4,6 +4,7 @@ import {
 } from "$lib/app/sections/projects";
 import type {
   About,
+  Article,
   Education,
   Experience,
   Interest,
@@ -336,8 +337,8 @@ export const projects: Project[] = [
     slug: "crochet-management-system",
     title: "Crochet Management System Design",
     shortTitle: "Crochet Management System Design",
-    started: "10/2024",
-    ended: "10/2024",
+    started: "09/2024",
+    ended: "09/2024",
     component: CrochetManagementSystem,
   },
   {
@@ -348,6 +349,19 @@ export const projects: Project[] = [
     started: "07/2024",
     ended: "Present (Research Phase)",
     component: EngineeringtheIntangible,
+  },
+];
+
+export const articles: Article[] = [
+  {
+    title: "Assumptions in System Design: Avoiding the Hidden Traps",
+    abstract:
+      "In system design, assumptions—whether explicit or hidden—play a crucial role in shaping the success and stability of complex systems. However, when left unchecked, especially when influenced by cognitive biases, these assumptions can lead to serious risks and system failures. This article takes a closer look at the challenge of identifying and managing hidden assumptions that can impact performance, scalability, and reliability. Traditional methods like cross-team reviews and standard testing often miss these implicit assumptions until they create critical issues. To help mitigate these risks, this article presents practical strategies such as scenario planning, designing for failure, and validating assumptions through thorough testing. A real-world example—the failure of NASA's Mars Climate Orbiter—highlights the importance of these practices. A simple, unexamined assumption about units of measurement led to a 125 million mission loss. By proactively managing assumptions, teams can reduce errors, improve communication, and build systems that are far more resilient and reliable.",
+    comment:
+      "This article is an introduction to a series on assumptions in system design, covering topics such as managing technical, security, and business assumptions, mitigating cognitive biases, and best practices for validating assumptions throughout the system lifecycle.",
+    started: "10/2024",
+    ended: "10/2024",
+    pdfFileName: "assumptions_in_system_design.pdf",
   },
 ];
 
@@ -362,9 +376,12 @@ export const spokenLanguages: SpokenLanguages = [
   },
   {
     language: "Czech",
-    level: "Limited working proficiency",
+    level: "Professional working proficiency",
   },
-  { language: "Spanish", level: "Elementary proficiency" },
+  {
+    language: "Spanish",
+    level: "Elementary proficiency",
+  },
 ];
 
 export const faIconClass = {

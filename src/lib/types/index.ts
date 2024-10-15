@@ -59,6 +59,7 @@ export type SpokenLanguages = {
   level:
     | "Elementary proficiency"
     | "Limited working proficiency"
+    | "Professional working proficiency"
     | "Full professional proficiency"
     | "Native proficiency";
 }[];
@@ -78,4 +79,13 @@ export type Project = {
   started: string;
   ended: string;
   component: ComponentType;
+};
+
+export type Article = {
+  title: string;
+  abstract: string;
+  comment?: string;
+  started: string;
+  ended: string;
+  pdfFileName: string;
 };
