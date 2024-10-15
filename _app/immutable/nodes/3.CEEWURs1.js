@@ -1,0 +1,1 @@
+import{i as e,p as o,s as t,a as s,t as a}from"../chunks/index.DigCzSbS.js";import{component as i}from"./0.C3sv02h-.js";const r=async()=>({interests:e,projects:o,softSkills:t,spokenLanguages:s,techSkills:a}),l=Object.freeze(Object.defineProperty({__proto__:null,load:r},Symbol.toStringTag,{value:"Module"}));export{i as component,l as universal};
