@@ -73,14 +73,11 @@
       <section>
         <h2>Version Control: My Next Career Update</h2>
         <p>
-          Looking ahead, I am increasingly drawn to <strong>AI</strong>,
-          <strong>data science</strong>, and <strong>blockchain</strong>.
-        </p>
-        <p>
-          While my academic background is not in STEM, my commitment to
+          I am actively exploring <strong>artificial intelligence</strong> (AI)
+          field. While my academic background is not in STEM, my commitment to
           <strong>continuous learning</strong>, driven by a
           <strong>growth mindset</strong>, and a solid foundation in computer
-          science drive me to explore these fields. My
+          science drive me to explore this field. My
           <strong>diverse experiences</strong>, from instructional design to
           sound engineering, have given me a unique perspective and the ability
           to approach complex challenges <strong>creatively</strong> and
