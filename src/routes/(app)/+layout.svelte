@@ -20,6 +20,7 @@
       <li><a href="{base}/">{data.about.name} <CodeXml /></a></li>
     </ul>
     <ul>
+      <!-- eslint-disable-next-line svelte/require-each-key -->
       {#each data.navbarItems as { name, href }}
         <li>
           <a

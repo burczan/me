@@ -40,14 +40,14 @@
 
     <ul class="hide-bullets">
       <li>
-        <Check color={"var(--lime)"} /> Visiting office from time to time
+        <Check color="var(--lime)" /> Visiting office from time to time
       </li>
       <li>
-        <MessageCircleQuestionMark color={"var(--orange)"} /> Visiting office once
+        <MessageCircleQuestionMark color="var(--orange)" /> Visiting office once
         a month
       </li>
-      <li><X color={"var(--red)"} /> Visiting office once a week</li>
-      <li><X color={"var(--red)"} /> Relocation to &lt;city&gt;</li>
+      <li><X color="var(--red)" /> Visiting office once a week</li>
+      <li><X color="var(--red)" /> Relocation to &lt;city&gt;</li>
     </ul>
   </div>
 </div>

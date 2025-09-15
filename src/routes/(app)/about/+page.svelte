@@ -149,6 +149,7 @@
         <h2>Dependencies Installed: My Tech Skills</h2>
 
         <dl>
+          <!-- eslint-disable-next-line svelte/require-each-key -->
           {#each Object.keys(data.techSkills) as section}
             <dt><strong>{data.techSkills[section].display}</strong></dt>
             <dd>
@@ -164,6 +165,7 @@
         <h2>Idle Threads: What Keeps Me Thinking</h2>
 
         <dl>
+          <!-- eslint-disable-next-line svelte/require-each-key -->
           {#each data.interests as interest}
             <dt><strong>{interest.name}</strong></dt>
             <dd><p>{interest.description}</p></dd>
@@ -174,6 +176,7 @@
       <section>
         <h2>Speech API: Running on Multiple Ports</h2>
         <ul>
+          <!-- eslint-disable-next-line svelte/require-each-key -->
           {#each data.spokenLanguages as { language, level }}
             <li><strong>{language}</strong> ({level})</li>
           {/each}

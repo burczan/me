@@ -11,6 +11,7 @@
     <i class={faIconClass.experience}></i> Experience
   </h2>
 
+  <!-- eslint-disable-next-line svelte/require-each-key -->
   {#each experience as { role, company, startDate, endDate, descriptionShortened }}
     <div class="entry">
       <div class="head">
@@ -19,6 +20,7 @@
       </div>
 
       <ul>
+        <!-- eslint-disable-next-line svelte/require-each-key -->
         {#each descriptionShortened as entry}
           <li>{entry}</li>
         {/each}

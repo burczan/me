@@ -43,6 +43,7 @@
 
   <div class="box">
     <article class="default">
+      <!-- eslint-disable-next-line svelte/require-each-key -->
       {#each articles as article}
         <section>
           <h2 class="text-center">{article.title}</h2>

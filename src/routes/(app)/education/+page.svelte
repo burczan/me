@@ -14,7 +14,7 @@
   <h1><GraduationCap class="icon-h1" /> Education</h1>
 
   <div role="group">
-    {#each fields as field, id}
+    {#each fields as field, id (id)}
       <button
         id={id.toString()}
         class:primary={id === activeTabId}
@@ -27,6 +27,7 @@
   </div>
 
   <div class="box">
+    <!-- eslint-disable-next-line svelte/require-each-key -->
     {#each data.education as { school, city, country, website, field, subfield, degree, dateRange }, id}
       {#if activeTabId === id}
         <h3>

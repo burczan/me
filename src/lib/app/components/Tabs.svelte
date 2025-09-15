@@ -21,6 +21,7 @@
 
 <div class="tabs">
   <div class="tab-headers">
+    <!-- eslint-disable-next-line svelte/require-each-key -->
     {#each tabs as tab, index}
       <button
         class="tab-header"

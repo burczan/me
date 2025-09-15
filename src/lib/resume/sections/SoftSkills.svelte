@@ -8,6 +8,7 @@
   </h2>
 
   <ul class="hideMarkers">
+    <!-- eslint-disable-next-line svelte/require-each-key -->
     {#each softSkills as skill}
       <li>{skill}</li>
     {/each}

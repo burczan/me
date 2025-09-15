@@ -7,6 +7,7 @@
     <i class={faIconClass.education}></i> Education
   </h2>
 
+  <!-- eslint-disable-next-line svelte/require-each-key -->
   {#each education as { school, city, country, degree, field, subfield, dateRange, website }}
     <div class="entry">
       <div class="head">

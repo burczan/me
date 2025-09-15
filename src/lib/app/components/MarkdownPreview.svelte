@@ -51,4 +51,5 @@
   const cleanHtml = DOMPurify.sanitize(dirtyHtml);
 </script>
 
+<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 {@html cleanHtml}
