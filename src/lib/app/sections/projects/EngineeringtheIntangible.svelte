@@ -1,11 +1,15 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import type { Project } from "$lib/types";
+  import type { ProjectData } from "$lib/types";
   import { generateToC } from "$lib/utils/generateToC";
   import FlipTable from "$lib/app/components/FlipTable.svelte";
   import FixTable from "$lib/app/components/FixTable.svelte";
 
-  export let project: Project;
+  interface Props {
+    project: ProjectData;
+  }
+
+  let { project }: Props = $props();
 
   onMount(() => {
     generateToC(2);

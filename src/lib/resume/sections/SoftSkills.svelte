@@ -4,7 +4,7 @@
 
 <section id="soft-skills">
   <h2>
-    <i class={faIconClass.softSkills} /> Soft skils
+    <i class={faIconClass.softSkills}></i> Soft skils
   </h2>
 
   <ul class="hideMarkers">

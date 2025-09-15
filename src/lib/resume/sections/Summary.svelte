@@ -8,7 +8,7 @@
       <span class="left">{about.name}</span>
 
       <span class="center">
-        <i class={faIconClass.headline} />
+        <i class={faIconClass.headline}></i>
       </span>
 
       <span class="right">{about.role}</span>

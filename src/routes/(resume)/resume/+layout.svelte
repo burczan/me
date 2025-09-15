@@ -1,6 +1,11 @@
-<script>
+<script lang="ts">
   import "../resume.scss";
   import "../pdf.scss";
+  interface Props {
+    children?: import("svelte").Snippet;
+  }
+
+  let { children }: Props = $props();
 </script>
 
-<slot />
+{@render children?.()}

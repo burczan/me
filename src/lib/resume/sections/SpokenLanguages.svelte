@@ -4,7 +4,7 @@
 
 <section id="spoken-languages">
   <h2>
-    <i class={faIconClass.spokenLanguages} /> Languages
+    <i class={faIconClass.spokenLanguages}></i> Languages
   </h2>
 
   <ul class="hideMarkers">

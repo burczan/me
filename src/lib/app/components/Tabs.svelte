@@ -1,14 +1,18 @@
 <script lang="ts">
-  import type { ComponentType, SvelteComponent } from "svelte";
+  import type { Component } from "svelte";
 
   interface Tab {
     name: string;
-    content: ComponentType<SvelteComponent>;
+    content: Component;
   }
 
-  export let tabs: Tab[] = [];
+  interface Props {
+    tabs?: Tab[];
+  }
 
-  let activeTab = 0;
+  let { tabs = [] }: Props = $props();
+
+  let activeTab = $state(0);
 
   function selectTab(index: number) {
     activeTab = index;
@@ -22,7 +26,7 @@
         class="tab-header"
         class:primary={index === activeTab}
         class:outline={index === activeTab}
-        on:click={() => selectTab(index)}
+        onclick={() => selectTab(index)}
       >
         {tab.name}
       </button>
@@ -31,7 +35,8 @@
 
   <div class="tab-content">
     {#if tabs[activeTab]}
-      <svelte:component this={tabs[activeTab].content} />
+      {@const SvelteComponent_1 = tabs[activeTab].content}
+      <SvelteComponent_1 />
     {/if}
   </div>
 </div>

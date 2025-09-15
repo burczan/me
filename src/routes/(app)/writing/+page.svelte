@@ -1,10 +1,10 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { PenTool } from "lucide-svelte";
+  import { PenTool } from "@lucide/svelte";
   import SvelteHead from "$lib/app/components/SvelteHead.svelte";
   import { generateToC } from "$lib/utils/generateToC";
 
-  export let data;
+  let { data } = $props();
 
   const pdfFiles = import.meta.glob("$lib/documents/*.pdf", {
     eager: true,

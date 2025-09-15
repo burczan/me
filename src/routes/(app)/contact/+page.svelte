@@ -6,11 +6,11 @@
     Github,
     Linkedin,
     MapPin,
-    MessageCircleQuestion,
+    MessageCircleQuestionMark,
     X,
-  } from "lucide-svelte";
+  } from "@lucide/svelte";
 
-  export let data;
+  let { data } = $props();
 
   const { contact, location } = data.about;
 </script>
@@ -43,8 +43,8 @@
         <Check color={"var(--lime)"} /> Visiting office from time to time
       </li>
       <li>
-        <MessageCircleQuestion color={"var(--orange)"} /> Visiting office once a
-        month
+        <MessageCircleQuestionMark color={"var(--orange)"} /> Visiting office once
+        a month
       </li>
       <li><X color={"var(--red)"} /> Visiting office once a week</li>
       <li><X color={"var(--red)"} /> Relocation to &lt;city&gt;</li>

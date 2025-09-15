@@ -8,7 +8,7 @@
 
 <section id="work-experience">
   <h2>
-    <i class={faIconClass.experience} /> Experience
+    <i class={faIconClass.experience}></i> Experience
   </h2>
 
   {#each experience as { role, company, startDate, endDate, descriptionShortened }}

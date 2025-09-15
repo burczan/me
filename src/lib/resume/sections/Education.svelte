@@ -4,7 +4,7 @@
 
 <section id="education">
   <h2>
-    <i class={faIconClass.education} /> Education
+    <i class={faIconClass.education}></i> Education
   </h2>
 
   {#each education as { school, city, country, degree, field, subfield, dateRange, website }}

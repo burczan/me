@@ -1,19 +1,23 @@
 <script lang="ts">
-  import { ArrowBigUp } from "lucide-svelte";
+  import { ArrowBigUp } from "@lucide/svelte";
 
-  export let showAtPixel = 2000;
+  interface Props {
+    showAtPixel?: number;
+  }
 
-  let scrollHeight = 0;
+  let { showAtPixel = 2000 }: Props = $props();
+
+  let scrollHeight = $state(0);
 
   const gotoTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  $: showGotoTop = scrollHeight > showAtPixel;
+  let showGotoTop = $derived(scrollHeight > showAtPixel);
 </script>
 
 {#if showGotoTop}
-  <button on:click={gotoTop} class="secondary go-to-top" title="Go to top">
+  <button onclick={gotoTop} class="secondary go-to-top" title="Go to top">
     <ArrowBigUp />
   </button>
 {/if}

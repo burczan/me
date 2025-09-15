@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let data;
+  let { data } = $props();
 </script>
 
-<svelte:component this={data.project.component} project={data.project} />
+<data.project.component project={data.project} />

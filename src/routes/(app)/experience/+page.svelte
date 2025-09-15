@@ -1,11 +1,11 @@
 <script lang="ts">
-  import { Shovel } from "lucide-svelte";
+  import { Shovel } from "@lucide/svelte";
   import SvelteHead from "$lib/app/components/SvelteHead.svelte";
 
-  export let data;
+  let { data } = $props();
 
   const roles = data.experience.map((entry) => entry.role);
-  let activeTabId = 0;
+  let activeTabId = $state(0);
 </script>
 
 <SvelteHead title="Experience" />
@@ -19,7 +19,7 @@
         id={id.toString()}
         class:primary={id === activeTabId}
         class:outline={id !== activeTabId}
-        on:click={() => (activeTabId = id)}
+        onclick={() => (activeTabId = id)}
       >
         {role}
       </button>

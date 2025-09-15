@@ -2,7 +2,11 @@
   import MarkdownIt from "markdown-it";
   import DOMPurify from "isomorphic-dompurify";
 
-  export let content: string;
+  interface Props {
+    content: string;
+  }
+
+  let { content }: Props = $props();
 
   const images = import.meta.glob("$lib/assets/**/*.{png,jpg,jpeg,gif,svg}", {
     eager: true,

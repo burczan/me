@@ -1,6 +1,11 @@
 <script lang="ts">
-  import { Projector } from "lucide-svelte";
+  import { Projector } from "@lucide/svelte";
   import SvelteHead from "$lib/app/components/SvelteHead.svelte";
+  interface Props {
+    children?: import("svelte").Snippet;
+  }
+
+  let { children }: Props = $props();
 </script>
 
 <SvelteHead title="Projects" />
@@ -9,6 +14,6 @@
   <h1><Projector class="icon-h1" /> Projects</h1>
 
   <div class="box">
-    <slot />
+    {@render children?.()}
   </div>
 </div>

@@ -1,12 +1,12 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { Ghost } from "lucide-svelte";
+  import { Ghost } from "@lucide/svelte";
   import { base } from "$app/paths";
   import { generateToC } from "$lib/utils/generateToC";
   import SvelteHead from "$lib/app/components/SvelteHead.svelte";
   import viridiAchievementsImg from "$lib/assets/viridi_achievements.png";
 
-  export let data;
+  let { data } = $props();
 
   const eiProject = data.projects[0];
 

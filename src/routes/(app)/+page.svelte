@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { BrainCircuit, CodeXml } from "lucide-svelte";
+  import { BrainCircuit, CodeXml } from "@lucide/svelte";
   import SvelteHead from "$lib/app/components/SvelteHead.svelte";
-  export let data;
+  let { data } = $props();
 </script>
 
 <SvelteHead title="Home" />

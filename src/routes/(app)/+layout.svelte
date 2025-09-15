@@ -1,13 +1,13 @@
 <script lang="ts">
   import "@picocss/pico";
   import "@picocss/pico/css/pico.colors.min.css";
-  import { CodeXml, Construction } from "lucide-svelte";
+  import { CodeXml, Construction } from "@lucide/svelte";
   import { base } from "$app/paths";
   import { page } from "$app/stores";
   import GoToTop from "$lib/app/components/GoToTop.svelte";
   import "./app.scss";
 
-  export let data;
+  let { data, children } = $props();
 </script>
 
 <svelte:head>
@@ -35,7 +35,7 @@
   </nav>
 
   <main>
-    <slot />
+    {@render children?.()}
   </main>
 
   <footer>

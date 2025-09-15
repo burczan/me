@@ -6,7 +6,7 @@
 
 <section id="projects">
   <h2>
-    <i class={faIconClass.projects} /> Projects
+    <i class={faIconClass.projects}></i> Projects
   </h2>
 
   <div class="entry">
@@ -19,7 +19,7 @@
           target="_blank"
         >
           {ei.shortTitle}
-          <i class="{faIconClass.externalLink} fa-sm" />
+          <i class="{faIconClass.externalLink} fa-sm"></i>
         </a>
       </strong>
     </div>

@@ -1,4 +1,4 @@
-import type { ComponentType } from "svelte";
+import type { Component } from "svelte";
 
 export type About = {
   name: string;
@@ -72,13 +72,18 @@ export type ProjectTitle =
   | "Toiper"
   | "Under Pressure";
 
-export type Project = {
+export type ProjectData = {
   slug: string;
   title: string;
   shortTitle: string;
   started: string;
   ended: string;
-  component: ComponentType;
+};
+
+export type ProjectView = Component<{ project: ProjectData }>;
+
+export type Project = ProjectData & {
+  component: ProjectView;
 };
 
 export type Article = {
