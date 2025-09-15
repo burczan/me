@@ -1,0 +1,1 @@
+.columns.svelte-h7bcrl{display:grid;grid-template-areas:"left right";grid-template-columns:1fr .5fr;column-gap:5em}.left.svelte-h7bcrl{grid-area:left}.right.svelte-h7bcrl{grid-area:right;margin:auto}

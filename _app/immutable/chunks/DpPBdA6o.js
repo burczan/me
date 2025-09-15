@@ -1,0 +1,1 @@
+import"./DsnmJJEf.js";import{d as o,t as m,b as r,$ as i}from"./DyY6Qw_P.js";import{h as n}from"./TVtcwlgc.js";import{s}from"./C-Zd23Sr.js";var f=o('<meta name="description"/>');function _(p,t){n(a=>{var e=f();m(()=>{i.title=`Me | ${t.title??""}`,s(e,"content",t.title)}),r(a,e)})}export{_ as S};
