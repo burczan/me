@@ -1,0 +1,1 @@
+import{rt as e}from"../chunks/Cj26qYkI.js";import{t}from"../chunks/C2taZUUL.js";import{i as n}from"../chunks/mN9jlfYB.js";var r=e({load:()=>i}),i=(async()=>({experience:n}));export{t as component,r as universal};

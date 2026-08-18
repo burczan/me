@@ -1,0 +1,1 @@
+import{E as e,F as t,I as n,f as r,h as i,w as a,z as o}from"./Cj26qYkI.js";import"./xihTtKlq.js";var s=e(`<meta name="description"/>`);function c(e,c){i(`58hj6j`,e=>{var i=s();n(()=>r(i,`content`,c.title)),t(()=>{o.title=`Me | ${c.title??``}`}),a(e,i)})}export{c as t};

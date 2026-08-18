@@ -1,0 +1,1 @@
+import{rt as e}from"../chunks/Cj26qYkI.js";import{t}from"../chunks/C2taZUUL.js";import{c as n,l as r,o as i,s as a,u as o}from"../chunks/mN9jlfYB.js";var s=e({load:()=>c}),c=(async()=>({interests:i,projects:a,softSkills:n,spokenLanguages:r,techSkills:o}));export{t as component,s as universal};
